@@ -1,0 +1,5 @@
+*.psd
+*.sketch
+*.esproj
+*.DS_Store
+scss/.sass-cache/

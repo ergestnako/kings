@@ -1,0 +1,18 @@
+.cols {
+@include bp(bp3) {
+display : flex;
+flex-wrap : wrap;
+align-items : center; }
+}
+
+.cols--two {
+
+.col--one {
+@include bp(bp3) {
+flex : 1; }
+}
+
+.col--two {
+}
+
+}

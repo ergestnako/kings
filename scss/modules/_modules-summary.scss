@@ -1,0 +1,35 @@
+.summary {
+margin-bottom : $vertical-spacing; 
+padding-bottom : $vertical-spacing / 2; 
+border-bottom : 1px $border-style $border-color; 
+
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+border-width : .5px; }
+
+&:last-of-type {
+padding-bottom : 0; 
+border-bottom-width : 0; }
+
+}
+
+
+
+.summary__header {
+@include font-size($font-size-minus-one);
+
+@include bp(bp4) {
+@include font-size($font-size); }
+}
+
+
+
+.summary__description {
+margin-bottom : 0; 
+@include font-size($font-size-minus-two);
+
+@include bp(bp4) {
+@include font-size($font-size-minus-one);
+line-height : 1.4; }
+}
