@@ -28,10 +28,10 @@ line-height : 1.4; }
 }
 
 .tertiary {
-@include font-size($font-size-minus-one);
+@include font-size($font-size-minus-two);
 
 @include bp(bp4) {
-@include font-size($font-size);
+@include font-size($font-size-minus-one);
 line-height : 1.4; }
 }
 

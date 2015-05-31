@@ -1,8 +1,5 @@
 blockquote {
-margin : 3rem 0 6rem; 
-
-@include bp(bp3) {
-margin : 3rem 44px 6rem; }
+margin : $vertical-spacing * 2 0 $vertical-spacing * 4;
 
 p {
 font-family : "lexiaregular","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -20,7 +17,7 @@ letter-spacing : 1px;
 text-transform : uppercase;
 
 @include bp(bp3) {
-padding-left : $gutter * 2; }
+padding-left : 8.6745%; }
 }
 
 cite {

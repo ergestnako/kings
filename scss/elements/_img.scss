@@ -38,6 +38,8 @@ width : auto; }
 .img--circle {
 border-radius : 50%; }
 
+
+
 figure {
 display : block;
 margin : 0 0 $vertical-spacing 0;
@@ -51,5 +53,12 @@ font-family : $figcaption-font-family;
 font-size : $figcaption-font-size;
 font-style : $figcaption-font-style;
 font-weight : $figcaption-font-weight;
-text-align : center;
+text-align : left;
 text-transform : $figcaption-text-transform; }
+
+.figure--full {
+margin : $vertical-spacing * 2 0;
+
+figcaption {
+margin-left: 8.6745%; }
+}
