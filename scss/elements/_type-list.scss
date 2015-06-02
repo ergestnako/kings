@@ -54,15 +54,6 @@ margin-right : 0; }
 
 
 
-// list--plain
-
-.list--plain {
-list-style-type : none; 
-margin-left : 0; 
-padding-left : 0; }
-
-
-
 // list--downloads
 
 .list--downloads {
@@ -96,6 +87,41 @@ display : block;
 padding : .75rem $gutter / 2 .75rem 44px;
 background : $base-bg url(../assets/img/site/icon-link-external.svg) no-repeat 11px 50%; } 
 }
+
+
+
+// list--paragraphs 
+
+.list--paragraphs {
+
+li {
+margin-bottom : $vertical-spacing; }
+
+p {
+margin-bottom : $vertical-spacing / 4; }
+
+p:last-of-type,
+p:only-of-type, {
+margin-bottom : 0; }
+
+}
+
+
+
+// list--plain
+
+.list--plain {
+list-style-type : none; 
+margin-left : 0; 
+padding-left : 0; }
+
+
+
+// list--sectioned
+
+.list--sectioned {
+padding-bottom : $vertical-spacing / 2;
+border-bottom : $border; }
 
 
 

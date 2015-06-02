@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="45px" height="67px" viewBox="0 0 45 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.1 (12002) - http://www.bohemiancoding.com/sketch -->
+    <title>Pin-blue</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Social-icons" sketch:type="MSArtboardGroup" transform="translate(-544.000000, -1082.000000)" fill="#1781A2">
+            <g id="Pin-blue" sketch:type="MSLayerGroup" transform="translate(544.590909, 1082.087402)">
+                <path d="M22,31.625 C16.693875,31.625 12.375,27.3075 12.375,22 C12.375,16.6925 16.693875,12.375 22,12.375 C27.306125,12.375 31.625,16.6925 31.625,22 C31.625,27.3075 27.306125,31.625 22,31.625 M22,0 C9.86975,0 0,9.86975 0,22 C0,33.672375 20.00075,64.092875 20.85325,65.382625 C21.107625,65.767625 21.538,66 22,66 C22.462,66 22.892375,65.767625 23.14675,65.382625 C23.99925,64.092875 44,33.672375 44,22 C44,9.86975 34.13025,0 22,0" id="Fill-2819" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

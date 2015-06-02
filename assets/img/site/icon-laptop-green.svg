@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="66px" height="66px" viewBox="0 0 66 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.1 (12002) - http://www.bohemiancoding.com/sketch -->
+    <title>laptop-green</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Social-icons" sketch:type="MSArtboardGroup" transform="translate(-226.000000, -818.000000)">
+            <g id="laptop-green" sketch:type="MSLayerGroup" transform="translate(226.000000, 818.000000)">
+                <rect id="Rectangle-2-Copy" fill="#73B85B" sketch:type="MSShapeGroup" x="0" y="0" width="66" height="66" rx="5"></rect>
+                <g id="laptop" transform="translate(11.314286, 11.314286)" fill="#FFFFFF" sketch:type="MSShapeGroup">
+                    <path d="M42.6695343,36.14358 L41.9466771,36.14358 L1.46667714,36.14358 L0.74382,36.14358 L0.0209628571,36.14358 L0.0209628571,36.8664371 C0.0209628571,38.8586314 1.64305429,40.4807229 3.63524857,40.4807229 L39.7781057,40.4807229 C41.7703,40.4807229 43.3923914,38.8586314 43.3923914,36.8664371 L43.3923914,36.14358 L42.6695343,36.14358 Z" id="Fill-4738"></path>
+                    <path d="M15.4029291,27.4692943 L28.0110034,27.4692943 L29.9381406,33.2521514 L13.475792,33.2521514 L15.4029291,27.4692943 Z M1.787192,34.6978657 L41.6267406,34.6978657 L42.6691006,34.6978657 L43.1707634,34.6978657 L39.3757634,24.5778657 L38.3319577,24.5778657 L37.8317406,24.5778657 L5.582192,24.5778657 L5.08052914,24.5778657 L4.03816914,24.5778657 L0.243169143,34.6978657 L0.743386286,34.6978657 L1.787192,34.6978657 Z" id="Fill-4739"></path>
+                    <path d="M7.25025714,2.89142857 L36.1645429,2.89142857 L36.1645429,21.6857143 L7.25025714,21.6857143 L7.25025714,2.89142857 Z M5.80454286,23.1314286 L37.6102571,23.1314286 L38.3331143,23.1314286 L39.0559714,23.1314286 L39.0559714,3.61428571 C39.0559714,1.62209143 37.43388,0 35.4416857,0 L7.97311429,0 C5.97947429,0 4.35882857,1.62209143 4.35882857,3.61428571 L4.35882857,23.1314286 L5.08168571,23.1314286 L5.80454286,23.1314286 Z" id="Fill-4740"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -17,6 +17,9 @@ line-height : $font-lineheight; }
 
 abbr[title] {
 border-bottom : 1px dotted $border-color;
+@include font-size($font-size-minus-one);
+font-variant : small-caps;
+letter-spacing : 1px;
 cursor : help; }
 
 .amp {
@@ -91,8 +94,17 @@ margin-bottom : 1.5rem; }
 margin-bottom : .6rem;
 @include font-size($font-size); }
 
-.p-tel {
+.p-name {
+@include font-size($font-size-plus-two);
+@include bp(bp4) {
 @include font-size($font-size-plus-three); }
+}
+
+.p-tel {
+@include font-size($font-size-plus-two);
+@include bp(bp4) {
+@include font-size($font-size-plus-three); }
+}
 
 small {
 @include font-size($font-size-minus-three);

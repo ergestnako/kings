@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="66px" height="66px" viewBox="0 0 66 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.1 (12002) - http://www.bohemiancoding.com/sketch -->
+    <title>Facebook-blue</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Social-icons" sketch:type="MSArtboardGroup" transform="translate(-226.000000, -322.000000)">
+            <g id="Facebook-blue" sketch:type="MSLayerGroup" transform="translate(226.000000, 322.000000)">
+                <rect id="Rectangle-2-Copy" fill="#1781A2" sketch:type="MSShapeGroup" x="0" y="0" width="66" height="66" rx="5"></rect>
+                <path d="M26.8714286,56.5714286 L26.8714286,35.8212054 L21.2142857,35.8212054 L21.2142857,28.2857143 L26.8714286,28.2857143 L26.8714286,21.6783482 C26.8714286,20.3082521 27.0924085,19.0155195 27.534375,17.8001116 C27.9763415,16.5847037 28.6392813,15.4871701 29.5232143,14.5074777 C30.4071473,13.5277853 31.5930729,12.7506725 33.0810268,12.1761161 C34.5689807,11.6015596 36.2705261,11.3142857 38.1857143,11.3142857 C39.1285761,11.3142857 40.0714239,11.3511157 41.0142857,11.4247768 C41.9571476,11.4984379 42.6642834,11.5647318 43.1357143,11.6236607 L43.8428571,11.7341518 L43.5334821,18.8497768 L38.6497768,18.8497768 C37.3238773,18.8497768 36.4436406,19.1628317 36.0090402,19.7889509 C35.5744398,20.4150701 35.3571429,21.3616008 35.3571429,22.6285714 L35.3571429,28.2857143 L43.8428571,28.2857143 L43.2683036,35.8212054 L35.3571429,35.8212054 L35.3571429,56.5714286 L26.8714286,56.5714286 Z" id="facebook" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

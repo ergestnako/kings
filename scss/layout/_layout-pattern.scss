@@ -85,10 +85,10 @@ border-width : .5px; }
 .pattern__item:last-child { 
 border-bottom-width : 0; }
 
-.pattern__item h1,
-.pattern__item h2,
-.pattern__item h3,
-.pattern__item h4 {
+#pattern__headings h1,
+#pattern__headings h2,
+#pattern__headings h3,
+#pattern__headings h4 {
 text-align : center; }
 
 .pattern__type {
