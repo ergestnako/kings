@@ -1,0 +1,20 @@
+.group__content {
+margin-bottom : $vertical-spacing * 2;
+
+p:last-of-type,
+p:only-of-type {
+margin-bottom : 0; }
+}
+
+.group__header {
+padding : 8px $gutter / 2 3px;
+background-color : $base-bg; }
+
+.header__indented {
+margin-left : -3rem;
+}
+
+.header__numeral {
+position : relative;
+top : -2px;
+@include font-size($font-size); }

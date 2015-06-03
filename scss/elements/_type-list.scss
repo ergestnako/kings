@@ -90,6 +90,23 @@ background : $base-bg url(../assets/img/site/icon-link-external.svg) no-repeat 1
 
 
 
+// list--footnotes
+
+.list--footnotes {
+
+li {
+margin-bottom : $vertical-spacing / 2;
+@include font-size($font-size-minus-two);
+
+@include bp(bp4) {
+@include font-size($font-size-minus-one);
+line-height : 1.4; }
+}
+
+}
+
+
+
 // list--paragraphs 
 
 .list--paragraphs {

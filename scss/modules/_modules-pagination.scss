@@ -26,7 +26,7 @@ padding : $pagination-padding;
 background-color : $pagination-background;
 border : $pagination-border;
 border-radius : $border-radius;
-font-size : $pagination-font-size;
+@include font-size($pagination-font-size);
 color : $pagination-link-color;
 letter-spacing : $pagination-letter-spacing;
 text-transform : $pagination-text-transform; }
@@ -84,9 +84,55 @@ padding-left : 0; }
 }
 
 .pagination__status {
-font-size : $pagination-font-size;
+@include font-size($pagination-font-size);
 letter-spacing : 1px;
 text-align : center;
 text-transform : uppercase; }
+
+
+
+
+// pagination__list__alphabetical
+
+.pagination__list__alphabetical {
+display : flex;
+flex-wrap : wrap;
+list-style-type : none;
+margin : 0 0 $vertical-spacing / 2 0;
+padding : 0;
+text-align : center; 
+
+li {
+display : inline-block;
+box-sizing : border-box; 
+order : 2;
+margin-right : 5px;
+color : $pagination-color;
+
+@include bp(bp3) {
+order : 0;
+width : auto;
+text-align : center; } 
+}
+
+li a {
+display : inline-block;
+min-width : 1.2rem;
+padding : $pagination-padding;
+background-color : $pagination-background;
+border : $pagination-border;
+border-radius : $border-radius;
+@include font-size($pagination-font-size);
+color : $pagination-link-color;
+letter-spacing : $pagination-letter-spacing;
+text-transform : $pagination-text-transform; }
+
+li a.active {
+background-color : $white;
+color : $font-color;
+cursor : default; }
+
+
+}
 
 
