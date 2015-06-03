@@ -19,6 +19,13 @@ margin-bottom : 0; }
 }
 }
 
+li {
+
+.media {
+margin-bottom : $vertical-spacing; } 
+
+}
+
 .media__header {
 margin-bottom : $vertical-spacing / 8; 
 @include font-size($font-size-plus-one);
@@ -31,7 +38,7 @@ margin-bottom : $vertical-spacing / 8;
 
 @include bp(bp3) {
 flex : 1;
-padding-bottom : $vertical-spacing; 
+padding-bottom : $vertical-spacing / 2; 
 border-bottom : 1px $border-style $border-color; 
 
 @media 
@@ -47,7 +54,8 @@ p {
 @include bp(bp4) {
 @include font-size($font-size); }
 
-&:last-of-type {
+&:last-of-type,
+&:only-of-type {
 margin-bottom : 0; }
 
 }
