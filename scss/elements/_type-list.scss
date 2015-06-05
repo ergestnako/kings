@@ -26,6 +26,7 @@ font-family : $alt-font-family;
 dd {
 margin-bottom : 3.2rem;
 margin-left : 0;
+@include font-size($font-size);
 line-height : 1.3; }
 
 

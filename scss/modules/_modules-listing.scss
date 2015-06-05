@@ -14,7 +14,6 @@ flex-direction : row-reverse; }
 .listing__meta {
 
 @include bp(bp3) {
-padding-top : .75rem;
 width : 9.807%;
 margin-right : $gutter;
 text-align : center; }

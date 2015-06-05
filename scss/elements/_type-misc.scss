@@ -91,7 +91,7 @@ bottom : -.25em; }
 margin-bottom : 1.5rem; }
 
 .h-card > div {
-margin-bottom : .6rem;
+margin-bottom : .4rem;
 @include font-size($font-size); }
 
 .p-name {
@@ -102,6 +102,7 @@ margin-bottom : .6rem;
 
 .p-tel {
 @include font-size($font-size-plus-two);
+letter-spacing : 1px;
 @include bp(bp4) {
 @include font-size($font-size-plus-three); }
 }
@@ -112,3 +113,18 @@ small {
 @include bp(bp4) {
 @include font-size($font-size-minus-two); }
 }
+
+
+// h-card--byline
+
+.h-card--byline {
+
+.p-name {
+@include font-size($font-size);
+text-transform : uppercase; }
+
+.p-tel {
+@include font-size($font-size); }
+
+}
+

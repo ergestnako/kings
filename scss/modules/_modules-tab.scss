@@ -1,0 +1,75 @@
+.accordion-tabs {
+margin-bottom : $vertical-spacing;
+padding : 0;
+line-height : 1.5;
+@include clearfix();
+
+@include bp(bp3) {
+border-radius : $border-radius; }
+
+.tab-header-and-content {
+list-style-type : none;
+
+@include bp(bp3) {
+display : inline; }
+
+&:first-child .tab-link {
+border-top-left-radius : $border-radius;
+border-top-right-radius : $border-radius; }
+
+&:last-child .tab-link {
+@include bp(bp3) {
+border-bottom-left-radius : $border-radius;
+border-bottom-right-radius : $border-radius; }
+}
+}
+
+.tab-link {
+display : block;
+padding : $vertical-spacing / 2 $gutter;
+background-color : transparent;
+@include font-size($font-size-minus-one);
+text-decoration : none;
+text-transform : uppercase;
+color : $link-color;
+
+@include bp(bp3) {
+display : inline-block;
+border-top-left-radius : $border-radius;
+border-top-right-radius : $border-radius;
+border-top-width : 0; }
+
+&:hover {
+color : $base-link-color; }
+
+&:focus {
+outline : none; }
+
+&.is-active {
+background-color : $base-bg;
+
+@include bp(bp3) {
+background-color : $base-bg;
+border-bottom-color : $base-bg;
+margin-bottom : -1px; }
+}
+}
+
+.tab-content {
+background-color : $base-bg;
+display : none;
+width : 100%;
+padding : $vertical-spacing $gutter;
+box-sizing : border-box;
+
+@include bp(bp3) {
+float : left;
+border-bottom-left-radius : $border-radius;
+border-bottom-right-radius : $border-radius;
+border-top-right-radius : $border-radius; }
+
+* {
+@include font-size($font-size-minus-one); }
+
+}
+}
