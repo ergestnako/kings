@@ -559,6 +559,20 @@
 <small><cite>King&#8217;s College Hospital</cite></small>
 </blockquote>
 
+<blockquote>
+<p>&#8220;Over the last 170 years, King&#8217;s has built its reputation as a world class hospital, with roots that lie firmly in the heart of our community. We are both a leading teaching hospital and a local hospital with a diverse inner city population.&#8221;</p>
+<small>
+<cite>
+<img src="assets/img/fpo/fpo-avatar.svg" alt="" class="cite__photo" height="66">
+<div class="cite__content">
+<div class="cite__name">Andrew Clarke</div>
+<div class="cite__job-title">Art director and designer</div>
+<div class="cite__org">Stuff &#38; Nonsense</div>
+</div><!-- cite__content -->
+</cite>
+</small>
+</blockquote>
+
 <div class="pattern__notes">
 <ul>
 <li>Paragraph: 1.8rem, small: 1.4rem</li>
@@ -725,7 +739,7 @@
 </div>
 
 <div class="pattern-col pattern-col2-col3">
-<p>Text level <abbr title="HyperText Markup Language">HTML</abbr> elements may be used within other elements. They include: <em>em</em> and <strong>strong</strong> for semantic emphasis, <i>i</i> and <b>b</b> for presentational formatting, <abbr title="Abbreviation">abbr</abbr> abbreviations, <cite>cite</cite> citations, <code>code</code> example, <del>del</del>, <ins>ins</ins> for visibly deleted and inserted content, <dfn>dfn</dfn> definitions, <mark>mark</mark> for highlighted passages, <sup>sup</sup> superscript and <sub>sub</sub> subscript.</p>
+<p>Text level <abbr title="HyperText Markup Language">HTML</abbr> elements may be used within other elements. They include: <em>em</em> and <strong>strong</strong> for semantic emphasis, <i>i</i> and <b>b</b> for presentational formatting, <abbr title="Abbreviation">abbr</abbr> abbreviations, <cite>cite</cite> citations, <code>code</code> example, <del>del</del>, <ins>ins</ins> for visibly deleted and inserted content, <dfn>dfn</dfn> definitions, <mark>mark</mark> for highlighted passages, <sup>sup</sup> superscript and <sub>sub</sub> subscript. They may also contain links to <a href="javascript:void(0)">other pages</a>&#8212;whetther internal or external&#8212;and <a href="assets/images/patterns/fpo-pdf.pdf">PDF files</a>.</p>
 </div><!-- pattern-col -->
 </div><!-- col-all -->
 
@@ -755,6 +769,38 @@
 
 <div class="pattern-col-all">
 <div class="pattern-col pattern-col1">
+<p class="milli">h-card (individual)</p>
+</div>
+
+<div class="pattern-col pattern-col2-col3">
+<div class="h-card h-card--individual">
+
+<div class="p-name">Gary Benge</div>
+<div class="p-job-title">Recruitment Consultant</div>
+
+<div class="h-card__cols">
+<div class="p-adr">
+<div class="p-org">King&#8217;s College Hospital</div>
+<div class="p-street-address">Denmark Hill</div>
+<div class="p-locality">London</div>
+<div class="p-postal-code">SE5 9RS</div>
+</div><!-- p-adr -->
+
+<div class="h-card__contact">
+<div><a mailto="javascript:void(0)" class="p-email">garybenge@nhs.net</a></div>
+<div>Telephone <span class="p-tel">020 3299 9000</span></div>
+<div>Fax <span class="p-fax">020 3299 9000</span></div>
+</div><!-- h-card__contact -->
+
+</div><!-- h-card__cols -->
+</div><!-- h-card -->
+
+</div><!-- pattern-col -->
+</div><!-- col-all -->
+
+
+<div class="pattern-col-all">
+<div class="pattern-col pattern-col1">
 <p class="milli">h-card<br> 
 1.6rem</p>
 </div>
@@ -762,7 +808,7 @@
 <div class="pattern-col pattern-col2-col3">
 <div class="media">
 <div class="media__figure">
-<a href="javascript:void(0)"><img src="assets/img/site/icon-pin-blue.svg" alt="" width="22"></a>
+<a href="javascript:void(0)"><img src="assets/img/site/icon-pin.svg" alt="" width="22"></a>
 </div><!-- media__figure -->
 
 <div class="media__content">
@@ -972,6 +1018,32 @@
 </div><!-- pattern-col -->
 </div><!-- col-all -->
 
+<div class="pattern-col-all pattern__item">
+<div class="pattern-col pattern-col1">
+<p class="milli">Staff list</p>
+</div><!-- pattern-col -->
+
+<div class="pattern-col pattern-col2-col3">
+
+<ul class="list--staff">
+<li class="h-card h-card--staff">
+<div class="p-name">Mrs. Aderonke Audu</div>
+<div class="p-job-title">Clinical Research Nurse</div>
+</li>
+
+<li class="h-card h-card--staff">
+<div class="p-name">Dr. Richard Campbell</div>
+<div class="p-job-title">Consultant Rheumatologist and Physician</div>
+</li>
+
+<li class="h-card h-card--staff">
+<div class="p-name">Dr. Nap Cheung Cheung Chun Wah</div>
+<div class="p-job-title">Consultant Rheumatologist</div>
+</li>
+</ul>
+
+</div><!-- pattern-col -->
+</div><!-- col-all -->
 
 </section><!-- pattern__page -->
 
@@ -985,7 +1057,7 @@
 
 <h1 class="pattern__page__header">FAQs</h1>
 
-<ol class="faq__list">
+<ol class="faq__list" id="faq__list">
 <li><a href="javascript:void(0)">What clinical services does the Trust provide?</a></li>
 <li><a href="javascript:void(0)">How can I find a phone number?</a></li>
 <li><a href="javascript:void(0)">Where can I find information on how to get to?</a></li>
@@ -997,17 +1069,17 @@
 
 <h3 class="faq__question"><a href="#faq-1">What clinical services does the Trust provide?</a></h3>
 <div class="faq__answer" id="faq-1">
-<p>You&#8217;ll find a full list of the Trust&#8217;s clinical departments in the Our services section of this website.</p>
+<p>You&#8217;ll find a full list of the Trust&#8217;s clinical departments in the Our services section of this website. <a href="#faq__list">&#x21A9;&#xFE0E;︎</a></p>
 </div><!-- faq__answer -->
 
 <h3 class="faq__question"><a href="#faq-2">How can I find a phone number?</a></h3>
 <div class="faq__answer" id="faq-2">
-<p>Call the Trust&#8217;s main switchboard on 020 3299 9000 and ask for the name of the service or person you require. You&#8217;ll also find contact information in the Wards and Our services sections.</p>
+<p>Call the Trust&#8217;s main switchboard on 020 3299 9000 and ask for the name of the service or person you require. You&#8217;ll also find contact information in the Wards and Our services sections. <a href="#faq__list">&#x21A9;&#xFE0E;︎</a></p>
 </div><!-- faq__answer -->
 
 <h3 class="faq__question"><a href="#faq-3">Where can I find information on how to get to King&#8217;s main campus and its other sites?</a></h3>
 <div class="faq__answer" id="faq-3">
-<p>You&#8217;ll find detailed information on travelling to the hospital and its related sites in the Getting to King&#8217;s section of this website.</p>
+<p>You&#8217;ll find detailed information on travelling to the hospital and its related sites in the Getting to King&#8217;s section of this website. <a href="#faq__list">&#x21A9;&#xFE0E;︎</a></p>
 </div><!-- faq__answer -->
 
 </section><!-- pattern__page -->
@@ -1494,6 +1566,48 @@
 </div><!-- pattern-col -->
 </div><!-- col-all -->
 
+<div class="pattern-col-all">
+<div class="pattern-col pattern-col1">
+<p class="milli">Icons</p>
+</div><!-- pattern-col -->
+
+<div class="pattern-col pattern-col2-col3">
+<p>
+<img src="assets/img/site/icon-download-pdf.svg" alt="">
+<img src="assets/img/site/icon-download-spreadsheet.svg" alt="">
+<img src="assets/img/site/icon-download-video.svg" alt="">
+<img src="assets/img/site/icon-download-word.svg" alt="">
+<img src="assets/img/site/icon-download.svg" alt="">
+<img src="assets/img/site/icon-haveyoursay.svg" alt="">
+<img src="assets/img/site/icon-laptop.svg" alt="">
+<img src="assets/img/site/icon-link-external.svg" alt="">
+<img src="assets/img/site/icon-mobilephone.svg" alt="">
+<img src="assets/img/site/icon-PALS.svg" alt="">
+
+<img src="assets/img/site/icon-pin.svg" alt="">
+<img src="assets/img/site/icon-play.svg" alt="">
+<img src="assets/img/site/icon-tv.svg" alt="">
+<img src="assets/img/site/icon-wifi.svg" alt="">
+</p>
+<p>
+<img src="assets/img/site/icon-download-pdf-hover.svg" alt="">
+<img src="assets/img/site/icon-download-spreadsheet-hover.svg" alt="">
+<img src="assets/img/site/icon-download-video-hover.svg" alt="">
+<img src="assets/img/site/icon-download-word-hover.svg" alt="">
+<img src="assets/img/site/icon-download-hover.svg" alt="">
+<img src="assets/img/site/icon-haveyoursay-hover.svg" alt="">
+<img src="assets/img/site/icon-laptop-hover.svg" alt="">
+<img src="assets/img/site/icon-link-external-hover.svg" alt="">
+<img src="assets/img/site/icon-mobilephone-hover.svg" alt="">
+<img src="assets/img/site/icon-PALS-hover.svg" alt="">
+<img src="assets/img/site/icon-pin-hover.svg" alt="">
+<img src="assets/img/site/icon-play-hover.svg" alt="">
+<img src="assets/img/site/icon-tv-hover.svg" alt="">
+<img src="assets/img/site/icon-wifi-hover.svg" alt="">
+</p>
+</div><!-- pattern-col -->
+</div><!-- col-all -->
+
 </section><!-- pattern__page -->
 
 
@@ -1586,9 +1700,9 @@
 <ul class="list--plain">
 
 <li>
-<div class="media">
+<div class="media media--key">
 <div class="media__figure">
-<img src="assets/img/site/icon-key-play.svg" alt="">
+<img src="assets/img/site/icon-play.svg" alt="" height="44">
 </div><!-- media__figure -->
 
 <div class="media__content">
@@ -1600,9 +1714,9 @@
 <!-- Next -->
 
 <li>
-<div class="media">
+<div class="media media--key">
 <div class="media__figure">
-<img src="assets/img/site/icon-key-laptop.svg" alt="">
+<img src="assets/img/site/icon-laptop.svg" alt="" height="44">
 </div><!-- media__figure -->
 
 <div class="media__content">
@@ -1614,9 +1728,9 @@
 <!-- Next -->
 
 <li>
-<div class="media">
+<div class="media media--key">
 <div class="media__figure">
-<img src="assets/img/site/icon-key-mobile.svg" alt="">
+<img src="assets/img/site/icon-mobilephone.svg" alt="" height="44">
 </div><!-- media__figure -->
 
 <div class="media__content">
@@ -1628,9 +1742,9 @@
 <!-- Next -->
 
 <li>
-<div class="media">
+<div class="media media--key">
 <div class="media__figure">
-<img src="assets/img/site/icon-key-wifi.svg" alt="">
+<img src="assets/img/site/icon-wifi.svg" alt="" height="44">
 </div><!-- media__figure -->
 
 <div class="media__content">
@@ -1639,6 +1753,55 @@
 </div><!-- media -->
 </li>
 
+</ul>
+
+</div><!-- pattern-col -->
+</div><!-- col-all -->
+
+
+
+<!-- Next -->
+
+<div class="pattern-col-all">
+<div class="pattern-col pattern-col1">
+<p class="milli">Illustrated staff list</p>
+</div><!-- pattern-col -->
+
+<div class="pattern-col pattern-col2-col3">
+
+<div class="media media--reverse">
+<figure class="media__figure">
+<img src="assets/img/fpo/fpo-avatar.svg" alt="" height="100">
+<figcaption><a href="javascript:void(0)"><img src="assets/img/site/icon-linkedin.svg" alt="" height="22"></a></figcaption>
+</figure><!-- media__figure -->
+
+<div class="media__content h-card h-card--staff">
+<div class="p-name">Anoushka de Almeida-Carragher</div>
+<div class="p-job-title">Public Governor</div>
+<p class="secondary">Born in Bromley and with a broad-based education that enriched my schooling years, I gained a BSc (Hons) in Biomedical Science (Neuroscience) from King&#8217;s College, London, a Master&#8217;s degree in Cognitive Neuropsychology from University College London (UCL), and a PhD from The UCL Institute of Neurology. I was privileged to have worked at postdoctoral level while at the Institute, with published academic papers on research into the regeneration of the spinal cord. I have, in addition, the PRINCE 2 Project Management Practitioner qualification.</p>
+
+<p class="secondary">My present role involves managing major grants, for medical research and innovative healthcare, whilst working for a funding body whose main beneficiaries are Barts Health NHS Trust and Queen Mary University Medical School. Exposure to both academia and the workings of Trust hospitals will certainly be invaluable experience to draw on. I&#8217;m aware of the financial pressures within the NHS that impact on patient care. As such, I would make patients&#8217; needs my priority.</p>
+</div><!-- media__content -->
+</div><!-- media -->
+
+
+
+
+
+
+
+
+<ul class="list--staff">
+
+<li class="h-card h-card--staff">
+<div class="p-name">Dr. Richard Campbell</div>
+<div class="p-job-title">Consultant Rheumatologist and Physician</div>
+</li>
+
+<li class="h-card h-card--staff">
+<div class="p-name">Dr. Nap Cheung Cheung Chun Wah</div>
+<div class="p-job-title">Consultant Rheumatologist</div>
+</li>
 </ul>
 
 </div><!-- pattern-col -->
@@ -1663,6 +1826,7 @@
 <h3 class="listing__header"><a href="javascript:void(0)">King&#8217;s College Hospital</a></h3>
 <p class="listing__byline"><span class="byline__posted">Posted by</span> <a href="javascript:void(0)">Andrew Clarke</a></p>
 <p>Over the last 170 years, King&#8217;s has built its reputation as a world class hospital, with roots that lie firmly in the heart of our community. We are both a leading teaching hospital and a local hospital with a diverse inner city population.</p>
+<p class="milli">(News listing module)</p>
 </div><!-- listing__content -->
 
 <div class="listing__meta">
@@ -1675,13 +1839,16 @@
 
 </div><!-- listing -->
 
+
+
 <!-- Next -->
 
-<div class="listing listing--course">
+<div class="listing listing--event">
 
 <div class="listing__content">
 <h3 class="listing__header"><a href="javascript:void(0)">Assistant practitioner</a></h3>
 <p>A one-day course that enables assistant practitioners to extend their understanding of the breast care pathway and update their mammography knowledge.</p>
+<p class="milli">(Event listing module)</p>
 </div><!-- listing__content -->
 
 <div class="listing__meta">
@@ -1704,7 +1871,101 @@
 
 </div>
 
+
+
+<!-- Next -->
+
+<div class="listing listing--resource">
+
+<div class="listing__content">
+
+<ul class="list--inline">
+<li>Patel AS,</li>
+<li>Siegert RJ,</li> 
+<li>Brignall K,</li> 
+<li>Gordon P,</li> 
+<li>Steer S,</li> 
+<li>Desai SR,</li> 
+<li>Maher TM,</li> 
+<li>Renzoni EA,</li> 
+<li>Wells AU,</li> 
+<li>Higginson IJ,</li> 
+<li>Birring SS</li>
+</ul>
+
+<h3 class="listing__header"><a href="javascript:void(0)">The development and validation of the King&#8217;s Sarcoidosis Questionnaire for the assessment of health status</a></h3>
+<ul class="list--inline">
+<li>Thorax</li>
+<li>67,(9):804-10</li>
+</ul>
+<p class="milli">(Resource listing module)</p>
+</div><!-- listing__content -->
+
+<div class="listing__meta">
+<span class="listing__time__year">2012</span>
+</div><!-- listing__meta -->
+
+</div>
+
+
+<!-- Next -->
+
+<div class="listing listing--ward">
+
+<div class="listing__content">
+
+<h3 class="listing__header">Adult Cystic Fibrosis Unit</h3>
+
+<p>The Adult Cystic Fibrosis (CF) Unit is part of King&#8217;s Adult CF Service and provides specialist inpatient care. It&#8217;s on Lonsdale Ward and has nine single rooms with bathroom facilities as well as a treatment room for patients having annual reviews or day care.</p>
+
+<table class="table--stripe">
+<tbody>
+<tr>
+<th>Telephone</th>
+<td><span class="spaced">020 3299 8652</span></td>
+</tr>
+
+<tr>
+<th>Visiting</th>
+<td>2&#8211;8pm</td>
+</tr>
+
+<tr>
+<th>Maximum visitors</th>
+<td>2</td>
+</tr>
+
+<tr>
+<th>Location</th>
+<td>Second floor, Golden Jubilee Wing, Denmark Hill, London, SE5 9RS</td>
+</tr>
+
+<tr>
+<th>Facilities</th>
+<td>
+<img src="assets/img/site/icon-laptop.svg" alt="" height="33" title="Laptop use allowed">
+<img src="assets/img/site/icon-mobilephone.svg" alt="" height="33" title="Mobile phone use allowed">
+<img src="assets/img/site/icon-wifi.svg" alt="" height="33" title="Wifi available">
+</td>
+</tr>
+</tbody>
+
+</table>
+
+<p class="milli">(Ward listing module)</p>
+</div><!-- listing__content -->
+
+<div class="listing__meta">
+</div><!-- listing__meta -->
+
+</div>
+
 </section><!-- pattern__page -->
+
+
+</section><!-- pattern__page -->
+
+
 
 
 

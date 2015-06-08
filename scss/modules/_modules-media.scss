@@ -64,6 +64,22 @@ margin-bottom : 0; }
 
 
 
+// media--key 
+
+.media--key {
+
+.media__content {
+display : flex;
+flex-direction : column;
+justify-content : center; }
+
+p:last-of-type,
+p:only-of-type {
+margin-bottom : 0; }
+}
+
+
+
 // reverse
 
 .media--reverse {

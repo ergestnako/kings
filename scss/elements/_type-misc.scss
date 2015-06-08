@@ -85,6 +85,11 @@ sub {
 bottom : -.25em; }
 
 
+
+.spaced {
+letter-spacing : 1px; }
+
+
 // h-card
 
 .h-card {
@@ -128,3 +133,52 @@ text-transform : uppercase; }
 
 }
 
+
+// h-card--individual
+
+.h-card--individual {
+
+.p-name {
+margin-bottom : 0;
+@include font-size($font-size-plus-two);
+@include bp(bp4) {
+@include font-size($font-size-plus-three); }
+}
+
+.p-job-title {
+margin-bottom : $vertical-spacing / 2; }
+
+.h-card__cols {
+@include bp(bp3) {
+display : flex;
+align-items : flex-start; } 
+}
+
+.p-tel {
+@include font-size($font-size); }
+
+.p-adr {
+@include bp(bp3) { 
+flex : 1;
+margin-right : $gutter; }
+}
+
+.h-card__contact { 
+@include bp(bp3) { 
+flex : 1; }
+}
+}
+
+
+// h-card--staff
+
+.h-card--staff {
+
+.p-name {
+margin-bottom : 0;
+@include font-size($font-size-plus-two);
+@include bp(bp4) {
+@include font-size($font-size-plus-three); }
+}
+
+}

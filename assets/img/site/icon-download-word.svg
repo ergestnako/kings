@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="66px" height="65px" viewBox="0 0 66 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.1 (12002) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-download-word-blue</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Social-icons" sketch:type="MSArtboardGroup" transform="translate(-378.000000, -1890.000000)">
+            <g id="Blue-doc-download-Copy" sketch:type="MSLayerGroup" transform="translate(150.000000, 1890.000000)">
+                <g id="icon-download-word-blue" transform="translate(228.000000, 0.000000)" sketch:type="MSShapeGroup">
+                    <rect id="Rectangle-2-Copy-5" fill="#1781A2" x="0" y="0.16023763" width="66" height="64.1666667" rx="5"></rect>
+                    <g id="Fill-1901-Copy" transform="translate(17.914286, 11.000000)" fill="#FFFFFF">
+                        <path d="M19.2761905,10.5925926 L19.2761905,0.814814815 L29.3333333,10.5925926 L19.2761905,10.5925926 Z M29.9258667,10.0165185 L19.8687238,0.238740741 C19.712,0.0855555556 19.4982857,-4.16851738e-13 19.2761905,-4.16851738e-13 L0.838095238,-4.16851738e-13 C0.375466667,-4.16851738e-13 0,0.364222222 0,0.814814815 L0,38.2962963 C0,38.7468889 0.375466667,39.1111111 0.838095238,39.1111111 L29.3333333,39.1111111 C29.7959619,39.1111111 30.1714286,38.7468889 30.1714286,38.2962963 L30.1714286,10.5925926 C30.1714286,10.3758519 30.0834286,10.1688889 29.9258667,10.0165185 L29.9258667,10.0165185 Z" id="Fill-1901"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

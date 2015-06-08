@@ -242,6 +242,9 @@ justify-content : space-between; }
 
 .listing--resource {
 
+.listing__time__year {
+@include font-size($font-size-plus-three); }
+
 .listing__content {
 
 p {
@@ -253,5 +256,24 @@ p {
 @include font-size($font-size-minus-one); }
 }
 
+.list--inline {
+margin-top : 0;
+margin-bottom : $vertical-spacing / 2;
+@include font-size($font-size-minus-three);
+line-height : 1.2; }
+
 }
+}
+
+
+
+// listing--ward
+
+.listing--ward {
+
+table {
+@include bp(bp3) {
+margin-left : -($gutter / 2); }
+}
+
 }

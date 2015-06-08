@@ -21,8 +21,22 @@ padding-left : 8.6745%; }
 }
 
 cite {
-font-style : normal; }
+display : flex;
+font-style : normal;
+
+.cite__photo {
+margin-right : $gutter; }
+
+.cite__job-title,
+.cite__org {
+letter-spacing : 0;
+text-transform : none; }
 }
+}
+
+
+
+
 
 
 

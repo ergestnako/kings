@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="66px" height="65px" viewBox="0 0 66 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.3.1 (12002) - http://www.bohemiancoding.com/sketch -->
-    <title>icon-download-video-blue</title>
+    <title>icon-download-video-green</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Social-icons" sketch:type="MSArtboardGroup" transform="translate(-302.000000, -1890.000000)">
-            <g id="Blue-doc-download-Copy" sketch:type="MSLayerGroup" transform="translate(150.000000, 1890.000000)">
-                <g id="icon-download-video-blue" transform="translate(152.000000, 0.000000)" sketch:type="MSShapeGroup">
-                    <rect id="Rectangle-2-Copy-6" fill="#1781A2" x="0" y="0.16023763" width="66" height="64.1666667" rx="5"></rect>
+        <g id="Social-icons" sketch:type="MSArtboardGroup" transform="translate(-302.000000, -1966.000000)">
+            <g id="Green-doc-download-" sketch:type="MSLayerGroup" transform="translate(150.000000, 1966.000000)">
+                <g id="icon-download-video-green" transform="translate(152.000000, 0.000000)" sketch:type="MSShapeGroup">
+                    <rect id="Rectangle-2-Copy-6" fill="#73B85B" x="0" y="0.16023763" width="66" height="64.1666667" rx="5"></rect>
                     <g id="document-play-copy" transform="translate(17.914286, 11.000000)" fill="#FFFFFF">
                         <path d="M19.2761905,10.9236111 L19.2761905,0.840277778 L29.3333333,10.9236111 L19.2761905,10.9236111 Z M23.0727619,23.4000556 L9.6632381,31.8028333 C9.52746667,31.8877014 9.37325714,31.9305556 9.21904762,31.9305556 C9.07908571,31.9305556 8.9399619,31.8952639 8.81257143,31.8255208 C8.54605714,31.6767917 8.38095238,31.3952986 8.38095238,31.0902778 L8.38095238,14.2847222 C8.38095238,13.9797014 8.54605714,13.6982083 8.81257143,13.5494792 C9.07908571,13.4024306 9.40426667,13.4091528 9.6632381,13.5721667 L23.0727619,21.9749444 C23.3174857,22.1287153 23.4666667,22.3976042 23.4666667,22.6875 C23.4666667,22.9773958 23.3174857,23.2462847 23.0727619,23.4000556 L23.0727619,23.4000556 Z M29.9258667,10.3295347 L19.8687238,0.246201389 C19.7111619,0.0882291667 19.4982857,0 19.2761905,0 L0.838095238,0 C0.375466667,0 0,0.375604167 0,0.840277778 L0,39.4930556 C0,39.9577292 0.375466667,40.3333333 0.838095238,40.3333333 L29.3333333,40.3333333 C29.7959619,40.3333333 30.1714286,39.9577292 30.1714286,39.4930556 L30.1714286,10.9236111 C30.1714286,10.7000972 30.0825905,10.4866667 29.9258667,10.3295347 L29.9258667,10.3295347 Z" id="Fill-1913"></path>
                     </g>

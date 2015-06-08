@@ -20,3 +20,11 @@ outline : 0; }
 
 a:link {
 transition : all $transition-duration $transition-timing-function; }
+
+a[href$=".pdf"]:after {
+content : " (PDF)";
+position : relative;
+top : -.5em;
+@include font-size($font-size-minus-two);
+line-height : 0;
+vertical-align : baselineheight; }
