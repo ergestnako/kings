@@ -140,6 +140,7 @@ text-transform : uppercase; }
 
 .p-name {
 margin-bottom : 0;
+line-height : 1.2;
 @include font-size($font-size-plus-two);
 @include bp(bp4) {
 @include font-size($font-size-plus-three); }
@@ -175,7 +176,8 @@ flex : 1; }
 .h-card--staff {
 
 .p-name {
-margin-bottom : 0;
+margin-bottom : $vertical-spacing / 8;
+line-height : 1.2;
 @include font-size($font-size-plus-two);
 @include bp(bp4) {
 @include font-size($font-size-plus-three); }

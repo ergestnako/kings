@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="67px" height="65px" viewBox="0 0 67 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.1 (12002) - http://www.bohemiancoding.com/sketch -->
+    <title>Email-blue</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Social-icons" sketch:type="MSArtboardGroup" transform="translate(-363.000000, -2144.000000)">
+            <g id="Email-&amp;-Tel-Copy-3" sketch:type="MSLayerGroup" transform="translate(363.500000, 2143.587402)">
+                <g id="Blue" sketch:type="MSShapeGroup">
+                    <g id="Email-blue" transform="translate(0.000000, 0.912598)">
+                        <rect id="Rectangle-2" fill="#1781A2" x="0" y="0.16023763" width="66" height="64.1666667" rx="5"></rect>
+                        <path d="M54.1120286,20.1226667 L33.621,35.5465 C33.4396286,35.6821667 33.2188286,35.75 33,35.75 C32.7811714,35.75 32.5603714,35.6821667 32.379,35.5465 L11.8899429,20.1226667 C11.5331143,20.6745 11.3142857,21.3106667 11.3142857,22 L11.3142857,42.1666667 C11.3142857,44.1888333 13.0826571,45.8333333 15.2571429,45.8333333 L50.7428571,45.8333333 C52.9173429,45.8333333 54.6857143,44.1888333 54.6857143,42.1666667 L54.6857143,22 C54.6857143,21.3106667 54.4668857,20.6745 54.1120286,20.1226667" id="Fill-100" fill="#FFFFFF"></path>
+                        <path d="M52.6906286,18.832 C52.113,18.5221667 51.4545429,18.3333333 50.7428571,18.3333333 L15.2571429,18.3333333 C14.5454571,18.3333333 13.887,18.5221667 13.3093714,18.832 L33,33.6545 L52.6906286,18.832" id="Fill-101" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

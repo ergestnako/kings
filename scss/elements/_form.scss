@@ -20,13 +20,13 @@ margin-bottom : 0; }
 legend {
 display : block;
 width : 100%;
-margin-bottom : $vertical-spacing * 2;
+margin-bottom : $vertical-spacing / 8;
 padding : 0 0 $vertical-spacing / 2 0;
+font-family : $bold-font-family;
 @include font-size($font-size);
 line-height : inherit;
 color : $form-font-color;
-border : 0;
-border-bottom : $border-width $border-style $border-color; }
+border-width : 0; }
 
 fieldset {
 margin-bottom : $vertical-spacing;

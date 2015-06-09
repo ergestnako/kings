@@ -52,6 +52,7 @@ text-align : center; }
 li:first-child a {
 background-color : transparent;
 border-width : 0;
+color : $link-color;
 
 @include bp(bp3) {
 padding-right : 0;
@@ -76,6 +77,7 @@ text-align : center; }
 li:last-child a {
 background-color : transparent;
 border-width : 0; 
+color : $link-color;
 
 @include bp(bp3) {
 padding-right : 0;

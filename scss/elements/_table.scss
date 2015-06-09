@@ -7,7 +7,12 @@ border : none;
 background-color : $table-bg;
 border-collapse : collapse;
 border-spacing : 0;
-font-family : $table-font-family; }
+font-family : $table-font-family;
+
+img {
+margin-right : $gutter / 4; }
+
+}
 
 th,
 td {

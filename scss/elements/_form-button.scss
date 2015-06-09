@@ -2,8 +2,7 @@ button {
 &:focus,
 &:active {
 outline : none;
-box-shadow : none;
-border : none; }
+box-shadow : none; }
 }
 
 
@@ -71,11 +70,11 @@ color : $button-primary-font-color-hover; }
 // mini
 
 .btn--mini {
-padding : 2px 8px 0;
+padding : 3px 8px 0;
 @include font-size($button-mini-font-size); }
 
 a.btn--mini {
-padding-top : 5px;
+padding-top : 6px;
 padding-bottom : 4px; }
 
 // small

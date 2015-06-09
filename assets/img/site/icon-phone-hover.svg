@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="66px" height="66px" viewBox="0 0 66 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.1 (12002) - http://www.bohemiancoding.com/sketch -->
+    <title>Phone-green</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Social-icons" sketch:type="MSArtboardGroup" transform="translate(-442.000000, -2220.000000)">
+            <g id="Email-&amp;-Tel-Copy-3" sketch:type="MSLayerGroup" transform="translate(363.500000, 2143.587402)">
+                <g id="Green" transform="translate(0.000000, 76.000000)" sketch:type="MSShapeGroup">
+                    <g id="Phone-green" transform="translate(78.500000, 0.798312)">
+                        <rect id="Rectangle" fill="#73B85B" x="0.916666667" y="0.162702825" width="64.1666667" height="65.1538462" rx="5"></rect>
+                        <path d="M50.5714112,42.0491942 L46.3645204,37.777582 C45.5344612,36.9330113 44.4300023,36.4698035 43.2569435,36.4698035 C42.0821697,36.4698035 40.9794258,36.9330113 40.1476517,37.777582 L39.0208978,38.9216706 C34.6133522,35.2194906 30.3807365,30.9217577 26.7432251,26.4533693 L27.869979,25.3092807 C29.5832623,23.5696392 29.5832623,20.7381507 27.869979,18.9985092 L23.6630882,14.7268971 C22.8330291,13.8823264 21.7285702,13.4191185 20.5555114,13.4191185 C19.3807376,13.4191185 18.2762787,13.8823264 17.4462195,14.7268971 L15.1378318,17.069057 C13.006089,19.2318545 12.6682343,22.6606374 14.3334976,25.2187288 C21.0803008,35.5747327 30.0377368,44.6699754 40.2385466,51.5205756 C41.2864105,52.2258356 42.5040593,52.5967502 43.759438,52.5967502 C45.4624313,52.5967502 47.0625247,51.9245764 48.2630235,50.703867 L50.5714112,48.3599657 C51.4014703,47.5188778 51.8593749,46.3974272 51.8593749,45.2045799 C51.8593749,44.0134741 51.4014703,42.8902821 50.5714112,42.0491942" id="Fill-319" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

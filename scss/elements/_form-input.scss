@@ -16,13 +16,18 @@ line-height : $vertical-spacing;
 color : $input-font-color; 
 transition : all $transition-duration $transition-timing-function;
 
+&:active,
 &:focus {
 outline : none;
-border-color : darken($input-border-color,10); }
+border-color : darken($input-border-color,25); }
 }
 
 input {
 &::-webkit-input-placeholder {
+// Filthy hack
+position : relative; 
+top : 6px;
+// Ed hack
 color : lighten($input-font-color,10); 
 font-family : $input-font-family;
 @include font-size($input-font-size); }

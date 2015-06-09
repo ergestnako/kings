@@ -1,0 +1,34 @@
+.accordion {  
+background-color : $base-bg;
+border : $border;
+margin : 0 0 $vertical-spacing 0;
+padding : 0;
+
+ul {
+margin : 0;
+padding : 0; }
+
+li {
+list-style-type : none;
+margin-bottom : 0;
+border-bottom : $border;
+
+> a {
+display : block;
+padding : ($vertical-spacing / 2) $gutter;
+font-family : $bold-font-family;
+color : $font-color;
+text-decoration : none; }
+
+&:last-child {
+border-bottom-width : 0; }
+}
+
+.submenu {
+display : none;
+padding : 0 $gutter ($vertical-spacing / 2); }
+
+.is-expanded {
+display : block;
+padding-bottom : 0; }
+}

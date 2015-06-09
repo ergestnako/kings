@@ -106,7 +106,7 @@ $border							: $border-width $border-style $border-color;
 // Boxes
 
 $box-padding					: 1rem 1.25rem;
-$box-bg 						: $white;
+$box-bg 						: $base-bg;
 
 $box-border-color				: $border-color;
 $box-border-style 				: $border-style;
@@ -117,10 +117,10 @@ $box-font-family				: $font-family;
 $box-font-size 					: $font-size;
 $box-font-color 				: $font-color;
 
-$box-large-padding				: 16px 22px;
+$box-large-padding				: 2rem 2.5rem;
 $box-large-border-radius 		: $border-radius * 2;
 
-$box-small-padding				: 2px 6px;
+$box-small-padding				: .5rem .75rem;
 $box-small-border-radius 		: $border-radius;
 
 
