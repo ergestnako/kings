@@ -68,8 +68,8 @@ border-bottom-left-radius : $border-radius;
 border-bottom-right-radius : $border-radius;
 border-top-right-radius : $border-radius; }
 
-* {
-@include font-size($font-size-minus-one); }
-
+.list--downloads a,
+.list--external a {
+background-color : $body-background; }
 }
 }

@@ -56,9 +56,10 @@ font-weight : $figcaption-font-weight;
 text-align : left;
 text-transform : $figcaption-text-transform; }
 
-.figure--full {
+.figure--full,
+.main > figure {
 margin : $vertical-spacing * 2 0;
 
 figcaption {
-margin-left: 8.6745%; }
+margin-left : 8.6745%; }
 }

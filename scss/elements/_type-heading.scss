@@ -2,17 +2,18 @@ h1, h2, h3, h4, h5 {
 margin-top : 0; }
 
 h1 { 
-margin-bottom : 1.4rem;
+margin-bottom : $vertical-spacing / 1.5;
 font-family : $heading-font-family;
 @include font-size($font-size-plus-four);
 font-weight : normal; 
+line-height : 1.4;
 
 @include bp(bp4) {
 @include font-size($font-size-plus-five); }
 }
 
 h2 { 
-margin-bottom : 1.4rem;
+margin-bottom : $vertical-spacing / 2;
 font-family : $heading-font-family;
 @include font-size($font-size-plus-three);
 font-weight : normal; 
@@ -26,7 +27,7 @@ p + h2 {
 margin-top : $vertical-spacing / 1.5; }
 
 h3 { 
-margin-bottom : .75rem;
+margin-bottom : $vertical-spacing / 2;
 font-family : $alt-font-family;
 @include font-size($font-size-plus-two);
 font-weight : normal;

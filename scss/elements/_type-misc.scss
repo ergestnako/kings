@@ -125,8 +125,7 @@ small {
 .h-card--byline {
 
 .p-name {
-@include font-size($font-size);
-text-transform : uppercase; }
+@include font-size($font-size); }
 
 .p-tel {
 @include font-size($font-size); }
@@ -171,6 +170,22 @@ flex : 1; }
 }
 
 
+.complementary {
+
+.h-card__cols {
+margin-bottom : $vertical-spacing * 2;
+
+@include bp(bp3) {
+display : block; }
+
+.p-adr {
+@include bp(bp3) { 
+margin-right : 0; }
+}
+}
+}
+
+
 // h-card--staff
 
 .h-card--staff {
@@ -182,5 +197,8 @@ line-height : 1.2;
 @include bp(bp4) {
 @include font-size($font-size-plus-three); }
 }
+
+.p-job-title {
+margin-bottom : $vertical-spacing; }
 
 }

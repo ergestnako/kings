@@ -106,9 +106,6 @@ p {
 
 @include bp(bp4) {
 @include font-size($font-size); }
-
-&:last-of-type {
-margin-bottom : 0; }
 }
 
 ul, ol {
@@ -275,10 +272,11 @@ display : block;
 .listing--resource {
 
 .listing__time__year {
-font-family : $bold-font-family;
+font-family : $alt-font-family;
 @include font-size($font-size-plus-two); }
 
 .listing__content {
+padding-bottom : 0;
 
 p {
 
@@ -306,6 +304,7 @@ line-height : 1.2; }
 
 table {
 @include bp(bp3) {
+margin-bottom : 0;
 margin-left : -($gutter / 2); }
 }
 

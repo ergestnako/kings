@@ -105,7 +105,7 @@ $border							: $border-width $border-style $border-color;
 
 // Boxes
 
-$box-padding					: 1rem 1.25rem;
+$box-padding					: 1rem $gutter;
 $box-bg 						: $base-bg;
 
 $box-border-color				: $border-color;
@@ -117,10 +117,10 @@ $box-font-family				: $font-family;
 $box-font-size 					: $font-size;
 $box-font-color 				: $font-color;
 
-$box-large-padding				: 2rem 2.5rem;
+$box-large-padding				: 2rem $gutter * 1.5;
 $box-large-border-radius 		: $border-radius * 2;
 
-$box-small-padding				: .5rem .75rem;
+$box-small-padding				: .5rem $gutter / 1.5;
 $box-small-border-radius 		: $border-radius;
 
 

@@ -6,14 +6,18 @@ border : $box-border-width $box-border-style $box-border-color;
 border-radius : $box-border-radius;
 font-family : $box-font-family;
 
+@include bp(bp3) { 
+margin-left : -($gutter); }
+
 p {
 font-size : $box-font-size;
-color : $box-font-color;
+color : $box-font-color; }
 
-&:last-child,
-&:only-child {
+p:last-child,
+ul:last-child,
+ol:last-child,
+table:last-child {
 margin-bottom : 0; }
-}
 }
 
 .box--small {
@@ -21,3 +25,14 @@ padding : $box-small-padding; }
 
 .box--large {
 padding : $box-large-padding; }
+
+.box__header {
+margin-bottom : .75rem;
+font-family : $alt-font-family;
+@include font-size($font-size-minus-one);
+font-weight : normal;
+text-transform : uppercase; 
+
+@include bp(bp4) {
+@include font-size($font-size); }
+}
