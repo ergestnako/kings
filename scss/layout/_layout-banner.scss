@@ -1,4 +1,6 @@
 [role="banner"] {
-margin-bottom : $vertical-spacing;
-padding-bottom : $vertical-spacing;
-border-bottom : $border; }
+background-color : #12617a;
+
+.container {
+padding : ($vertical-spacing * 2) 0 ($vertical-spacing / 2) 0; }
+}

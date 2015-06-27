@@ -1,5 +1,40 @@
 [role="contentinfo"] {
-margin : $vertical-spacing $gutter / 2 0 $gutter / 2; 
-padding : $vertical-spacing 0;
-border-top : $border;
+margin : 0 0 ($gutter / 2) 0; 
+padding : $vertical-spacing 0; 
+
+small {
+display : block; }
+
+.content {
+display : flex;
+align-items : center; }
+
+}
+
+
+.contentinfo__logo {
+display : flex;
+align-items : flex-end;
+margin-right : $gutter;
+
+img {
+margin-right : $gutter;
+width : 66px; }
+
+ul {
+list-style-type : none;
+margin : 0;
+padding : 0; }
+
+li {
+margin-bottom : 0;
+line-height : 1.25; }
+
+a {
+@include font-size($font-size-minus-two); }
+
+}
+
+.contentinfo__copyright {
+flex : 1;
 text-align : center; }

@@ -12,3 +12,10 @@ border-bottom : $border;
 (min-resolution: 192dpi) { 
 border-width : .5px; }
 }
+
+
+
+.divider {
+width : 30px;
+border-width : 1px 0 0 0;
+border-image : url(../assets/img/site/divider-hr.png) 2 0 0 0; }
