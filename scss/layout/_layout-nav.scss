@@ -34,7 +34,11 @@ background-color : #83be70;
 border : 3px solid #98c988;
 border-radius : $border-radius; 
 box-sizing : border-box;
+display:none;
 
+&.is-active{
+display:block;
+}
 .cols {
 margin-bottom : 0; }
 }
@@ -64,7 +68,7 @@ margin-left : -15px; }
 
 
 
-.navigation__item {
+.navigation__box__item {
 margin-bottom : $vertical-spacing / 2;
 border-width : 0 0 1px 0;
 border-image : url(../assets/img/site/divider-navigation.png) 0 0 2 0;
@@ -74,11 +78,11 @@ margin-bottom : 0;
 border-width : 0; }
 }
 
-.navigation__header {
+.navigation__box__header {
 margin-bottom : 0;
 @include font-size($font-size-plus-one); }
 
-.navigation__list {
+.navigation__box__list {
 margin-bottom : 0;
 
 li {
