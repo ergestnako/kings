@@ -2,5 +2,48 @@
 background-color : #12617a;
 
 .container {
-padding : ($vertical-spacing * 2) 0 ($vertical-spacing / 2) 0; }
+display : flex;
+padding : ($vertical-spacing * 2) 0 ($vertical-spacing / 2) 0;
+
+@include bp(bp5) {
+display : block; }
+}
+
+.main {
+flex : 1; }
+
+.complementary {
+width : 18px; 
+
+@include bp(bp3) {
+width : 22.6979%; }
+}
+
+.form__search {
+@include bp(bp3) {
+border : 1px solid #1781a2;
+border-radius : $border-radius; }
+
+input {
+display : none;
+padding : 0;
+background-color : transparent;
+border-width : 0;
+color : $white; 
+
+@include bp(bp3) {
+display : inline-block; }
+}
+
+.btn {
+display : inline-block;
+padding : 2px 2px 0 0;
+background-color : transparent; 
+border-width : 0;
+
+img {
+width : 18px; }
+
+}
+}
 }

@@ -20,10 +20,6 @@ color : $white; }
 
 .active {
 font-family : $bold-font-family; }
-
-.main a {
-@include font-size($font-size-plus-one); }
-
 }
 
 

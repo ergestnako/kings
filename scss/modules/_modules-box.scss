@@ -6,9 +6,6 @@ border : $box-border-width $box-border-style $box-border-color;
 border-radius : $box-border-radius;
 font-family : $box-font-family;
 
-@include bp(bp3) { 
-margin-left : -($gutter); }
-
 p {
 font-size : $box-font-size;
 color : $box-font-color; }
@@ -35,4 +32,14 @@ text-transform : uppercase;
 
 @include bp(bp4) {
 @include font-size($font-size); }
+}
+
+
+.main {
+
+.box {
+@include bp(bp3) { 
+margin-left : -($gutter); }
+}
+
 }
