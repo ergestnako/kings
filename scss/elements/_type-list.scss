@@ -200,8 +200,7 @@ column-gap : $gutter; }
 column-count : 1; }
 
 li {
-margin-bottom : 0;
-@include font-size($font-size-minus-one); }
+margin-bottom : 0; }
 
 }
 
