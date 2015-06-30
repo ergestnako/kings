@@ -22,13 +22,16 @@ color : $white; }
 font-family : $bold-font-family; }
 }
 
+.navigation__item{
+position : relative;
+}
 
 // navigation__box
 
 .navigation__box {
 display : none;
 position : absolute;
-top : 160px;
+top : 2em;
 width : 640px;
 padding : ($gutter / 2) ($gutter / 2) 0 ($gutter / 2);
 background-color : #83be70;
