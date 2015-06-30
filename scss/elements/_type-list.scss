@@ -201,12 +201,11 @@ column-count : 1; }
 
 li {
 margin-bottom : 0; }
-
 }
 
 .list--cols {
 @include bp(bp3) { 
-column-count : 1; }
+column-count : 2; } 
 }
 
 }

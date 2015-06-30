@@ -301,11 +301,32 @@ line-height : 1.2; }
 // listing--ward
 
 .listing--ward {
+flex-direction : row;
+flex-wrap : wrap;
+padding-bottom : $vertical-spacing / 4; 
+border-bottom : 1px $border-style $border-color; 
 
-table {
-@include bp(bp3) {
-margin-bottom : 0;
-margin-left : -($gutter / 2); }
+&:last-of-type {
+padding-bottom : 0; 
+border-bottom-width : 0; }
+
+.listing__header {
+margin-bottom : $vertical-spacing / 16; }
+
+p {
+margin-bottom : $vertical-spacing / 8; }
+
+.p-tel {
+@include font-size($font-size-plus-one);
+letter-spacing : 1px;
+
+@include bp(bp4) {
+@include font-size($font-size-plus-two); }
+}
 }
 
-}
+.listing__ward--one {
+flex : 2; }
+
+.listing__ward--two {
+flex : 1; }

@@ -58,3 +58,10 @@ text-transform : uppercase;
 @include bp(bp4) {
 @include font-size($font-size); }
 }
+
+
+.complementary {
+	
+p {
+margin-bottom : $vertical-spacing / 4; }
+}
