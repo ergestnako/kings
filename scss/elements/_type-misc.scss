@@ -95,11 +95,10 @@ letter-spacing : 1px; }
 .h-card {
 margin-bottom : 1.5rem; }
 
-.h-card > div {
-margin-bottom : .4rem;
-@include font-size($font-size); }
-
 .p-name {
+margin-bottom : $vertical-spacing / 8;
+line-height : 1;
+
 @include font-size($font-size-plus-two);
 @include bp(bp4) {
 @include font-size($font-size-plus-three); }
@@ -146,7 +145,8 @@ line-height : 1.2;
 }
 
 .p-job-title {
-margin-bottom : $vertical-spacing / 2; }
+margin-bottom : $vertical-spacing / 2;
+@include font-size($font-size-minus-two); }
 
 .h-card__cols {
 @include bp(bp3) {
@@ -155,7 +155,8 @@ align-items : flex-start; }
 }
 
 .p-tel {
-@include font-size($font-size); }
+@include font-size($font-size);
+line-height : 1; }
 
 .p-adr {
 @include bp(bp3) { 
@@ -199,6 +200,7 @@ line-height : 1.2;
 }
 
 .p-job-title {
-margin-bottom : $vertical-spacing; }
+margin-bottom : $vertical-spacing / 2;
+@include font-size($font-size-minus-two); }
 
 }

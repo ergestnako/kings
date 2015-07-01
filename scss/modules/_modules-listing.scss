@@ -106,6 +106,10 @@ p {
 
 @include bp(bp4) {
 @include font-size($font-size); }
+
+&:last-child,
+&:only-child {
+margin-bottom : 0; }
 }
 
 ul, ol {
@@ -143,8 +147,7 @@ text-transform : uppercase; }
 
 .byline__posted {
 @include font-size($font-size-minus-one);
-font-family : $alt-font-family;
-text-transform : uppercase; }
+font-family : $bold-font-family; }
 
 .byline__role {
 display : block;

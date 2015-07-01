@@ -24,7 +24,7 @@ padding : $box-small-padding; }
 padding : $box-large-padding; }
 
 .box__header {
-margin-bottom : .75rem;
+margin-bottom : $vertical-spacing / 2;
 font-family : $alt-font-family;
 @include font-size($font-size-minus-one);
 font-weight : normal;

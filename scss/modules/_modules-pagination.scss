@@ -1,4 +1,4 @@
-.pagination {
+.pagination__alphabetical {
 display : flex;
 justify-content : center;
 margin-bottom : $vertical-spacing; }
@@ -6,7 +6,7 @@ margin-bottom : $vertical-spacing; }
 .pagination__list {
 display : flex;
 flex-wrap : wrap;
-justify-content : space-between;
+justify-content : center;
 list-style-type : none;
 margin : 0 0 $vertical-spacing / 2 0;
 padding : 0;

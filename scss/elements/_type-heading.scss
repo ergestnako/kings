@@ -58,12 +58,6 @@ text-transform : uppercase;
 @include font-size($font-size); }
 }
 
-.complementary {
-	
-h3, h4, h5 {
-margin-bottom : $vertical-spacing / 8; }
-}
-
 // special
 
 .h1--special {

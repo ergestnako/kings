@@ -10,15 +10,15 @@ max-width : none; }
 
 .img--right {
 float : right;
-margin-bottom : $vertical-spacing;
-margin-left : $gutter;
+margin-bottom : $vertical-spacing / 4;
+margin-left : $gutter / 2;
 width : auto; }
 
 .img--left {
 float : left;
 width : auto;
-margin-right : $gutter;
-margin-bottom : $vertical-spacing; }
+margin-right : $gutter / 2;
+margin-bottom : $vertical-spacing / 4; }
 
 .img--center {
 display : block;
@@ -58,7 +58,7 @@ text-transform : $figcaption-text-transform; }
 
 .figure--full,
 .main > figure {
-margin : $vertical-spacing * 2 0;
+margin : 0 0 $vertical-spacing * 2 0;
 
 figcaption {
 margin-left : 8.6745%; }

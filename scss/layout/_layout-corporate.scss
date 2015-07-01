@@ -1,7 +1,7 @@
-.corporate {
+#corporate {
 padding : $vertical-spacing 0;
 background-color : $base-bg;
-border-top : $border;
+border-top : ($border-width * 2) $border-style $border-color;
 
 .content {
 @include bp(bp3) {

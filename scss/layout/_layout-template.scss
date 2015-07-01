@@ -13,6 +13,10 @@ flex : 1; }
 
 // container
 
+.container__wrap {
+background-color : $base-bg;
+border-top : ($border-width * 2) $border-style $border-color; }
+
 .container {
 margin : 0 $gutter / 2; 
 padding : $vertical-spacing 0;
