@@ -35,7 +35,7 @@ top : 2em;
 width : 640px;
 padding : ($gutter / 2) ($gutter / 2) 0 ($gutter / 2);
 background-color : #83be70;
-border : 3px solid #98c988;
+border : 5px solid #98c988;
 border-radius : $border-radius; 
 box-sizing : border-box;
 
@@ -100,7 +100,8 @@ color : #f1f8ef; }
 
 .navigation__box--light {
 background-color : #fff;
-border-color : #98c988;
+border-color : #b9d9e3;
+border-width : 5px;
 
 a, 
 a:visited {
@@ -108,12 +109,16 @@ color : $font-color; }
 }
 
 .navigation__box:after {
-border-color : rgba(131, 190, 112, 0);
-border-bottom-color : #fff; }
+border-color : rgba(255, 255, 255, 0);
+border-bottom-color : #fff;
+border-width : 11px;
+margin-left : -11px; }
 
 .navigation__box:before {
-border-color : rgba(152, 201, 136, 0);
-border-bottom-color : #98c988; }
+border-color: rgba(185, 217, 227, 0);
+border-bottom-color : #b9d9e3;
+border-width : 18px;
+margin-left : -18px; }
 
 .navigation__box__list {
 a, a:visited {

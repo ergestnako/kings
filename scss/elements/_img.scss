@@ -61,5 +61,10 @@ text-transform : $figcaption-text-transform; }
 margin : 0 0 $vertical-spacing * 2 0;
 
 figcaption {
-margin-left : 8.6745%; }
+margin-left : 8.6745%;
+
+@include bp(bp4) {
+column-count : 2;
+column-gap : $gutter; }
+}
 }

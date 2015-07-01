@@ -47,9 +47,10 @@ $alt-font-family 				: "aktiv_grotesk_trialregular", "Helvetica Neue", Helvetica
 $alt-font-color 				: #acaeaf;
 $alt-font-lineheight 			: $font-lineheight;
 
-// Bold
+// Styles
 
 $bold-font-family 				: "aktiv_grotesk_trialmedium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$italic-font-family 			: "aktiv_grotesk_trialLtIt", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 // Extra type variables
 
@@ -201,7 +202,7 @@ $label-font-size 				: $font-size;
 
 // Images
 
-$figcaption-font-family			: $font-family;
+$figcaption-font-family			: $italic-font-family;
 $figcaption-font-size			: 1.4rem;
 $figcaption-font-style			: normal;
 $figcaption-font-weight			: normal;
