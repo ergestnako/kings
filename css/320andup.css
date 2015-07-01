@@ -1379,6 +1379,32 @@ blockquote {
   font-size: 16px;
   font-size: 1.6rem; }
 
+.title {
+  margin: 0 11px;
+  padding: 1.35em 0 0 0; }
+  .title:before, .title:after {
+    content: "";
+    display: table; }
+  .title:after {
+    clear: both; }
+  @media (min-width: 30em) {
+    .title {
+      margin: 0 22px; } }
+  @media (min-width: 37.5em) {
+    .title {
+      margin: 0 44px; } }
+  @media (min-width: 48em) {
+    .title {
+      margin: 0 66px; } }
+  @media (min-width: 76.25em) {
+    .title {
+      margin: 0 auto;
+      width: 80%;
+      max-width: 120rem; } }
+
+.title__header {
+  margin: 0 0 0 5.6745%; }
+
 .listing {
   margin-bottom: 2.025em; }
   @media (min-width: 37.5em) {
@@ -1423,6 +1449,16 @@ blockquote {
   .listing hr {
     margin: 0.675em 0; }
 
+.listing__marker {
+  font-family: "aktiv_grotesk_trialregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-size: 1.8rem; }
+  @media (min-width: 48em) {
+    .listing__marker {
+      font-size: 21px;
+      font-size: 2.1rem;
+      line-height: 1.5; } }
+
 .listing__meta__item {
   padding-top: 0.675em;
   line-height: 1.3; }
@@ -1459,14 +1495,6 @@ blockquote {
     .listing__content {
       border-width: .5px; } }
 
-@media (min-width: 37.5em) {
-  .listing__content p {
-    font-size: 14px;
-    font-size: 1.4rem; } }
-@media (min-width: 48em) {
-  .listing__content p {
-    font-size: 16px;
-    font-size: 1.6rem; } }
 .listing__content p:last-child, .listing__content p:only-child {
   margin-bottom: 0; }
 .listing__content ul, .listing__content ol {
@@ -1606,6 +1634,24 @@ blockquote {
     font-size: 10px;
     font-size: 1rem;
     line-height: 1.2; }
+
+@media (min-width: 37.5em) {
+  .listing--service {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .listing--service:last-of-type {
+      padding-bottom: 0;
+      border-bottom-width: 0; } }
+.listing--service .listing__header {
+  margin-bottom: 0.084375em; }
+.listing--service p {
+  margin-bottom: 0.16875em; }
 
 .listing--ward {
   -webkit-box-orient: horizontal;

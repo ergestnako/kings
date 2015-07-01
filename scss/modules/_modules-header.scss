@@ -1,0 +1,22 @@
+.title {
+margin : 0 $gutter / 2; 
+padding : ($vertical-spacing) 0 0 0;
+@include clearfix(); 
+
+@include bp(bp2) {
+margin : 0 $gutter; }
+
+@include bp(bp3) {
+margin : 0 $gutter * 2; }
+
+@include bp(bp4) {
+margin : 0 $gutter * 3; }
+
+@include bp(bp6) {
+margin : 0 auto;
+width : 80%;
+max-width : $max-width; }
+}
+
+.title__header {
+margin : 0 0 0 5.6745%; }
