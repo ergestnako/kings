@@ -1,5 +1,43 @@
-.summary {
-margin-bottom : $vertical-spacing; 
+.media {
+margin-bottom : $vertical-spacing * 2; 
+
+@include bp(bp3) {
+display : flex;
+align-items : flex-start; }
+
+&:last-of-type {
+padding-bottom : 0; 
+border-bottom-width : 0; }
+
+.media__figure {
+margin-bottom : $vertical-spacing / 4;
+
+@include bp(bp3) {
+// width : 21.56488549%;
+margin-right : 4.58015268%;
+margin-bottom : 0; }
+}
+}
+
+li {
+
+.media {
+margin-bottom : $vertical-spacing; } 
+
+}
+
+.media__header {
+margin-bottom : $vertical-spacing / 8; 
+@include font-size($font-size-plus-one);
+
+@include bp(bp4) {
+@include font-size($font-size-plus-two); }
+}
+
+.media__content {
+
+@include bp(bp3) {
+flex : 1;
 padding-bottom : $vertical-spacing / 2; 
 border-bottom : 1px $border-style $border-color; 
 
@@ -7,29 +45,97 @@ border-bottom : 1px $border-style $border-color;
 (-webkit-min-device-pixel-ratio: 2), 
 (min-resolution: 192dpi) { 
 border-width : .5px; }
-
-&:last-of-type {
-padding-bottom : 0; 
-border-bottom-width : 0; }
-
 }
 
-
-
-.summary__header {
-@include font-size($font-size-minus-one);
+p {
+@include bp(bp3) {
+@include font-size($font-size-minus-one); }
 
 @include bp(bp4) {
 @include font-size($font-size); }
+
+&:last-of-type,
+&:only-of-type {
+margin-bottom : 0; }
+
+}
+
 }
 
 
 
-.summary__description {
-margin-bottom : 0; 
-@include font-size($font-size-minus-two);
+// media--key 
 
-@include bp(bp4) {
-@include font-size($font-size-minus-one);
-line-height : 1.4; }
+.media--key {
+
+.media__content {
+display : flex;
+flex-direction : column;
+justify-content : center; }
+
+p:last-of-type,
+p:only-of-type {
+margin-bottom : 0; }
+}
+
+
+
+// reverse
+
+.media--reverse {
+
+@include bp(bp3) {
+flex-direction : row-reverse; }
+
+.media__figure {
+margin-bottom : $vertical-spacing / 4;
+
+@include bp(bp3) {
+margin-right : 0;
+margin-left : 4.58015268%;
+margin-bottom : 0; }
+}
+}
+
+
+.box {
+
+.media__content {
+padding-bottom : 0;
+border-width : 0; }
+}
+
+
+
+// comment
+
+.media--comment {
+margin-bottom : $vertical-spacing / 2; 
+
+.media__figure {
+
+@include bp(bp3) {
+width : auto; }
+}
+
+.media__header {
+margin-bottom : $vertical-spacing / 4;
+@include font-size($font-size);
+
+
+time {
+display : inline-block;
+margin-left : $gutter / 2;
+@include font-size($font-size-minus-two);
+text-transform : uppercase;
+color : $color-neutral; }
+}
+
+.media__content {
+padding-bottom : $vertical-spacing / 2; 
+
+p {
+@include font-size($font-size); }
+
+}
 }

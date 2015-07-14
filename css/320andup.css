@@ -454,7 +454,8 @@ h4 {
   font-family: "aktiv_grotesk_trialregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-size: 1.8rem;
-  font-weight: normal; }
+  font-weight: normal;
+  line-height: 1.3; }
   @media (min-width: 48em) {
     h4 {
       font-size: 21px;
@@ -466,7 +467,8 @@ h5 {
   font-size: 14px;
   font-size: 1.4rem;
   font-weight: normal;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  line-height: 1.3; }
   @media (min-width: 48em) {
     h5 {
       font-size: 16px;
@@ -926,6 +928,7 @@ p {
       line-height: 1.5; } }
 
 .lead {
+  margin-bottom: 3rem;
   font-family: "aktiv_grotesk_trialregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-size: 1.8rem; }
@@ -1692,34 +1695,121 @@ blockquote {
       -ms-flex: 1;
           flex: 1; }
 
-.summary {
-  margin-bottom: 1.35em;
-  padding-bottom: 0.675em;
-  border-bottom: 1px solid #d1e6e3; }
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .summary {
-      border-width: .5px; } }
-  .summary:last-of-type {
+.media {
+  margin-bottom: 2.7em; }
+  @media (min-width: 37.5em) {
+    .media {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+              align-items: flex-start; } }
+  .media:last-of-type {
     padding-bottom: 0;
     border-bottom-width: 0; }
+  .media .media__figure {
+    margin-bottom: 0.3375em; }
+    @media (min-width: 37.5em) {
+      .media .media__figure {
+        margin-right: 4.58015268%;
+        margin-bottom: 0; } }
 
-.summary__header {
-  font-size: 14px;
-  font-size: 1.4rem; }
+li .media {
+  margin-bottom: 1.35em; }
+
+.media__header {
+  margin-bottom: 0.16875em;
+  font-size: 18px;
+  font-size: 1.8rem; }
   @media (min-width: 48em) {
-    .summary__header {
+    .media__header {
+      font-size: 21px;
+      font-size: 2.1rem; } }
+
+@media (min-width: 37.5em) {
+  .media__content {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding-bottom: 0.675em;
+    border-bottom: 1px solid #d1e6e3; } }
+  @media (min-width: 37.5em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 37.5em) and (min-resolution: 192dpi) {
+    .media__content {
+      border-width: .5px; } }
+
+@media (min-width: 37.5em) {
+  .media__content p {
+    font-size: 14px;
+    font-size: 1.4rem; } }
+@media (min-width: 48em) {
+  .media__content p {
+    font-size: 16px;
+    font-size: 1.6rem; } }
+.media__content p:last-of-type, .media__content p:only-of-type {
+  margin-bottom: 0; }
+
+.media--key .media__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+.media--key p:last-of-type,
+.media--key p:only-of-type {
+  margin-bottom: 0; }
+
+@media (min-width: 37.5em) {
+  .media--reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; } }
+.media--reverse .media__figure {
+  margin-bottom: 0.3375em; }
+  @media (min-width: 37.5em) {
+    .media--reverse .media__figure {
+      margin-right: 0;
+      margin-left: 4.58015268%;
+      margin-bottom: 0; } }
+
+.box .media__content {
+  padding-bottom: 0;
+  border-width: 0; }
+
+.media--comment {
+  margin-bottom: 0.675em; }
+  @media (min-width: 37.5em) {
+    .media--comment .media__figure {
+      width: auto; } }
+  .media--comment .media__header {
+    margin-bottom: 0.3375em;
+    font-size: 16px;
+    font-size: 1.6rem; }
+    .media--comment .media__header time {
+      display: inline-block;
+      margin-left: 11px;
+      font-size: 12px;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      color: #dae0df; }
+  .media--comment .media__content {
+    padding-bottom: 0.675em; }
+    .media--comment .media__content p {
       font-size: 16px;
-      font-size: 1.6rem; } }
-
-.summary__description {
-  margin-bottom: 0;
-  font-size: 12px;
-  font-size: 1.2rem; }
-  @media (min-width: 48em) {
-    .summary__description {
-      font-size: 14px;
-      font-size: 1.4rem;
-      line-height: 1.4; } }
+      font-size: 1.6rem; }
 
 .pagination__alphabetical {
   display: -webkit-box;
