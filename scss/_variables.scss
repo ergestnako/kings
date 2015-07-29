@@ -37,20 +37,28 @@ $font-size-minus-one			: 14;
 $font-size-minus-two			: 12;
 $font-size-minus-three			: 10;
 
-$font-family 					: "aktiv_grotesk_triallight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+//$font-family 					: "aktiv_grotesk_triallight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family 					: "aktiv-grotesk-std", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-weight 					: 300;
 $font-color 					: #494a4a;
 $font-lineheight 				: 1.6;
 
 // Alt
 
-$alt-font-family 				: "aktiv_grotesk_trialregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+//$alt-font-family 				: "aktiv_grotesk_trialregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$alt-font-family 				: "aktiv-grotesk-std", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$alt-font-weight				: 400;
 $alt-font-color 				: #acaeaf;
 $alt-font-lineheight 			: $font-lineheight;
 
 // Styles
 
-$bold-font-family 				: "aktiv_grotesk_trialmedium", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$italic-font-family 			: "aktiv_grotesk_trialLtIt", "Helvetica Neue", Helvetica, Arial, sans-serif;
+//$bold-font-family 				: "aktiv_grotesk_trialmedium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+//$italic-font-family 			: "aktiv_grotesk_trialLtIt", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$bold-font-family 				: "aktiv-grotesk-std", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$bold-font-weight				: 500;
+$italic-font-family 			: "aktiv-grotesk-std", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$italic-font-weight				: 300;
 
 // Extra type variables
 
@@ -59,13 +67,19 @@ $codefont-font-family			: Monaco, Courier New, monospace;
 
 // Headings
 
-$heading-font-family 			: "lexialight", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$heading-font-weight 			: normal;
+//$heading-font-family 			: "lexialight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$heading-font-family 			: "lexia", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$heading-font-weight 			: 300;
 $heading-font-color 			: inherit;
 $heading-lineheight				: $font-size * 1.15;
 
 
+//Quote type
+$quote-font-family				: "lexia", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$quote-font-weight				: 400;
 
+$quotespecial-font-family		: "lexia", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$quotespecial-font-weight		: 300;
 
 
 // COLOUR  ================================================
@@ -115,6 +129,7 @@ $box-border-width 				: $border-width;
 $box-border-radius 				: $border-radius;
 
 $box-font-family				: $font-family;
+$box-font-weight				: $font-weight;
 $box-font-size 					: $font-size;
 $box-font-color 				: $font-color;
 
@@ -137,7 +152,7 @@ $button-border-radius 					: 8px;
 $button-font-family						: $alt-font-family;
 $button-font-size 						: $font-size-plus-one;
 $button-font-color 						: $font-color;
-$button-font-weight 					: normal;
+$button-font-weight 					: $alt-font-weight;
 $button-letter-spacing					: 0;
 $button-font-transform 					: none;
 
@@ -166,6 +181,7 @@ $button-primary-font-color-hover 		: $button-primary-font-color;
 // Forms
 
 $form-font-family				: $font-family;
+$form-font-weight				: $font-weight;
 $form-font-color 				: $font-color;
 
 
@@ -183,6 +199,7 @@ $input-border-width 			: 2px;
 $input-border-radius 			: $border-radius;
 
 $input-font-family				: $font-family;
+$input-font-weight				: $font-weight;
 $input-font-size 				: $font-size;
 $input-font-color 				: $font-color;
 $input-placeholder-color 		: $font-color;
@@ -196,6 +213,7 @@ $textarea-min-height			: 160px;
 
 $label-font-color 				: $font-color;
 $label-font-family				: $alt-font-family;
+$label-font-weight				: $alt-font-weight;
 $label-font-size 				: $font-size;
 
 
@@ -203,6 +221,7 @@ $label-font-size 				: $font-size;
 // Images
 
 $figcaption-font-family			: $italic-font-family;
+$figcaption-font-weight			: $italic-font-weight;
 $figcaption-font-size			: 1.4rem;
 $figcaption-font-style			: normal;
 $figcaption-font-weight			: normal;
@@ -251,7 +270,7 @@ $pagination-background-active	: $body-background;
 $pagination-border				: 2px $border-style $button-border-color;
 $pagination-color				: $font-color;
 $pagination-link-color			: $pagination-color;
-$pagination-padding				: .6rem 1.2rem .2rem;
+$pagination-padding				: .4rem 1.2rem .4rem;
 $pagination-font-size			: $font-size-minus-two;
 $pagination-letter-spacing		: 2px;
 $pagination-text-transform		: uppercase;
@@ -261,6 +280,7 @@ $pagination-text-transform		: uppercase;
 
 $table-padding 					: 8px;
 $table-font-family				: $font-family;
+$table-font-weight				: $font-weight;
 $table-font-size 				: $font-size-minus-one;
 $table-condensed-font-size 		: $font-size-minus-two;
 $table-font-color 				: $font-color;

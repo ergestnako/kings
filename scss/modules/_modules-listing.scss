@@ -56,6 +56,7 @@ margin : $vertical-spacing / 2 0; }
 
 .listing__marker {
 font-family : $alt-font-family;
+font-weight : $alt-font-weight;
 @include font-size($font-size-plus-one);
 
 @include bp(bp4) {
@@ -81,6 +82,7 @@ display : inline;
 @include bp(bp3) {
 display : block;
 font-family : $alt-font-family;
+font-weight : $alt-font-weight;
 @include font-size($font-size-minus-two);
 text-transform : uppercase; }
 }
@@ -150,7 +152,8 @@ text-transform : uppercase; }
 
 .byline__posted {
 @include font-size($font-size-minus-one);
-font-family : $bold-font-family; }
+font-family : $bold-font-family;
+font-weight : $bold-font-weight; }
 
 .byline__role {
 display : block;
@@ -259,6 +262,7 @@ text-transform : uppercase;
 @include bp(bp3) {
 display : block;
 font-family : $alt-font-family;
+font-weight : $alt-font-weight;
 @include font-size($font-size-minus-one); }
 }
 
@@ -279,6 +283,7 @@ display : block;
 
 .listing__time__year {
 font-family : $alt-font-family;
+font-weight : $alt-font-weight;
 @include font-size($font-size-plus-two); }
 
 .listing__content {

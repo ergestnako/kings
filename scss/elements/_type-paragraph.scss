@@ -13,6 +13,7 @@ line-height : 1.5; }
 .lead {
 margin-bottom : 3rem;
 font-family : $alt-font-family;
+font-weight : $alt-font-weight;
 @include font-size($font-size-plus-one);
 
 @include bp(bp4) {

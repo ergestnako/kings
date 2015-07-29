@@ -65,6 +65,7 @@ text-transform : uppercase;
 @include bp(bp3) {
 display : block;
 font-family : $alt-font-family;
+font-weight : $alt-font-weight;
 @include font-size($font-size-minus-one); }
 }
 

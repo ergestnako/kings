@@ -8,6 +8,7 @@ background-color : $table-bg;
 border-collapse : collapse;
 border-spacing : 0;
 font-family : $table-font-family;
+font-weight : $table-font-weight;
 
 img {
 margin-right : $gutter / 4; }
@@ -28,8 +29,8 @@ vertical-align : top;
 
 th {
 font-family : $alt-font-family;
+font-weight : $alt-font-weight;
 text-transform : uppercase;
-font-weight : normal;
 text-align : left; }
 
 .table--condensed {

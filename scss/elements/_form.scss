@@ -3,6 +3,7 @@ margin : 0 0 $vertical-spacing 0;
 padding : 0;
 border : 0; 
 font-family : $form-font-family;
+font-weight: $form-font-weight;
 
 p {
 margin-bottom : $vertical-spacing / 2; }
@@ -23,6 +24,7 @@ width : 100%;
 margin-bottom : $vertical-spacing / 8;
 padding : 0 0 $vertical-spacing / 2 0;
 font-family : $bold-font-family;
+font-weight : $bold-font-weight;
 @include font-size($font-size);
 line-height : inherit;
 color : $form-font-color;
@@ -45,5 +47,6 @@ max-width : 100%;
 margin-bottom : 0; 
 padding-left : $gutter / 2;
 font-family : $label-font-family;
+font-weight : $label-font-weight;
 @include font-size($label-font-size);
 color : $label-font-color; }

@@ -5,6 +5,7 @@ background-color : $box-bg;
 border : $box-border-width $box-border-style $box-border-color;
 border-radius : $box-border-radius;
 font-family : $box-font-family;
+font-weight : $box-font-weight;
 
 p {
 font-size : $box-font-size;
@@ -26,8 +27,8 @@ padding : $box-large-padding; }
 .box__header {
 margin-bottom : $vertical-spacing / 2;
 font-family : $alt-font-family;
+font-weight : $alt-font-weight;
 @include font-size($font-size-minus-one);
-font-weight : normal;
 text-transform : uppercase; 
 
 @include bp(bp4) {

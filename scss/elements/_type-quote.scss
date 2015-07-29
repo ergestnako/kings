@@ -2,7 +2,8 @@ blockquote {
 margin : $vertical-spacing * 2 0 $vertical-spacing * 4;
 
 p {
-font-family : "lexiaregular","Helvetica Neue",Helvetica,Arial,sans-serif;
+font-family : $quote-font-family;
+font-weight : $quote-font-weight;
 @include font-size($font-size-plus-one);
 color : $alt-font-color; 
 
@@ -12,6 +13,7 @@ color : $alt-font-color;
 
 small {
 font-family : $alt-font-family;
+font-weight : $alt-font-weight;
 @include font-size($font-size-minus-one);
 letter-spacing : 1px;
 text-transform : uppercase;
@@ -45,7 +47,8 @@ text-transform : none; }
 .quote--special {
 
 p {
-font-family : "lexialight","Helvetica Neue",Helvetica,Arial,sans-serif;
+font-family : $quotespecial-font-family;
+font-weight : $quotespecial-font-weight;
 color : $font-color; 
 
 @include bp(bp4) {

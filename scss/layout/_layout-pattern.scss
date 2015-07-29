@@ -28,6 +28,7 @@ flex-basis : 50%; }
 .pattern__page__header {
 margin-bottom : 2rem;
 font-family : $alt-font-family;
+font-weight : $alt-font-weight;
 font-size : 1.6rem;
 letter-spacing : 1px;
 text-transform : uppercase;
@@ -153,6 +154,7 @@ width : 65.3333%; }
 
 .pattern__cover__header {
 font-family : $alt-font-family;
+font-weight : $alt-font-weight;
 font-size : 1.6rem;
 letter-spacing : 3px;
 text-align : center;
@@ -191,11 +193,13 @@ text-transform : uppercase; }
 .pattern__contents__header {
 margin-bottom : 2rem;
 font-family : $alt-font-family;
+font-weight : $alt-font-weight;
 font-size : 2.4rem; }
 
 .pattern__contents__title {
 margin-bottom : 1.5rem;
 font-family : $alt-font-family;
+font-weight : $alt-font-weight;
 font-size : 1.6rem; }
 
 .pattern__heading {

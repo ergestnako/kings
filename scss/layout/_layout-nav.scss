@@ -19,7 +19,8 @@ a:visited {
 color : $white; }
 
 .active {
-font-family : $bold-font-family; }
+font-family : $bold-font-family; 
+font-weight : $bold-font-weight;}
 }
 
 .navigation__item{

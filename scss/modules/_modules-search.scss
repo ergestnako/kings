@@ -18,6 +18,7 @@ border-top-right-radius : 0;
 border-bottom-right-radius : 0;
 box-sizing : border-box;
 font-family : $input-font-family;
+font-weight : $input-font-weight;
 @include font-size($input-font-size);
 line-height : $vertical-spacing;
 color : $input-font-color; 

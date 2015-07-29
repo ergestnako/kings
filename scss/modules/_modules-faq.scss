@@ -14,8 +14,8 @@ line-height : 1.4; }
 .faq__question {
 margin-bottom : $vertical-spacing / 8;
 font-family : $alt-font-family;
+font-weight : $alt-font-weight;
 @include font-size($font-size-plus-one);
-font-weight : normal; 
 
 @include bp(bp4) {
 @include font-size($font-size-plus-two); }

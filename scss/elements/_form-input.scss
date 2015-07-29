@@ -11,6 +11,7 @@ border : $input-border-width $input-border-style $input-border-color;
 border-radius: $input-border-radius;
 box-sizing : border-box;
 font-family : $input-font-family;
+font-weight : $input-font-weight;
 @include font-size($input-font-size);
 line-height : $vertical-spacing;
 color : $input-font-color; 
@@ -30,11 +31,13 @@ top : 6px;
 // Ed hack
 color : lighten($input-font-color,10); 
 font-family : $input-font-family;
+font-weight : $input-font-weight;
 @include font-size($input-font-size); }
 
 &:-moz-placeholder {
 color : lighten($input-font-color,10); 
 font-family : $input-font-family;
+font-weight : $input-font-weight;
 @include font-size($input-font-size); }
 
 &::-moz-placeholder {
