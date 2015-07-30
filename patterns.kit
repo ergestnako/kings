@@ -548,6 +548,21 @@
 
 <div class="pattern__item">
 
+<blockquote class="quote--bordered">
+<p>&#8220;<!-- $pattern-example-short -->&#8221;</p>
+<small><cite><!-- $title --></cite></small>
+</blockquote>
+
+<div class="pattern__notes">
+<ul>
+<li>Paragraph: 2.1rem 1.3rem</li>
+<li>Paragraph: 2.4rem</li>
+</ul>
+</div>
+</div>
+
+<div class="pattern__item">
+
 <blockquote class="quote--special">
 <p>&#8220;<!-- $pattern-example-short -->&#8221;</p>
 <small><cite><!-- $title --></cite></small>
@@ -727,7 +742,7 @@
 <div class="p-postal-code">SE5 9RS</div>
 </div><!-- p-adr -->
 
-<div>Telephone <span class="p-tel">020 3299 9000</span></div>
+<div class="p-tel">020 3299 9000</div>
 </div><!-- h-card -->
 
 </div><!-- pattern-col -->
@@ -755,8 +770,7 @@
 
 <div class="h-card__contact">
 <div><a mailto="javascript:void(0)" class="p-email">garybenge@nhs.net</a></div>
-<div>Telephone <span class="p-tel">020 3299 9000</span></div>
-<div>Fax <span class="p-fax">020 3299 9000</span></div>
+<div class="p-tel">020 3299 9000</div>
 </div><!-- h-card__contact -->
 
 </div><!-- h-card__cols -->
@@ -1435,16 +1449,7 @@
 </div><!-- pattern-col -->
 
 <div class="pattern-col pattern-col2-col3">
-<hr>
-<p>For further information please contact:</p>
-<div class="h-card h-card--byline">
-<div class="p-name">Ellie Morton</div>
-<div class="p-job-title">Communications Officer</div>
-<div><b>Phone:</b> <span class="p-tel">020 3299 4139</span></div>
-<div><b>Email:</b> <a href="javascript:void(0)" class="u-email">eleanor.morton@nhs.net</a>
-</div><!-- h-card -->
-
-</div><!-- group__content -->
+<!-- @include partials/module-byline.kit -->
 </div><!-- pattern-col -->
 </div><!-- col-all -->
 
@@ -1764,29 +1769,8 @@
 
 <div class="pattern-col pattern-col2-col3">
 
-<div class="media media--reverse">
-<figure class="media__figure">
-<img src="assets/img/fpo/fpo-avatar.svg" alt="" height="100">
-<figcaption>
-<a href="javascript:void(0)"><img src="assets/img/site/icon-email.svg" alt="" height="22"></a>
-<a href="javascript:void(0)"><img src="assets/img/site/icon-linkedin.svg" alt="" height="22"></a>
-</figcaption>
-</figure><!-- media__figure -->
-
-<div class="media__content h-card h-card--staff">
-<div class="p-name">Anoushka de Almeida-Carragher</div>
-<div class="p-job-title">Public Governor</div>
-<p class="secondary">Born in Bromley and with a broad-based education that enriched my schooling years, I gained a BSc (Hons) in Biomedical Science (Neuroscience) from King&#8217;s College, London, a Master&#8217;s degree in Cognitive Neuropsychology from University College London (UCL), and a PhD from The UCL Institute of Neurology. I was privileged to have worked at postdoctoral level while at the Institute, with published academic papers on research into the regeneration of the spinal cord. I have, in addition, the PRINCE 2 Project Management Practitioner qualification.</p>
-
-<p class="secondary">My present role involves managing major grants, for medical research and innovative healthcare, whilst working for a funding body whose main beneficiaries are Barts Health NHS Trust and Queen Mary University Medical School. Exposure to both academia and the workings of Trust hospitals will certainly be invaluable experience to draw on. I&#8217;m aware of the financial pressures within the NHS that impact on patient care. As such, I would make patients&#8217; needs my priority.</p>
-</div><!-- media__content -->
-</div><!-- media -->
-
-
-
-
-
-
+<!-- @include partials/module-staff.kit -->
+<!-- @include partials/module-staff.kit -->
 
 
 <ul class="list--staff">
@@ -1879,103 +1863,13 @@
 
 </div><!-- listing -->
 
-
-
 <!-- @include partials/module-listing--news.kit -->
 
 <!-- @include partials/module-listing--event.kit -->
 
-
-<!-- Next -->
-
-<div class="listing listing--resource">
-
-<div class="listing__content">
-
-<ul class="list--inline">
-<li>Patel AS,</li>
-<li>Siegert RJ,</li> 
-<li>Brignall K,</li> 
-<li>Gordon P,</li> 
-<li>Steer S,</li> 
-<li>Desai SR,</li> 
-<li>Maher TM,</li> 
-<li>Renzoni EA,</li> 
-<li>Wells AU,</li> 
-<li>Higginson IJ,</li> 
-<li>Birring SS</li>
-</ul>
-
-<h3 class="listing__header"><a href="javascript:void(0)">The development and validation of the King&#8217;s Sarcoidosis Questionnaire for the assessment of health status</a></h3>
-<ul class="list--inline">
-<li>Thorax</li>
-<li>67,(9):804-10</li>
-</ul>
-<p class="milli">(Resource listing module)</p>
-</div><!-- listing__content -->
-
-<div class="listing__meta">
-<span class="listing__time__year">2012</span>
-</div><!-- listing__meta -->
-
-</div><!-- listing__meta -->
-
-
-<!-- Next -->
-
-<div class="listing listing--ward">
-
-<div class="listing__content">
-
-<h3 class="listing__header">Adult Cystic Fibrosis Unit</h3>
-
-<p>The Adult Cystic Fibrosis (CF) Unit is part of King&#8217;s Adult CF Service and provides specialist inpatient care. It&#8217;s on Lonsdale Ward and has nine single rooms with bathroom facilities as well as a treatment room for patients having annual reviews or day care.</p>
-
-<table class="table--stripe">
-<tbody>
-<tr>
-<th>Telephone</th>
-<td><span class="spaced">020 3299 8652</span></td>
-</tr>
-
-<tr>
-<th>Visiting</th>
-<td>2&#8211;8pm</td>
-</tr>
-
-<tr>
-<th>Maximum visitors</th>
-<td>2</td>
-</tr>
-
-<tr>
-<th>Location</th>
-<td>Second floor, Golden Jubilee Wing, <br>Denmark Hill, <br>London, SE5 9RS</td>
-</tr>
-
-<tr>
-<th>Facilities</th>
-<td>
-<img src="assets/img/site/icon-key-laptop.svg" alt="" height="22" title="Laptop use allowed">
-<img src="assets/img/site/icon-key-mobilephone.svg" alt="" height="22" title="Mobile phone use allowed">
-<img src="assets/img/site/icon-key-wifi.svg" alt="" height="22" title="Wifi available">
-</td>
-</tr>
-</tbody>
-
-</table>
-
-</div><!-- listing__content -->
-</div><!-- listing -->
-
-<p class="milli">(Ward listing module)</p>
-
-<!-- Next -->
+<!-- @include partials/module-listing--resource -->
 
 <!-- @include partials/module-listing--ward -->
-
-</section><!-- pattern__page -->
-
 
 </section><!-- pattern__page -->
 
@@ -2044,7 +1938,7 @@
 </li>
 
 <li class="tab-header-and-content">
-<a href="javascript:void(0)" class="tab-link">THree</a>
+<a href="javascript:void(0)" class="tab-link">Three</a>
 <div class="tab-content">
 <p><b>Tab three</b> <!-- $pattern-example-long --></p> 
 </div>

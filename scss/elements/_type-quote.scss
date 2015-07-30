@@ -14,11 +14,7 @@ small {
 font-family : $alt-font-family;
 @include font-size($font-size-minus-one);
 letter-spacing : 1px;
-text-transform : uppercase;
-
-@include bp(bp3) {
-padding-left : 8.6745%; }
-}
+text-transform : uppercase; }
 
 cite {
 display : flex;
@@ -32,6 +28,33 @@ margin-right : $gutter; }
 letter-spacing : 0;
 text-transform : none; }
 }
+}
+
+
+
+
+// bordered
+
+.quote--bordered {
+padding : $vertical-spacing 0;
+border-top : 3px solid $black;
+border-bottom : 3px solid $black;
+
+p {
+margin-bottom : ($vertical-spacing / 2);
+font-family : "lexiabold","Helvetica Neue",Helvetica,Arial,sans-serif;
+color : $font-color; 
+
+@include bp(bp4) {
+@include font-size($font-size-plus-two);
+line-height : 1.3; }
+
+@include bp(bp5) {
+@include font-size($font-size-plus-three); }
+}
+
+
+
 }
 
 

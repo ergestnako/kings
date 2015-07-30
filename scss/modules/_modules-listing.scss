@@ -277,6 +277,9 @@ display : block;
 
 .listing--resource {
 
+.listing__header {
+margin-bottom : $vertical-spacing / 16; }
+
 .listing__time__year {
 font-family : $alt-font-family;
 @include font-size($font-size-plus-two); }
@@ -293,11 +296,28 @@ p {
 @include font-size($font-size-minus-one); }
 }
 
-.list--inline {
+ul {
+margin-top : ($vertical-spacing / 2); }
+
+.listing__contributors {
 margin-top : 0;
 margin-bottom : $vertical-spacing / 2;
-@include font-size($font-size-minus-three);
-line-height : 1.2; }
+line-height : 1.2; 
+
+li {
+margin-right : ($gutter / 4);
+@include font-size($font-size-minus-two); }
+}
+
+.listing__data {
+margin-top : 0;
+margin-bottom : $vertical-spacing / 2;
+line-height : 1.2; 
+
+li {
+margin-right : ($gutter / 4);
+@include font-size($font-size-minus-two); }
+}
 
 }
 }

@@ -106,7 +106,7 @@ $border							: $border-width $border-style $border-color;
 
 // Boxes
 
-$box-padding					: 1rem $gutter;
+$box-padding					: 1.5rem $gutter 1rem;
 $box-bg 						: $base-bg;
 
 $box-border-color				: $border-color;
@@ -118,10 +118,10 @@ $box-font-family				: $font-family;
 $box-font-size 					: $font-size;
 $box-font-color 				: $font-color;
 
-$box-large-padding				: 2rem $gutter * 1.5;
+$box-large-padding				: 2.5rem $gutter * 1.5 2rem;
 $box-large-border-radius 		: $border-radius * 2;
 
-$box-small-padding				: .5rem $gutter / 1.5;
+$box-small-padding				: 1.5rem $gutter / 1.5 .5rem;
 $box-small-border-radius 		: $border-radius;
 
 
@@ -231,6 +231,7 @@ $medium-screen: em(640) !default;
 
 
 $breadcrumb-background 			: $base-bg;
+$breadcrumb-background-hover 	: $white;
 $breadcrumb-border-color 		: $border-color;
 $breadcrumb-border 				: 2px $border-style $border-color;
 $breadcrumb-height 				: $vertical-spacing * 1.5;
@@ -252,6 +253,7 @@ $pagination-border				: 2px $border-style $button-border-color;
 $pagination-color				: $font-color;
 $pagination-link-color			: $pagination-color;
 $pagination-padding				: .6rem 1.2rem .2rem;
+$pagination-font-family			: $bold-font-family;
 $pagination-font-size			: $font-size-minus-two;
 $pagination-letter-spacing		: 2px;
 $pagination-text-transform		: uppercase;

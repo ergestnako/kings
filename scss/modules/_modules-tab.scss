@@ -30,7 +30,6 @@ padding : $vertical-spacing / 2 $gutter;
 background-color : transparent;
 @include font-size($font-size-minus-one);
 text-decoration : none;
-text-transform : uppercase;
 color : $link-color;
 
 @include bp(bp3) {
@@ -40,7 +39,7 @@ border-top-right-radius : $border-radius;
 border-top-width : 0; }
 
 &:hover {
-color : $base-link-color; }
+color : $link-color-hover; }
 
 &:focus {
 outline : none; }

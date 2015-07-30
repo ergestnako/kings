@@ -31,10 +31,16 @@ padding : $pagination-padding;
 background-color : $pagination-background;
 border : $pagination-border;
 border-radius : $border-radius;
+font-family : $pagination-font-family;
 @include font-size($pagination-font-size);
 color : $pagination-link-color;
 letter-spacing : $pagination-letter-spacing;
-text-transform : $pagination-text-transform; }
+text-transform : $pagination-text-transform; 
+
+&:hover {
+color : $link-color-hover;
+background-color : $pagination-background-hover; }
+}
 
 li a.active {
 background-color : $white;
@@ -132,13 +138,17 @@ border-radius : $border-radius;
 @include font-size($pagination-font-size);
 color : $pagination-link-color;
 letter-spacing : $pagination-letter-spacing;
-text-transform : $pagination-text-transform; }
+text-transform : $pagination-text-transform; 
+
+&:hover {
+color : $link-color-hover;
+background-color : $pagination-background-hover; }
+}
 
 li a.active {
 background-color : $white;
 color : $font-color;
 cursor : default; }
-
 
 }
 

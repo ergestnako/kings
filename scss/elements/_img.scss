@@ -45,7 +45,7 @@ display : block;
 margin : 0 0 $vertical-spacing 0;
 
 img {
-margin-bottom : $vertical-spacing; }
+margin-bottom : ($vertical-spacing / 1.5); }
 }
 
 figcaption {

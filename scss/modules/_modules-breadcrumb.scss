@@ -30,8 +30,11 @@ border-top-right-radius : $border-radius;
 border-bottom-right-radius : $border-radius;
 color : $breadcrumb-color-active; }
 
-&:focus,
 &:hover {
+color : $link-color-hover;
+background-color : $breadcrumb-background-hover; }
+
+&:focus {
 background-color : $breadcrumb-inactive-hover-color;
 color: $breadcrumb-color-hover; }
 
@@ -61,6 +64,10 @@ z-index : 1; }
 
 &:after {
 border-left-color: $breadcrumb-background; }
+
+
+&:hover:after {
+border-left-color: $breadcrumb-background-hover;  }
 
 @include bp(bp4) {
 @include font-size($font-size);

@@ -48,18 +48,11 @@ border-width : .5px; }
 }
 
 p {
-@include bp(bp3) {
-@include font-size($font-size-minus-one); }
-
-@include bp(bp4) {
-@include font-size($font-size); }
 
 &:last-of-type,
 &:only-of-type {
 margin-bottom : 0; }
-
 }
-
 }
 
 

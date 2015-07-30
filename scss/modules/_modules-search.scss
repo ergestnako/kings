@@ -39,6 +39,13 @@ background-color : $button-primary-bg;
 border-color : $button-primary-bg;
 color : $button-primary-font-color;
 border-top-left-radius : 0;
-border-bottom-left-radius : 0; }
+border-bottom-left-radius : 0; 
 
+&:hover,
+&:focus,
+&:active {
+background-color : $button-primary-bg-hover;
+border-color : $button-primary-border-color-hover;
+color : $button-primary-font-color-hover; }
+}
 }
