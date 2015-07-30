@@ -14,6 +14,30 @@ display : inline-block;
 margin-right : $gutter; }
 }
 
+
+
+
+// navigation__item
+
+.navigation__item {
+position : relative; }
+
+.navigation__link {
+
+&:hover {
+border-top : 1px solid $white; }
+}
+
+
+.has-sub {
+
+.navigation__link:hover {
+border-top-width : 0; }
+}
+
+
+
+
 .list--plain {
 
 li { 
@@ -34,9 +58,6 @@ color : $white; }
 .active {
 font-family : $bold-font-family; }
 }
-
-.navigation__item {
-position : relative; }
 
 
 

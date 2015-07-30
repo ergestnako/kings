@@ -26,7 +26,8 @@ border-radius : $border-radius; }
 
 input {
 display : none;
-padding : 0;
+padding-top : 0;
+padding-bottom : 0;
 background-color : transparent;
 border-width : 0;
 color : $white; 
@@ -35,8 +36,33 @@ color : $white;
 display : inline-block; }
 }
 
+input {
+&::-webkit-input-placeholder {
+
+// Filthy hack
+position : relative; 
+top : 10px;
+// End hack
+
+color : $white; 
+font-family : $input-font-family;
+@include font-size($input-font-size); }
+
+&:-moz-placeholder {
+color : $white; 
+font-family : $input-font-family;
+@include font-size($input-font-size); }
+
+&::-moz-placeholder {
+color : $white;  }
+
+&:-ms-input-placeholder {
+color : $white; }
+}
+
 .btn {
 display : inline-block;
+margin-right : 11px;
 padding : 2px 2px 0 0;
 background-color : transparent; 
 border-width : 0;
@@ -54,4 +80,7 @@ padding-bottom : $vertical-spacing / 2;
 img {
 width : 400px; }
 }
+
+
+
 

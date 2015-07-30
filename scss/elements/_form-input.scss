@@ -22,28 +22,6 @@ outline : none;
 border-color : darken($input-border-color,25); }
 }
 
-input {
-&::-webkit-input-placeholder {
-// Filthy hack
-position : relative; 
-top : 6px;
-// Ed hack
-color : lighten($input-font-color,10); 
-font-family : $input-font-family;
-@include font-size($input-font-size); }
-
-&:-moz-placeholder {
-color : lighten($input-font-color,10); 
-font-family : $input-font-family;
-@include font-size($input-font-size); }
-
-&::-moz-placeholder {
-color : lighten($input-font-color,10); 
-}
-&:-ms-input-placeholder {
-color : lighten($input-font-color,10); }
-}
-
 [placeholder]:focus::-webkit-input-placeholder {
 opacity : 0;
 transition : opacity .5s .5s ease; }

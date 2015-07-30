@@ -218,9 +218,6 @@ column-gap : $gutter; }
 
 @include bp(bp5) {
 column-count : 1; }
-
-li {
-margin-bottom : 0; }
 }
 
 .list--cols {

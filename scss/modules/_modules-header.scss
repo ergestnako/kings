@@ -18,6 +18,13 @@ width : 80%;
 max-width : $max-width; }
 }
 
+
+
 .title__header,
-.title__meta {
+.title__meta,
+.title__category {
 margin : 0 0 0 6.5%; }
+
+.title__category {
+@include font-size($font-size-minus-one);
+text-transform : uppercase; }

@@ -93,22 +93,23 @@ letter-spacing : 1px; }
 // h-card
 
 .h-card {
-margin-bottom : 1.5rem; }
+margin-bottom : 1.5rem;
+@include font-size($font-size); }
 
 .p-name {
 margin-bottom : $vertical-spacing / 8;
 line-height : 1;
 
-@include font-size($font-size-plus-two);
+@include font-size($font-size-plus-one);
 @include bp(bp4) {
-@include font-size($font-size-plus-three); }
+@include font-size($font-size-plus-two); }
 }
 
 .p-tel {
-@include font-size($font-size-plus-two);
+@include font-size($font-size-plus-one);
 letter-spacing : 1px;
 @include bp(bp4) {
-@include font-size($font-size-plus-three); }
+@include font-size($font-size-plus-two); }
 }
 
 small {
