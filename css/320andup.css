@@ -2562,7 +2562,7 @@ li .media {
         width: 22.6979%; } }
   @media (min-width: 37.5em) {
     [role="banner"] .form__search {
-      border: 1px solid #1781a2;
+      border: 2px solid #1781a2;
       border-radius: 2px; } }
   [role="banner"] .form__search input {
     display: none;

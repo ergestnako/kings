@@ -21,7 +21,7 @@ width : 22.6979%; }
 
 .form__search {
 @include bp(bp3) {
-border : 1px solid #1781a2;
+border : 2px solid #1781a2;
 border-radius : $border-radius; }
 
 input {
