@@ -341,8 +341,12 @@ border-bottom-width : 0; }
 .listing__header {
 margin-bottom : $vertical-spacing / 16; }
 
-p {
-margin-bottom : $vertical-spacing / 8; }
+.listing__description {
+margin-bottom : $vertical-spacing / 4;  }
+
+.list--inline {
+margin : 0 0 $vertical-spacing / 8 0;
+padding : 0; }
 }
 
 
@@ -379,3 +383,15 @@ flex : 2; }
 
 .listing__ward--two {
 flex : 1; }
+
+
+
+.listing:last-of-type {
+
+.listing__content {
+
+@include bp(bp3) {
+padding-bottom : 0; 
+border-bottom-width : 0; }
+}
+}

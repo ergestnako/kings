@@ -1,4 +1,5 @@
 [role="navigation"] {
+margin-bottom : ($vertical-spacing);
 background-color : $color-primary;
 
 .container {
@@ -23,9 +24,14 @@ margin-right : $gutter; }
 position : relative; }
 
 .navigation__link {
+color : rgba(255,255,255,.85); 
 
 &:hover {
-border-top : 1px solid $white; }
+border-top : 1px solid rgba(255,255,255,.5);
+color : $white;  }
+
+.active {
+font-family : $bold-font-family; }
 }
 
 
@@ -51,12 +57,7 @@ border-width : 0; }
 }
 }
 
-a, 
-a:visited {
-color : $white; }
 
-.active {
-font-family : $bold-font-family; }
 }
 
 

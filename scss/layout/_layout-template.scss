@@ -11,15 +11,19 @@ flex : 1; }
 
 
 
-// container
+// container__wrap
 
 .container__wrap {
 background-color : $base-bg;
 border-top : ($border-width * 2) $border-style $border-color; }
 
+
+
+// container
+
 .container {
 margin : 0 $gutter / 2; 
-padding : $vertical-spacing 0;
+padding : ($vertical-spacing / 2) 0;
 @include clearfix();
 transition : margin $transition-duration $transition-timing-function;
 
@@ -36,7 +40,6 @@ margin : 0 $gutter * 3; }
 margin : 0 auto;
 width : 80%;
 max-width : $max-width; }
-
 }
 
 
