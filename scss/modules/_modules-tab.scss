@@ -1,74 +1,89 @@
-.accordion-tabs {
-margin-bottom : $vertical-spacing;
-padding : 0;
-line-height : 1.5;
-@include clearfix();
+.mod-js .accordion-tabs{
+	&.accordion-container{
+		margin-bottom : $vertical-spacing;
+		padding : 0;
+		line-height : 1.5;
+		@include clearfix();
 
-@include bp(bp3) {
-border-radius : $border-radius; }
+		@include bp(bp3) {
+			border-radius : $border-radius; 
+		}
+	}
+	.accordion-section{
+		@include bp(bp3) {
+			display : inline; 
+		}
 
-.tab-header-and-content {
-list-style-type : none;
+		&:first-child .tab-link {
+			border-top-left-radius : $border-radius;
+			border-top-right-radius : $border-radius; 
+		}
 
-@include bp(bp3) {
-display : inline; }
+		&:last-child .tab-link {
+			@include bp(bp3) {
+				border-bottom-left-radius : $border-radius;
+				border-bottom-right-radius : $border-radius; 
+			}
+		}
+	}
 
-&:first-child .tab-link {
-border-top-left-radius : $border-radius;
-border-top-right-radius : $border-radius; }
+	.accordion-trigger{
+		display : block;
+		padding : $vertical-spacing / 2 $gutter;
+		background-color : transparent;
+		@include font-size($font-size-minus-one);
+		text-decoration : none;
+		color : $link-color;
 
-&:last-child .tab-link {
-@include bp(bp3) {
-border-bottom-left-radius : $border-radius;
-border-bottom-right-radius : $border-radius; }
-}
-}
+		@include bp(bp3) {
+			display : inline-block;
+			border-top-left-radius : $border-radius;
+			border-top-right-radius : $border-radius;
+			border-top-width : 0; 
+		}
 
-.tab-link {
-display : block;
-padding : $vertical-spacing / 2 $gutter;
-background-color : transparent;
-@include font-size($font-size-minus-one);
-text-decoration : none;
-color : $link-color;
+		&:hover {
+			color : $link-color-hover; 
+		}
 
-@include bp(bp3) {
-display : inline-block;
-border-top-left-radius : $border-radius;
-border-top-right-radius : $border-radius;
-border-top-width : 0; }
+		&:focus {
+			outline : none; 
+		}
+	}
 
-&:hover {
-color : $link-color-hover; }
+	.accordion-title{
+		//reset
+		margin:0;
+		text-transform: none;
+		line-height: 1.6;
+	}
 
-&:focus {
-outline : none; }
+	.is-open .accordion-trigger {
+		background-color : $base-bg;
 
-&.is-active {
-background-color : $base-bg;
+		@include bp(bp3) {
+			background-color : $base-bg;
+			border-bottom-color : $base-bg;
+			margin-bottom : -1px; 
+		}
+	}
 
-@include bp(bp3) {
-background-color : $base-bg;
-border-bottom-color : $base-bg;
-margin-bottom : -1px; }
-}
-}
+	.accordion-body{
+		background-color : $base-bg;
+		width : 100%;
+		padding : $vertical-spacing $gutter;
+		box-sizing : border-box;
 
-.tab-content {
-background-color : $base-bg;
-display : none;
-width : 100%;
-padding : $vertical-spacing $gutter;
-box-sizing : border-box;
+		@include bp(bp3) {
+			float : left;
+			border-bottom-left-radius : $border-radius;
+			border-bottom-right-radius : $border-radius;
+			border-top-right-radius : $border-radius; 
+		}
 
-@include bp(bp3) {
-float : left;
-border-bottom-left-radius : $border-radius;
-border-bottom-right-radius : $border-radius;
-border-top-right-radius : $border-radius; }
-
-.list--downloads a,
-.list--external a {
-background-color : $body-background; }
-}
+		.list--downloads a,
+		.list--external a {
+			background-color : $body-background; 
+		}
+	}
 }
