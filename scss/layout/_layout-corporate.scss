@@ -3,13 +3,13 @@
 	background-color : $base-bg;
 	border-top : ($border-width * 2) $border-style $border-color;
 
-	.content {
-		@include bp(bp3) {
+	.container {
+		@include bp(bp4) {
 		display : flex; }
 	}
 
 	.corporate__col {
-		@include bp(bp3) {
+		@include bp(bp4) {
 			flex : 1;
 			margin-right : 3%;
 		}
@@ -23,19 +23,21 @@
 		@include font-size($font-size-minus-one);
 	}
 
-	.corporate__section + .corporate__section {
-		margin-top : $vertical-spacing;
-		padding-top : $vertical-spacing / 1.5;
-		border-width : 1px 0 0 0;
-		border-image : url(../assets/img/site/divider-corporate.png) 2 0 0 0; 
+	@include bp(bp4){
+		.corporate__section + .corporate__section {
+			margin-top : $vertical-spacing;
+			padding-top : $vertical-spacing / 1.5;
+			border-width : 1px 0 0 0;
+			border-image : url(../assets/img/site/divider-corporate.png) 2 0 0 0; 
+		}
 	}
-
+	
 	ul {
 		list-style-type : none;
 		margin : 0 0 $vertical-spacing 0;
 		padding : 0; 
 
-		@include bp(bp3) {
+		@include bp(bp4) {
 			margin : 0; 
 		}
 	}
@@ -56,7 +58,7 @@
 }
 
 .mod-js #corporate{
-	@include bp(bp3){
+	@include bp(bp4){
 		.is-closed .accordion-body{
 			display: block;
 		}	
