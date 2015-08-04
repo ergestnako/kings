@@ -18,10 +18,10 @@ padding : 0; }
 dt {
 margin-bottom : $vertical-spacing / 8;
 font-family : $alt-font-family;
-@include font-size($font-size-plus-two); }
+@include font-size($font-size-plus-one); }
 
 dd {
-margin-bottom : 3.2rem;
+margin-bottom : $vertical-spacing;
 margin-left : 0;
 @include font-size($font-size); }
 
