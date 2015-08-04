@@ -87,7 +87,7 @@ bottom : -.25em; }
 
 
 .spaced {
-letter-spacing : 1px; }
+letter-spacing : .5px; }
 
 
 // h-card
@@ -107,10 +107,7 @@ line-height : 1;
 
 .p-tel {
 @include font-size($font-size-plus-one);
-letter-spacing : 1px;
-@include bp(bp4) {
-@include font-size($font-size-plus-two); }
-}
+letter-spacing : 1px; }
 
 small {
 @include font-size($font-size-minus-three);

@@ -28,3 +28,8 @@ top : -.5em;
 @include font-size($font-size-minus-two);
 line-height : 0;
 vertical-align : baselineheight; }
+
+[href="javascript:void(0)"]:hover {
+text-decoration : line-through;
+text-decoration-style : wavy;
+text-decoration-color : $color-neutral; }
