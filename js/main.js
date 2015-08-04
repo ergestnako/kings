@@ -1,25 +1,40 @@
-$(document).ready(function() {
-	$(".accordion-tabs > .tab-header-and-content:first-of-type .tab-link").addClass('is-active');
-	$(".accordion-tabs > .tab-header-and-content:first-of-type .tab-content").addClass('is-open').show();
+(function($){
+	$(function(){
+		setupAccordions();
+	});
 
-	$(document).on('click', '.tab-link', function(e){
-		e.preventDefault();
-		var tabLabel = $(this);
-		if (!tabLabel.hasClass("is-active")){
-			var tabContainer = $(this).closest(".accordion-tabs");
-			$('.is-open', tabContainer).removeClass('is-open').hide();
-			tabLabel.next().toggleClass("is-open").toggle();
-			$('.is-active', tabContainer).removeClass("is-active");
-			tabLabel.addClass("is-active");
+	function setupAccordions(){
+		$('.accordion-container').each(function(i,e){
+			setupAccordion(e);
+		});
+	}
+
+	function setupAccordion(accordion){
+		var openFirst = accordion.hasAttribute('data-accordion-openfirst');
+		var allPanels = $('.accordion-section', accordion);
+		allPanels.addClass('is-closed');
+		if(openFirst){
+			$(allPanels[0]).addClass('is-open').removeClass('is-closed');
 		}
-	});
+	}
 
-	$(".js-accordion-trigger").bind("click", function(e) {
-		e.preventDefault();
-		$(this).parent().find(".submenu").slideToggle("fast");
-		$(this).parent().toggleClass("is-expanded");
-	});
-});
+	function accordionClicked(event){
+		var thisPanel = $(event.currentTarget).closest('.accordion-section');
+		var accordionContainer = thisPanel.closest('.accordion-container');
+		var independentPanels = accordionContainer.get(0).hasAttribute('data-accordion-independent');
+		var allPanels = $('.accordion-section', accordionContainer);
+		var otherPanels = allPanels.not(thisPanel);
+		
+		if(independentPanels){
+			thisPanel.toggleClass('is-closed').toggleClass('is-open');
+		} else {
+			otherPanels.removeClass('is-open').addClass('is-closed');
+			thisPanel.removeClass('is-closed').addClass('is-open');
+		}
+	}
+
+	$(document).on('click', '.accordion-trigger', accordionClicked);
+})(jQuery);
 
 (function($){
 	var navigationBoxClass = '.navigation__box';

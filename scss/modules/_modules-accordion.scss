@@ -1,34 +1,57 @@
-.accordion {  
-background-color : $base-bg;
-border : $border;
-margin : 0 0 $vertical-spacing 0;
-padding : 0;
-
-ul {
-margin : 0;
-padding : 0; }
-
-li {
-list-style-type : none;
-margin-bottom : 0;
-border-bottom : $border;
-
-> a {
-display : block;
-padding : ($vertical-spacing / 2) $gutter;
-font-family : $bold-font-family;
-color : $font-color;
-text-decoration : none; }
-
-&:last-child {
-border-bottom-width : 0; }
+.accordion-section{
+	list-style-type : none;
 }
 
-.submenu {
-display : none;
-padding : 0 $gutter ($vertical-spacing / 2); }
+.mod-js{
+	.accordion-container{}
+	.accordion-section{}
+	.accordion-title{}
 
-.is-expanded {
-display : block;
-padding-bottom : 0; }
+	.is-open .accordion-handle{}
+	.is-closed .accordion-handle{}
+
+	.accordion-trigger{
+		cursor: pointer;
+	}
+
+	.is-open .accordion-body{
+		display: block;
+	}
+	.is-closed .accordion-body{
+		display: none;
+	}	
+}
+
+.mod-js .accordion{
+	&.accordion-container{
+		background-color : $base-bg;
+		border : $border;
+		margin : 0 0 $vertical-spacing 0;
+		padding : 0;
+	}
+	.accordion-section{
+		margin-bottom : 0;
+		border-bottom : $border;
+		&:last-child {
+			border-bottom-width : 0; 
+		}
+	}
+	.accordion-title{
+		display : block;
+		padding : ($vertical-spacing / 2) $gutter;
+		font-family : $bold-font-family;
+		color : $font-color;
+		text-decoration : none;
+
+		//reset typeography to a baseline
+		margin:0;
+		text-transform: none;
+		line-height: 1.6;
+	}
+	.accordion-body{
+		padding : 0 $gutter ($vertical-spacing / 2);
+	}
+	
+	.is-open .accordion-handle{}
+	.is-closed .accordion-handle{}
 }
