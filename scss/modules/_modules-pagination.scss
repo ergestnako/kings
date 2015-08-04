@@ -120,6 +120,7 @@ display : inline-block;
 box-sizing : border-box; 
 order : 2;
 margin-right : 5px;
+margin-bottom : 5px;
 color : $pagination-color;
 
 @include bp(bp3) {

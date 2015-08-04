@@ -4,18 +4,15 @@ padding : 0 0 0 $gutter;
 
 @include bp(bp3) { 
 margin : 0 0 $vertical-spacing -22px; }
-
-
 }
 
 li {
-margin-bottom : .5rem;
 @include font-size($font-size); }
 
 li > ul,
 li > ol {
 list-style-type : none;
-margin : $vertical-spacing 0 $vertical-spacing $gutter;
+margin : ($vertical-spacing / 2) 0 ($vertical-spacing / 2) $gutter;
 padding : 0; }
 
 dt {
@@ -42,6 +39,60 @@ column-count : 2; }
 
 li {
 @include bp(bp3) { 
+margin-bottom : 0; }
+}
+}
+
+
+
+// list--cols--two
+
+.list--cols--two {
+list-style-type : none; 
+margin-left : 0; 
+padding-left : 0; 
+
+@include bp(bp3) { 
+column-count : 2; }
+
+li {
+@include bp(bp3) { 
+margin-bottom : 0; }
+}
+}
+
+
+
+// list--cols--three
+
+.list--cols--three {
+list-style-type : none; 
+margin-left : 0; 
+padding-left : 0; 
+
+@include bp(bp3) { 
+column-count : 3; }
+
+li {
+@include bp(bp3) { 
+margin-bottom : 0; }
+}
+}
+
+
+
+// list--cols--four
+
+.list--cols--four {
+list-style-type : none; 
+margin-left : 0; 
+padding-left : 0; 
+
+@include bp(bp4) { 
+column-count : 4; }
+
+li {
+@include bp(bp4) { 
 margin-bottom : 0; }
 }
 }
@@ -99,9 +150,11 @@ margin-bottom : 5px; }
 
 a {
 display : block;
-padding : .75rem $gutter / 2 .75rem 54px;
+padding : .75rem $gutter / 2 .75rem 45px;
 background : $base-bg url(../assets/img/site/icon-download-pdf.svg) no-repeat 11px 50%;
-background-size : 33px auto; } 
+background-size : 22px auto;
+@include font-size($font-size-minus-one);
+line-height : 1.3; } 
 }
 
 
@@ -118,9 +171,11 @@ margin-bottom : 5px; }
 
 a {
 display : block;
-padding : .75rem $gutter / 2 .75rem 54px;
+padding : .75rem $gutter / 2 .75rem 45px;
 background : $base-bg url(../assets/img/site/icon-link-external.svg) no-repeat 11px 50%; 
-background-size : 33px auto; } 
+background-size : 22px auto;
+@include font-size($font-size-minus-one);
+line-height : 1.3; } 
 }
 
 

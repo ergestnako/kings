@@ -1,5 +1,5 @@
 .media {
-margin-bottom : $vertical-spacing * 2; 
+margin-bottom : $vertical-spacing; 
 
 @include bp(bp3) {
 display : flex;
