@@ -75,8 +75,9 @@ background-color : #83be70;
 border : 5px solid #98c988;
 border-radius : $border-radius; 
 box-sizing : border-box;
+z-index: 200;
 
-&.is-active{
+&.is-dropdown, &.is-modal{
 display : block; }
 
 .cols {
@@ -161,3 +162,20 @@ margin-left : -18px; }
 a, a:visited {
 color : $link-color; }
 } 
+
+.overlay{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top:0;
+	left:0;
+	z-index:100;
+	opacity:0;
+	background: rgba(0, 25, 33, 0.8);
+	transition: opacity .4s;
+	visibility: hidden;
+	&.is-shown{
+		visibility: visible;
+		opacity: 1;
+	}
+}

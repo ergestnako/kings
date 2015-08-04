@@ -36,26 +36,44 @@
 	$(document).on('click', '.accordion-trigger', accordionClicked);
 })(jQuery);
 
+//A bit messy in places, could possibly be cleaned up a little
+//Using Pointer Events because sanity!
+//Mice show on hover and navigate on click
+//Touch shows on touch
+//Pen currently treated as touch for this scenario, I think best to stick with that
+//Included ability to include a close button on the modal if wanted, can remove this
+//CSS work needed to make the modal colours work and to redesign the drop down when in modal mode,
+//Rather than overriding styles between is-modal and is-dropdown I think best to have them as parent selectors for situations where they would conflict
 (function($){
 	var navigationBoxClass = '.navigation__box';
-	var activeClass = 'is-active';
-	var currentlyShownNav = $();
-	var overlaySelector = '.overlay';
+	var modalClass = 'is-modal';
+	var dropdownClass = 'is-dropdown';
+	var currentlyShownNav = $('');
 	var menuSelector = '.navigation__item';
 	var delayedHide = null;
+	var overlay = $('<div class="overlay"></div>');
+	$(document.body).append(overlay);
 
-	$(document).on('mouseenter', menuSelector, activate);
-	$(document).on('mouseleave', menuSelector, function(){
-		delayedHide = setTimeout(deactivate, 500);
+	$(menuSelector).attr('touch-action', 'none');
+
+	$(menuSelector).on('pointerenter', function(event){
+		if(event.originalEvent.pointerType == "mouse" && !currentlyShownNav.hasClass(modalClass)){
+			activateDropdown(event);
+		}
 	});
-	/*$(document).on('mouseenter', currentlyShownNav, function(){
-		console.log("enter menu");
-		cancelTimeout();
+	$(menuSelector).on('pointerleave', function(event){
+		if(event.originalEvent.pointerType == "mouse"){
+			delayedHide = setTimeout(deactivateDropdown, 500);
+		}		
 	});
-	$(document).on('mouseleave', currentlyShownNav, deactivate);*/
-	
+	$(menuSelector).on('pointerdown', function(event){
+		if(event.originalEvent.pointerType != "mouse"){
+			event.preventDefault();
+			activateModal(event);
+		}
+	});
+
 	function cancelTimeout(){
-		console.log("cancel" + delayedHide);
 		clearTimeout(delayedHide);
 		delayedHide = null;
 	}
@@ -64,26 +82,51 @@
 		return $(navigationBoxClass, menuElement);
 	}
 
-	function activate(event){
+	function activateDropdown(event){
 		cancelTimeout();
+		if (!$(event.currentTarget).hasClass('has-sub')){
+			deactivateDropdown();
+			return;
+		}
+
 		var targetNavbox = navboxForMenu(event.currentTarget);
-		console.log("activate");
 
 		if (targetNavbox[0] != currentlyShownNav[0]){
-			currentlyShownNav.removeClass(activeClass);
-			targetNavbox.addClass(activeClass);
+			currentlyShownNav.removeClass(dropdownClass);
+			targetNavbox.addClass(dropdownClass);
 			currentlyShownNav = targetNavbox;
-			currentlyShownNav.on('mouseenter', cancelTimeout);
-			currentlyShownNav.on('mouseleave', deactivate);
+			currentlyShownNav.on('pointerenter', cancelTimeout);
+			currentlyShownNav.on('pointerleave', deactivateDropdown);
 		}
 	}
 
-	function deactivate(event){
-		console.log("deactivate");
+	function deactivateDropdown(){
 		cancelTimeout();
-		currentlyShownNav.removeClass(activeClass);
-		currentlyShownNav.off('mouseenter');
-		currentlyShownNav.off('mouseleave');
+		currentlyShownNav.removeClass(dropdownClass);
+		currentlyShownNav.off('pointerenter');
+		currentlyShownNav.off('pointerleave');
+		currentlyShownNav = $('');
+	}
+
+	function activateModal(event){
+		deactivateDropdown();
+		var targetNavbox = navboxForMenu(event.currentTarget);
+		if (targetNavbox.length == 0){
+			return;
+		}
+
+		currentlyShownNav = targetNavbox;
+		overlay.addClass('is-shown');
+		currentlyShownNav.addClass(modalClass);
+		overlay.on('pointerdown', deactivateModal);
+		$('.navigation__close', currentlyShownNav).on('pointerdown', deactivateModal);
+	}
+
+	function deactivateModal(){
+		currentlyShownNav.removeClass(modalClass);
+		$('.navigation__close', currentlyShownNav).off('pointerdown');
 		currentlyShownNav = $();
+		overlay.removeClass('is-shown');
+		overlay.off('pointerdown');
 	}
 })(jQuery);
