@@ -2908,8 +2908,9 @@ li .media {
   background-color: #83be70;
   border: 5px solid #98c988;
   border-radius: 2px;
-  box-sizing: border-box; }
-  .navigation__box.is-active {
+  box-sizing: border-box;
+  z-index: 200; }
+  .navigation__box.is-dropdown, .navigation__box.is-modal {
     display: block; }
   .navigation__box .cols {
     margin-bottom: 0; }
@@ -2982,6 +2983,22 @@ li .media {
 
 .navigation__box__list a, .navigation__box__list a:visited {
   color: #1781a2; }
+
+.overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  opacity: 0;
+  background: rgba(0, 25, 33, 0.8);
+  -webkit-transition: opacity .4s;
+          transition: opacity .4s;
+  visibility: hidden; }
+  .overlay.is-shown {
+    visibility: visible;
+    opacity: 1; }
 
 #news {
   padding: 1.35em 0;
