@@ -37,8 +37,8 @@ text-transform : none; }
 
 .quote--bordered {
 padding : $vertical-spacing 0;
-border-top : 3px solid $black;
-border-bottom : 3px solid $black;
+border-top : 3px solid $border-color;
+border-bottom : 3px solid $border-color;
 
 p {
 margin-bottom : ($vertical-spacing / 2);

@@ -142,7 +142,7 @@ a.btn--large {
   background-color: #fff;
   background-image: none;
   border: 2px solid #d1e6e3;
-  border-radius: 2px;
+  border-radius: 6px;
   box-sizing: border-box;
   font-family: "aktiv_grotesk_triallight", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -1059,8 +1059,8 @@ blockquote {
 
 .quote--bordered {
   padding: 1.35em 0;
-  border-top: 3px solid black;
-  border-bottom: 3px solid black; }
+  border-top: 3px solid #d1e6e3;
+  border-bottom: 3px solid #d1e6e3; }
   .quote--bordered p {
     margin-bottom: 0.675em;
     font-family: "lexiabold","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -1124,8 +1124,8 @@ blockquote {
   margin-bottom: 1.35em;
   padding: 1.5rem 22px 1rem;
   background-color: #f2f8f7;
-  border: 1px solid #d1e6e3;
-  border-radius: 2px;
+  border: 6px double #d1e6e3;
+  border-radius: 6px;
   font-family: "aktiv_grotesk_triallight", "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .box p {
     font-size: 16;
@@ -1177,14 +1177,14 @@ blockquote {
     text-decoration: none; }
     .list--breadcrumb a:first-child {
       padding-left: 0.84375em;
-      border-top-left-radius: 2px;
-      border-bottom-left-radius: 2px;
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
       border-left: 2px solid #d1e6e3; }
     .list--breadcrumb a:last-child {
       padding-right: 0.84375em;
       background-color: #fff;
-      border-top-right-radius: 2px;
-      border-bottom-right-radius: 2px;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
       color: #494a4a; }
     .list--breadcrumb a:hover {
       color: #73b85b;
@@ -1277,8 +1277,8 @@ blockquote {
     text-decoration: none; }
     .list--fragments a:first-child {
       padding-left: 0.84375em;
-      border-top-left-radius: 2px;
-      border-bottom-left-radius: 2px;
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
       border-left: 2px solid #d1e6e3; }
     .list--fragments a:hover {
       color: #73b85b;
@@ -2018,7 +2018,7 @@ li .media {
     padding: 0.6rem 1.2rem 0.2rem;
     background-color: #f2f8f7;
     border: 2px solid #d1e6e3;
-    border-radius: 2px;
+    border-radius: 6px;
     font-family: "aktiv_grotesk_trialbold", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 12px;
     font-size: 1.2rem;
@@ -2127,7 +2127,7 @@ li .media {
     padding: 0.6rem 1.2rem 0.2rem;
     background-color: #f2f8f7;
     border: 2px solid #d1e6e3;
-    border-radius: 2px;
+    border-radius: 6px;
     font-size: 12px;
     font-size: 1.2rem;
     color: #494a4a;
@@ -2197,7 +2197,7 @@ li .media {
     background-image: none;
     border: 2px solid #d1e6e3;
     border-right-width: 0;
-    border-radius: 2px;
+    border-radius: 6px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     box-sizing: border-box;
@@ -2305,17 +2305,17 @@ li .media {
     clear: both; }
   @media (min-width: 37.5em) {
     .mod-js .accordion-tabs.accordion-container {
-      border-radius: 2px; } }
+      border-radius: 6px; } }
 @media (min-width: 37.5em) {
   .mod-js .accordion-tabs .accordion-section {
     display: inline; } }
 .mod-js .accordion-tabs .accordion-section:first-child .tab-link {
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px; }
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px; }
 @media (min-width: 37.5em) {
   .mod-js .accordion-tabs .accordion-section:last-child .tab-link {
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px; } }
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px; } }
 .mod-js .accordion-tabs .accordion-trigger {
   display: block;
   padding: 0.675em 22px;
@@ -2327,8 +2327,8 @@ li .media {
   @media (min-width: 37.5em) {
     .mod-js .accordion-tabs .accordion-trigger {
       display: inline-block;
-      border-top-left-radius: 2px;
-      border-top-right-radius: 2px;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
       border-top-width: 0; } }
   .mod-js .accordion-tabs .accordion-trigger:hover {
     color: #73b85b; }
@@ -2353,9 +2353,9 @@ li .media {
   @media (min-width: 37.5em) {
     .mod-js .accordion-tabs .accordion-body {
       float: left;
-      border-bottom-left-radius: 2px;
-      border-bottom-right-radius: 2px;
-      border-top-right-radius: 2px; } }
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+      border-top-right-radius: 6px; } }
   .mod-js .accordion-tabs .accordion-body .list--downloads a,
   .mod-js .accordion-tabs .accordion-body .list--external a {
     background-color: #fff; }
@@ -2699,7 +2699,7 @@ li .media {
   @media (min-width: 37.5em) {
     [role="banner"] .form__search {
       border: 2px solid #57a1b9;
-      border-radius: 2px; } }
+      border-radius: 6px; } }
   [role="banner"] .form__search input {
     display: none;
     padding-top: 0;
@@ -2912,7 +2912,7 @@ li .media {
   padding: 11px 11px 0 11px;
   background-color: #fff;
   border: 5px solid #b9d9e3;
-  border-radius: 2px;
+  border-radius: 6px;
   box-sizing: border-box;
   z-index: 200; }
   .navigation__box.is-dropdown, .navigation__box.is-modal {
