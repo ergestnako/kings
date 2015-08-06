@@ -1,6 +1,7 @@
 [role="contentinfo"] {
-margin : 0 0 ($gutter / 2) 0; 
+margin : 0; 
 padding : $vertical-spacing 0; 
+border-bottom : 10px solid $border-color;
 
 .main {
 margin-bottom : $vertical-spacing; 

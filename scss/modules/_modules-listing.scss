@@ -50,7 +50,8 @@ margin-bottom : $vertical-spacing / 2; }
 }
 
 hr {
-margin : $vertical-spacing / 2 0; }
+margin : ($vertical-spacing / 2) 0 ($vertical-spacing / 1.25);
+border-width : 2px; }
 
 }
 
@@ -249,8 +250,11 @@ padding-top : 0; }
 .listing__time__day {
 
 @include bp(bp3) {
-display : block;
-@include font-size($font-size-plus-three); }
+display : inline-block;
+margin-bottom : 6px;
+border-bottom : 2px solid $border-color;
+@include font-size($font-size-plus-two);
+line-height : 1; }
 }
 
 .listing__time__month {

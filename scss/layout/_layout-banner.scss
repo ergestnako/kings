@@ -1,9 +1,11 @@
 [role="banner"] {
 background-color : #12617a;
+border-top : 20px solid #125970;
+border-bottom : 2px solid #57a1b9;
 
 .container {
 display : flex;
-padding : ($vertical-spacing * 2) 0 ($vertical-spacing / 2) 0;
+padding : ($vertical-spacing) 0 ($vertical-spacing / 4) 0;
 
 @include bp(bp5) {
 display : block; }
@@ -21,7 +23,7 @@ width : 22.6979%; }
 
 .form__search {
 @include bp(bp3) {
-border : 2px solid #1781a2;
+border : 2px solid #57a1b9;
 border-radius : $border-radius; }
 
 input {

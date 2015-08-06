@@ -31,6 +31,10 @@ font-family : $bold-font-family ;
 font-weight : normal;
 text-align : left; }
 
+tr:last-of-type th,
+tr:last-of-type td {
+border-bottom-width : 0; }
+
 .table--condensed {
 
 th,
