@@ -1,5 +1,5 @@
 .header {
 margin : -($vertical-spacing) 0 $vertical-spacing;
-min-height : 300px;
-background-color : $base-bg;
-border-bottom : $border; }
+min-height : 400px;
+background : transparent url(../assets/img/fpo/fpo-header-01.jpg) no-repeat 50% 0;
+background-size : contain; }
