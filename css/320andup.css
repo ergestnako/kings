@@ -2871,7 +2871,7 @@ li .media {
 
 .header {
   margin: -1.35em 0 1.35em;
-  min-height: 400px;
+  min-height: 320px;
   background: transparent url(../assets/img/fpo/fpo-header-01.jpg) no-repeat 50% 0;
   background-size: contain; }
 
