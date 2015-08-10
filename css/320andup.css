@@ -2687,15 +2687,22 @@ li .media {
       [role="banner"] .container {
         display: block; } }
   [role="banner"] .main {
+    float: left;
+    margin-right: -100%;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1; }
   [role="banner"] .complementary {
-    width: 18px; }
+    width: 18px;
+    -webkit-transition: 0.4s;
+            transition: 0.4s; }
     @media (min-width: 37.5em) {
       [role="banner"] .complementary {
-        width: 22.6979%; } }
+        width: 22.6979%; }
+        [role="banner"] .complementary.focused {
+          margin-left: calc(400px + 10%);
+          width: calc(90% - 400px); } }
   @media (min-width: 37.5em) {
     [role="banner"] .form__search {
       border: 2px solid #57a1b9;
@@ -2871,11 +2878,12 @@ li .media {
 
 .header__hospital__orpington, .header__specialty__cancer, .header__details--01 {
   margin: -2.025em 0 1.35em;
-  min-height: 260px; }
+  margin-top: -2.7em;
+  min-height: 300px; }
 
 .header__hospital__orpington {
-  background: transparent url(../assets/img/fpo/fpo-header-01.jpg) no-repeat 50% 0;
-  background-size: auto 260px; }
+  background: transparent url(../assets/img/fpo/fpo-header-04.jpg) no-repeat 50% 0;
+  background-size: auto 300px; }
 
 .header__specialty__cancer {
   background: transparent url(../assets/img/fpo/fpo-header-02.jpg) no-repeat 50% 0;
@@ -2925,7 +2933,7 @@ li .media {
   border-radius: 6px;
   box-sizing: border-box;
   z-index: 200; }
-  .navigation__box.is-dropdown, .navigation__box.is-modal {
+  .no-js .navigation__box.is-dropdown, .no-js .navigation__box.is-modal {
     display: block; }
   .navigation__box .cols {
     margin-bottom: 0; }
