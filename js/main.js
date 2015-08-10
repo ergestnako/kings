@@ -1,11 +1,13 @@
+// Nav search focus animation 
 $('#nav-search').focus(function() {
 	$(this).parents('.complementary').addClass('focused');
 });
-
 $('#nav-search').blur(function() {
 	$(this).parents('.complementary').removeClass('focused');
 });
 
+// Smooth scroll links
+$('a').smoothScroll();
 
 (function($){
 	$(function(){
