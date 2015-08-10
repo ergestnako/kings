@@ -74,8 +74,8 @@ box-sizing : border-box;
 z-index: 200;
 
 &.is-dropdown, &.is-modal{
-display : block; }
-
+//display : block; }
+}
 .cols {
 margin-bottom : 0; }
 }

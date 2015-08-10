@@ -68,17 +68,17 @@ $('a').smoothScroll();
 	$(menuSelector).attr('touch-action', 'none');
 
 	$(menuSelector).on('pointerenter', function(event){
-		if(event.originalEvent.pointerType == "mouse" && !currentlyShownNav.hasClass(modalClass)){
+		if(event.originalEvent.pointerType === "mouse" && !currentlyShownNav.hasClass(modalClass)){
 			activateDropdown(event);
 		}
 	});
 	$(menuSelector).on('pointerleave', function(event){
-		if(event.originalEvent.pointerType == "mouse"){
+		if(event.originalEvent.pointerType === "mouse"){
 			delayedHide = setTimeout(deactivateDropdown, 500);
 		}		
 	});
 	$(menuSelector).on('pointerdown', function(event){
-		if(event.originalEvent.pointerType != "mouse"){
+		if(event.originalEvent.pointerType !== "mouse"){
 			event.preventDefault();
 			activateModal(event);
 		}
@@ -102,9 +102,11 @@ $('a').smoothScroll();
 
 		var targetNavbox = navboxForMenu(event.currentTarget);
 
-		if (targetNavbox[0] != currentlyShownNav[0]){
+		if (targetNavbox[0] !== currentlyShownNav[0]){
 			currentlyShownNav.removeClass(dropdownClass);
+			currentlyShownNav.fadeOut(150);
 			targetNavbox.addClass(dropdownClass);
+			targetNavbox.fadeIn(250);
 			currentlyShownNav = targetNavbox;
 			currentlyShownNav.on('pointerenter', cancelTimeout);
 			currentlyShownNav.on('pointerleave', deactivateDropdown);
@@ -114,6 +116,7 @@ $('a').smoothScroll();
 	function deactivateDropdown(){
 		cancelTimeout();
 		currentlyShownNav.removeClass(dropdownClass);
+		currentlyShownNav.fadeOut(150);
 		currentlyShownNav.off('pointerenter');
 		currentlyShownNav.off('pointerleave');
 		currentlyShownNav = $('');
@@ -122,7 +125,7 @@ $('a').smoothScroll();
 	function activateModal(event){
 		deactivateDropdown();
 		var targetNavbox = navboxForMenu(event.currentTarget);
-		if (targetNavbox.length == 0){
+		if (targetNavbox.length === 0){
 			return;
 		}
 
