@@ -19,16 +19,24 @@ $('.tooltip--nav').each(function() {
 	        event: 'mouseenter'
 	    },
 	    hide: {
-	        event: 'unfocus',
-	        inactive: 1000
+	        event: 'mouseleave',
+	        delay: 1000,
+	        fixed: true
+	        
 	    },
         style: {
-	        classes: 'qtip-nav'
-        },
+	        classes: 'qtip-nav',
+	        tip: {
+	            corner: true,
+	            height: 9,
+	            width: 18
+	        }
+        },        
         position: {
-	        my: 'top center',
-	        at: 'bottom center',
-	        target: $(this)
+	        viewport: $('.container'),
+		    adjust: {
+	            method: 'shift none'
+	        }
 	    }
     });
 });
