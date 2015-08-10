@@ -65,13 +65,17 @@ padding : ($gutter / 4) 0; }
 display : none;
 position : absolute;
 top : 2em;
-width : 640px;
+width : 300px;
 padding : ($gutter / 2) ($gutter / 2) 0 ($gutter / 2);
 background-color : #fff;
 border : 5px solid #b9d9e3;
 border-radius : $border-radius; 
 box-sizing : border-box;
 z-index: 200;
+
+&--wide {
+width: 640px;
+}
 
 &.is-dropdown, &.is-modal{
 .no-js & {
