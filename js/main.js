@@ -6,9 +6,41 @@ $('#nav-search').blur(function() {
 	$(this).parents('.complementary').removeClass('focused');
 });
 
+
+
+
+// Tooltips
+$('.tooltip--nav').each(function() {
+    $(this).qtip({
+        content: {
+            text: $(this).next('.tooltip__content')
+        },
+        show: {
+	        event: 'mouseenter'
+	    },
+	    hide: {
+	        event: 'unfocus',
+	        inactive: 1000
+	    },
+        style: {
+	        classes: 'qtip-nav'
+        },
+        position: {
+	        my: 'top center',
+	        at: 'bottom center',
+	        target: $(this)
+	    }
+    });
+});
+
+
+
 // Smooth scroll links
 $('a').smoothScroll();
 
+
+
+// Accordions
 (function($){
 	$(function(){
 		setupAccordions();

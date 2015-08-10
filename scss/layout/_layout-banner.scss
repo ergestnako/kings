@@ -14,13 +14,15 @@ display : block; }
 .main {
 float: left;
 margin-right: -100%;
-flex : 1; }
+}
 
 .complementary {
+
 width : 18px; 
 transition: 0.4s;
 
 @include bp(bp3) {
+	margin-left: 77.3021%;
 width : 22.6979%;
 
 
