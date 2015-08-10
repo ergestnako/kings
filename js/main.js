@@ -1,3 +1,12 @@
+$('#nav-search').focus(function() {
+	$(this).parents('.complementary').addClass('focused');
+});
+
+$('#nav-search').blur(function() {
+	$(this).parents('.complementary').removeClass('focused');
+});
+
+
 (function($){
 	$(function(){
 		setupAccordions();
