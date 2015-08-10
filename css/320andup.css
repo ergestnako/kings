@@ -1,4 +1,4 @@
-html, body, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+html, body, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video, picture {
   margin: 0;
   padding: 0;
   border: 0;
@@ -7,7 +7,7 @@ html, body, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquo
   vertical-align: baseline;
   background: transparent; }
 
-article, aside, figure, footer, header, hgroup, nav, section {
+article, aside, figure, footer, header, hgroup, nav, section, picture {
   display: block; }
 
 a {
@@ -1124,8 +1124,8 @@ blockquote {
   margin-bottom: 1.35em;
   padding: 1.5rem 22px 1rem;
   background-color: #f2f8f7;
-  border: 6px double #d1e6e3;
-  border-radius: 6px;
+  border: 4px solid #d1e6e3;
+  border-radius: 0;
   font-family: "aktiv_grotesk_triallight", "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .box p {
     font-size: 16;
@@ -2869,11 +2869,21 @@ li .media {
   .mod-js #corporate .accordion-trigger {
     cursor: auto; } }
 
-.header {
-  margin: -1.35em 0 1.35em;
-  min-height: 320px;
+.header__hospital__orpington, .header__specialty__cancer, .header__details--01 {
+  margin: -2.025em 0 1.35em;
+  min-height: 260px; }
+
+.header__hospital__orpington {
   background: transparent url(../assets/img/fpo/fpo-header-01.jpg) no-repeat 50% 0;
-  background-size: contain; }
+  background-size: auto 260px; }
+
+.header__specialty__cancer {
+  background: transparent url(../assets/img/fpo/fpo-header-02.jpg) no-repeat 50% 0;
+  background-size: auto 260px; }
+
+.header__details--01 {
+  background: transparent url(../assets/img/fpo/fpo-header-03.jpg) no-repeat 50% 0;
+  background-size: auto 260px; }
 
 [role="navigation"] {
   margin-bottom: 2.7em;

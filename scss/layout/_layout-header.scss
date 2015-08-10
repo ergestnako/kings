@@ -1,5 +1,30 @@
-.header {
-margin : -($vertical-spacing) 0 $vertical-spacing;
-min-height : 320px;
+%header {
+margin : -($vertical-spacing * 1.5) 0 $vertical-spacing;
+min-height : 260px; }
+
+// hospitals
+
+.header__hospital__orpington {
+@extend %header;
 background : transparent url(../assets/img/fpo/fpo-header-01.jpg) no-repeat 50% 0;
-background-size : contain; }
+background-size : auto 260px; }
+
+
+
+
+// specialties
+
+.header__specialty__cancer {
+@extend %header;
+background : transparent url(../assets/img/fpo/fpo-header-02.jpg) no-repeat 50% 0;
+background-size : auto 260px; }
+
+
+
+
+// details
+
+.header__details--01 {
+@extend %header;
+background : transparent url(../assets/img/fpo/fpo-header-03.jpg) no-repeat 50% 0;
+background-size : auto 260px; }

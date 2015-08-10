@@ -110,9 +110,9 @@ $box-padding					: 1.5rem $gutter 1rem;
 $box-bg 						: $base-bg;
 
 $box-border-color				: $border-color;
-$box-border-style 				: double;
-$box-border-width 				: 6px;
-$box-border-radius 				: $border-radius;
+$box-border-style 				: solid;
+$box-border-width 				: 4px;
+$box-border-radius 				: 0;
 
 $box-font-family				: $font-family;
 $box-font-size 					: $font-size;
