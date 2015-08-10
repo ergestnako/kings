@@ -1,13 +1,14 @@
 %header {
 margin : -($vertical-spacing * 1.5) 0 $vertical-spacing;
-min-height : 260px; }
+margin-top : -($vertical-spacing * 2);
+min-height : 300px; }
 
 // hospitals
 
 .header__hospital__orpington {
 @extend %header;
-background : transparent url(../assets/img/fpo/fpo-header-01.jpg) no-repeat 50% 0;
-background-size : auto 260px; }
+background : transparent url(../assets/img/fpo/fpo-header-04.jpg) no-repeat 50% 0;
+background-size : auto 300px; }
 
 
 
