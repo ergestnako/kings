@@ -74,7 +74,9 @@ box-sizing : border-box;
 z-index: 200;
 
 &.is-dropdown, &.is-modal{
-//display : block; }
+.no-js & {
+	display: block;
+}
 }
 .cols {
 margin-bottom : 0; }
