@@ -62,7 +62,6 @@ padding : ($gutter / 4) 0; }
 // navigation__box
 
 .navigation__box {
-display : none;
 position : absolute;
 top : 2em;
 width : 300px;
@@ -72,13 +71,25 @@ border : 5px solid #b9d9e3;
 border-radius : $border-radius; 
 box-sizing : border-box;
 z-index: 200;
+opacity: 0;
+transition: opacity 0.15s;
+pointer-events: none;
+
+.mod-no-pointerevents & {
+	display: none;
+}
 
 &--wide {
 width: 640px;
 }
 
 &.is-dropdown, &.is-modal{
-	display: block;
+	opacity: 1;
+	pointer-events: auto;
+	transition: opacity 0.25s;
+	.mod-no-pointerevents & {
+		display: block;
+	}
 }
 .cols {
 margin-bottom : 0; }
