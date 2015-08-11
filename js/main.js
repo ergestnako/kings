@@ -144,9 +144,7 @@ $('a').smoothScroll();
 
 		if (targetNavbox[0] !== currentlyShownNav[0]){
 			currentlyShownNav.removeClass(dropdownClass);
-			currentlyShownNav.fadeOut(150);
 			targetNavbox.addClass(dropdownClass);
-			targetNavbox.fadeIn(250);
 			currentlyShownNav = targetNavbox;
 			currentlyShownNav.on('pointerenter', cancelTimeout);
 			currentlyShownNav.on('pointerleave', deactivateDropdown);
@@ -156,7 +154,6 @@ $('a').smoothScroll();
 	function deactivateDropdown(){
 		cancelTimeout();
 		currentlyShownNav.removeClass(dropdownClass);
-		currentlyShownNav.fadeOut(150);
 		currentlyShownNav.off('pointerenter');
 		currentlyShownNav.off('pointerleave');
 		currentlyShownNav = $('');
