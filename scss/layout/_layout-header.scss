@@ -7,7 +7,7 @@ min-height : 300px; }
 
 .header__hospital__orpington {
 @extend %header;
-background : transparent url(../assets/img/fpo/fpo-header-04.jpg) no-repeat 50% 0;
+background : transparent url(../assets/img/site/banner-hospital-large.jpg) no-repeat 50% 0;
 background-size : auto 300px; }
 
 
@@ -17,7 +17,7 @@ background-size : auto 300px; }
 
 .header__specialty__cancer {
 @extend %header;
-background : transparent url(../assets/img/fpo/fpo-header-02.jpg) no-repeat 50% 0;
+background : transparent url(../assets/img/site/banner-hospital-large.jpg) no-repeat 50% 0;
 background-size : auto 260px; }
 
 
@@ -27,5 +27,28 @@ background-size : auto 260px; }
 
 .header__details--01 {
 @extend %header;
-background : transparent url(../assets/img/fpo/fpo-header-03.jpg) no-repeat 50% 0;
+background : transparent url(../assets/img/site/banner-hospital-large.jpg) no-repeat 50% 0;
 background-size : auto 260px; }
+
+
+
+
+.header__index {
+@extend %header;
+padding-top : 280px;
+background : transparent url(../assets/img/site/banner-home.jpg) no-repeat 50% 0;
+background-size : auto 270px;
+box-sizing : border-box;
+
+@include bp(bp6) {
+background-image : url(../assets/img/site/banner-home-large.jpg);
+background-size : auto 450px; }
+
+.main {
+width : 100%;
+
+@include bp(bp6) {
+width : 74.1745%; }
+}
+
+}

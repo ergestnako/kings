@@ -57,6 +57,17 @@ margin-bottom : 0; }
 
 
 
+.media:last-of-type {
+
+.media__content {
+
+@include bp(bp3) {
+border-bottom-width : 0; }
+}
+
+}
+
+
 // media--key 
 
 .media--key {

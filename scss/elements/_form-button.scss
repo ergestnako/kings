@@ -13,7 +13,7 @@ box-shadow : none; }
 -webkit-font-smoothing : antialiased;
 -moz-osx-font-smoothing : grayscale;
 display : inline-block;
-padding : 6px 16px 3px;
+padding : 6px 16px;
 background-color : $button-bg;
 border : $button-border-width $button-border-style $button-border-color;
 border-radius : $button-border-radius;
@@ -43,8 +43,8 @@ text-decoration : none; }
 }
 
 a.btn {
-padding-top : 10px;
-padding-bottom : 8px; }
+padding-top : 4px;
+padding-bottom : 4px; }
 
 // primary
 
@@ -70,32 +70,32 @@ color : $button-primary-font-color-hover; }
 // mini
 
 .btn--mini {
-padding : 3px 8px 0;
+padding : 3px 8px 5px;
 @include font-size($button-mini-font-size); }
 
 a.btn--mini {
-padding-top : 6px;
-padding-bottom : 4px; }
+padding-top : 2px;
+padding-bottom : 2px; }
 
 // small
 
 .btn--small {
-padding : 4px 12px 1px;
+padding : 4px 12px 6px;
 @include font-size($button-small-font-size); }
 
 a.btn--small {
-padding-top : 8px;
-padding-bottom : 6px; }
+padding-top : 3px;
+padding-bottom : 3px; }
 
 // large
 
 .btn--large {
-padding : 10px 18px 6px;
+padding : 10px 18px;
 @include font-size($button-large-font-size); }
 
 a.btn--large {
-padding-top : 15px;
-padding-bottom : 11px; }
+padding-top : 7px;
+padding-bottom : 7px; }
 
 .btn--block {
 display : block;

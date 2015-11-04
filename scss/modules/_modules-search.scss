@@ -34,7 +34,7 @@ border-color : darken($input-border-color,10); }
 -moz-osx-font-smoothing : grayscale;
 display : inline-block;
 margin : 0;
-padding : 6px $gutter 4px;
+padding : 6px $gutter;
 background-color : $button-primary-bg;
 border-color : $button-primary-bg;
 color : $button-primary-font-color;

@@ -55,11 +55,6 @@ display : inline-block; }
 input {
 &::-webkit-input-placeholder {
 
-// Filthy hack
-position : relative; 
-top : 10px;
-// End hack
-
 color : $white; 
 font-family : $input-font-family;
 @include font-size($input-font-size); }

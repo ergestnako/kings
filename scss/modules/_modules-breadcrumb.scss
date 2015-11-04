@@ -11,7 +11,7 @@ border-left : 0;
 border : $breadcrumb-border;
 margin-bottom : 2px;
 margin-right : -5px;
-padding : 0 ($breadcrumb-height / 4) 0 ($breadcrumb-height / 2);
+padding : 0 ($breadcrumb-height / 4) 0;
 color : $breadcrumb-color;
 @include font-size($font-size-minus-one);
 line-height : $breadcrumb-height;
@@ -71,6 +71,6 @@ border-left-color: $breadcrumb-background-hover;  }
 
 @include bp(bp4) {
 @include font-size($font-size);
-padding : ($breadcrumb-height / 5) ($breadcrumb-height / 2) 0 ($breadcrumb-height / 1.5); }
+padding : ($breadcrumb-height / 5) ($breadcrumb-height / 2); }
 }
 }

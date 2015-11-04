@@ -17,11 +17,7 @@ border-bottom-width : 0; }
 
 
 .summary__header {
-@include font-size($font-size-minus-one);
-
-@include bp(bp4) {
 @include font-size($font-size); }
-}
 
 
 

@@ -87,3 +87,14 @@ column-count : 2;
 column-gap : $gutter; }
 }
 }
+
+
+
+.figure--index {
+
+figcaption {
+@include bp(bp5) {
+padding-left : ($gutter * 2); }
+}
+}
+

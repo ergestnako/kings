@@ -6,6 +6,13 @@ background : $color-primary url(../assets/img/site/navigation.png) repeat-x 100%
 .container {
 padding : $vertical-spacing 0 ($vertical-spacing / 2.5); }
 
+.complementary {
+padding : ($vertical-spacing / 2) 0;
+
+@include bp(bp5) {
+padding : 0; }
+}
+
 ul {
 list-style-type : none; 
 margin : 0;
@@ -25,7 +32,11 @@ margin-right : ($gutter / 2); }
 position : relative; }
 
 .navigation__link {
+@include font-size($font-size-minus-one);
 color : $white;
+
+@include bp(bp6) {
+@include font-size($font-size); }
 
 &:hover {
 border-top : 1px solid rgba(255,255,255,.5);

@@ -1,48 +1,25 @@
 .tooltip {
-	cursor: context-menu;
-}
+cursor : context-menu; }
 
 .tooltip__content {
-display: none;
-}
+display : none; }
 
 .qtip-nav{
 padding : ($gutter / 2) ($gutter / 2) 0 ($gutter / 2);
-background-color : #fff;
+background-color : $white;
 border : 5px solid #b9d9e3;
 border-radius : $border-radius; 
 box-sizing : border-box;
-max-width: 640px;
-}
-
-.qtip-nav .qtip-titlebar{
-background-color: #FFEF93;
-}
-
-.qtip-nav .qtip-icon{
-border-color: #CCC;
-background: #F1F1F1;
-color: #777;
-}
-
-.qtip-nav .qtip-titlebar .qtip-close{
-border-color: #AAA;
-color: #111;
-}
-
+max-width : 640px; }
 
 .tooltip__content--nav {
-	.navigation__box__item {
-		float: left;
-		width: calc(50% - 11px);
-		
-		&:nth-child(2n) {
-			margin-left: 22px;
-		}
-		
-		&:nth-child(2n+1) {
-			clear: left;
-		}
-	}
-	
+
+li {
+margin-bottom : ($vertical-spacing);
+
+&:last-child {
+margin-bottom : 0; } 
+
+}
+
 }

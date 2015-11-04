@@ -251,10 +251,9 @@ padding-top : 0; }
 
 @include bp(bp3) {
 display : inline-block;
-margin-bottom : 6px;
+margin-bottom : 2px;
 border-bottom : 2px solid $border-color;
-@include font-size($font-size-plus-two);
-line-height : 1; }
+@include font-size($font-size-plus-two); }
 }
 
 .listing__time__month {
