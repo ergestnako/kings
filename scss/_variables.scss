@@ -259,6 +259,24 @@ $pagination-letter-spacing		: 2px;
 $pagination-text-transform		: uppercase;
 
 
+
+// Sub-nav
+
+$sub-nav-background 			: $white;
+$sub-nav-background-hover 		: $base-bg;
+$sub-nav-border-color 			: $border-color;
+$sub-nav-border 				: 2px $border-style $border-color;
+$sub-nav-height 				: $vertical-spacing * 1.25;
+$sub-nav-arrow-color 			: $sub-nav-border-color;
+$sub-nav-inactive-hover-color 	: $sub-nav-background;
+$sub-nav-color 					: $font-color;
+$sub-nav-color-hover 			: $sub-nav-color;
+$sub-nav-color-active 			: $sub-nav-color;
+$sub-nav-font-size				: $font-size-minus-two;
+
+
+
+
 // Tables
 
 $table-padding 					: 8px;
