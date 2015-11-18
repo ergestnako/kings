@@ -2,7 +2,7 @@ blockquote {
 margin : $vertical-spacing * 2 0 $vertical-spacing * 4;
 
 p {
-font-family : "lexiaregular","Helvetica Neue",Helvetica,Arial,sans-serif;
+font-family : "lexia","Helvetica Neue",Helvetica,Arial,sans-serif;
 @include font-size($font-size-plus-one);
 color : $alt-font-color; 
 
@@ -42,7 +42,8 @@ border-bottom : 3px solid $border-color;
 
 p {
 margin-bottom : ($vertical-spacing / 2);
-font-family : "lexiabold","Helvetica Neue",Helvetica,Arial,sans-serif;
+font-family : "lexia","Helvetica Neue",Helvetica,Arial,sans-serif;
+font-weight : 600;
 color : $font-color; 
 
 @include bp(bp4) {

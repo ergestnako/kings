@@ -40,3 +40,10 @@ font-family : $font-family; }
 @include bp(bp4) {
 @include font-size($font-size-plus-one); }
 }
+
+.m-hide {
+display : none; 
+
+@include bp(bp4) {
+display : block; }
+}

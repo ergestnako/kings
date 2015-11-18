@@ -151,7 +151,7 @@ text-transform : uppercase; }
 
 .byline__posted {
 @include font-size($font-size-minus-one);
-font-family : $bold-font-family; }
+font-weight : 600; }
 
 .byline__role {
 display : block;

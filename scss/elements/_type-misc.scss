@@ -46,13 +46,11 @@ small {
 // b, strong, i, em
 
 b, strong {
-font-family : $bold-font-family;
-font-weight : normal; }
+font-weight : 700; }
 
 
 i, em {
-font-family : 'Bliss2LtIt';
-font-style : normal; }
+font-style : italic; }
 
 
 // code 
