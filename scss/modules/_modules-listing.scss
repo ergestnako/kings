@@ -312,6 +312,14 @@ margin-right : ($gutter / 4);
 @include font-size($font-size-minus-two); }
 }
 
+li:after {
+	content: ",";
+}
+
+li:last-of-type:after {
+	content: "";
+}
+
 .listing__data {
 margin-top : 0;
 margin-bottom : $vertical-spacing / 2;
