@@ -10,7 +10,11 @@
 	.is-open .accordion-handle{}
 	.is-closed .accordion-handle{}
 
-	.accordion-trigger{
+	.is-closed .accordion-trigger{
+		cursor: pointer;
+	}
+
+	[data-accordion-independent] .accordion-trigger{
 		cursor: pointer;
 	}
 
