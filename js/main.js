@@ -57,6 +57,7 @@ $('a').smoothScroll();
 	function setupAccordions(){
 		$('.accordion-container').each(function(i,e){
 			setupAccordion(e);
+			$(location.hash, e).click();
 		});
 	}
 
