@@ -12,9 +12,6 @@
 		flex-wrap: wrap;
 		align-items: flex-start;
 		justify-content: space-between;
-		.col {
-			flex-basis: 50%;
-		}
 	}
 , .col--one {
 	margin-bottom: $vertical-spacing;
@@ -41,9 +38,6 @@
 		flex-wrap: wrap;
 		align-items: flex-start;
 		justify-content: space-between;
-		.col {
-			flex-basis: 50%;
-		}
 	}
 , .col--one {
 	margin-bottom: $vertical-spacing;
