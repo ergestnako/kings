@@ -1,40 +1,37 @@
 .publication {
-margin-bottom : $vertical-spacing; 
-padding-bottom : $vertical-spacing / 2; 
-border-bottom : 1px $border-style $border-color; 
+	margin-bottom : $vertical-spacing; 
+	padding-bottom : $vertical-spacing / 2; 
+	border-bottom : 1px $border-style $border-color; 
 
-@media 
-(-webkit-min-device-pixel-ratio: 2), 
-(min-resolution: 192dpi) { 
-border-width : .5px; }
+	@media 	(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+		border-width : .5px; 
+	}
 
-&:last-of-type {
-padding-bottom : 0; 
-border-bottom-width : 0; }
-
+	&:last-of-type {
+		padding-bottom : 0; 
+		border-bottom-width : 0; 
+	}
 }
-
-
 
 .publication__header {
-margin-bottom : $vertical-spacing / 2;
-@include font-size($font-size);
+	margin-bottom : $vertical-spacing / 2;
+	@include font-size($font-size);
 
-@include bp(bp4) {
-@include font-size($font-size-plus-one); }
+	@include bp(bp4) {
+		@include font-size($font-size-plus-one); 
+	}
 }
-
-
 
 .publication__downloads {
-display : flex;
+	display : flex;
 
-li {
-flex : 1;
-margin-right : $gutter / 2; 
+	li {
+		flex : 1;
+		margin-right : $gutter / 2; 
 
-&:last-of-type,
-&:only-of-type {
-margin-right : 0; }
-}
+		&:last-of-type,
+		&:only-of-type {
+			margin-right : 0; 
+		}
+	}
 }

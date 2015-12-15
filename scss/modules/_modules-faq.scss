@@ -1,34 +1,36 @@
 .faq { }
 
 .faq__list {
-margin-bottom : $vertical-spacing * 2; 
-@include bp(bp5) {
-column-count : 2;
-column-gap : $gutter * 2; }
+	margin-bottom : $vertical-spacing * 2; 
+	@include bp(bp5) {
+		column-count : 2;
+		column-gap : $gutter * 2; 
+	}
 
-li {
-@include font-size($font-size-minus-one);
-line-height : 1.4; }
+	li {
+		@include font-size($font-size-minus-one);
+		line-height : 1.4; 
+	}
 }
 
 .faq__question {
-margin-bottom : $vertical-spacing / 8;
-font-family : $alt-font-family;
-@include font-size($font-size-plus-one);
-font-weight : normal; 
+	margin-bottom : $vertical-spacing / 8;
+	font-family : $alt-font-family;
+	@include font-size($font-size-plus-one);
+	font-weight : normal; 
 
-@include bp(bp4) {
-@include font-size($font-size-plus-two); }
+	@include bp(bp4) {
+		@include font-size($font-size-plus-two); 
+	}
 }
 
 .faq__answer {
-margin-bottom : $vertical-spacing;
+	margin-bottom : $vertical-spacing;
 
-p, ol, ul {
-@include font-size($font-size-minus-one);
-
-@include bp(bp4) {
-@include font-size($font-size); }
-
-}
+	p, ol, ul {
+		@include font-size($font-size-minus-one);
+		@include bp(bp4) {
+			@include font-size($font-size); 
+		}
+	}
 }

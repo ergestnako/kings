@@ -1,51 +1,52 @@
-
 .form__search {
-display : flex;
-align-items : flex-start;
+	display : flex;
+	align-items : flex-start;
 
-input {
-flex : 1;
--webkit-appearance : none;
-display : block;
-margin : 0;
-padding : 9px $gutter / 2 4px;
-background-color : $input-bg;
-background-image : none;
-border : $input-border-width $input-border-style $input-border-color;
-border-right-width : 0;
-border-radius: $input-border-radius;
-border-top-right-radius : 0;
-border-bottom-right-radius : 0;
-box-sizing : border-box;
-font-family : $input-font-family;
-@include font-size($input-font-size);
-line-height : $vertical-spacing;
-color : $input-font-color; 
-transition : all $transition-duration $transition-timing-function;
+	input {
+		flex : 1;
+		-webkit-appearance : none;
+		display : block;
+		margin : 0;
+		padding : 9px $gutter / 2 4px;
+		background-color : $input-bg;
+		background-image : none;
+		border : $input-border-width $input-border-style $input-border-color;
+		border-right-width : 0;
+		border-radius: $input-border-radius;
+		border-top-right-radius : 0;
+		border-bottom-right-radius : 0;
+		box-sizing : border-box;
+		font-family : $input-font-family;
+		@include font-size($input-font-size);
+		line-height : $vertical-spacing;
+		color : $input-font-color; 
+		transition : all $transition-duration $transition-timing-function;
 
-&:focus {
-outline : none;
-border-color : darken($input-border-color,10); }
-}
+		&:focus {
+			outline : none;
+			border-color : darken($input-border-color,10); 
+		}
+	}
 
-.btn {
--webkit-appearance : none;
--webkit-font-smoothing : antialiased;
--moz-osx-font-smoothing : grayscale;
-display : inline-block;
-margin : 0;
-padding : 6px $gutter;
-background-color : $button-primary-bg;
-border-color : $button-primary-bg;
-color : $button-primary-font-color;
-border-top-left-radius : 0;
-border-bottom-left-radius : 0; 
+	.btn {
+		-webkit-appearance : none;
+		-webkit-font-smoothing : antialiased;
+		-moz-osx-font-smoothing : grayscale;
+		display : inline-block;
+		margin : 0;
+		padding : 6px $gutter;
+		background-color : $button-primary-bg;
+		border-color : $button-primary-bg;
+		color : $button-primary-font-color;
+		border-top-left-radius : 0;
+		border-bottom-left-radius : 0; 
 
-&:hover,
-&:focus,
-&:active {
-background-color : $button-primary-bg-hover;
-border-color : $button-primary-border-color-hover;
-color : $button-primary-font-color-hover; }
-}
+		&:hover,
+		&:focus,
+		&:active {
+			background-color : $button-primary-bg-hover;
+			border-color : $button-primary-border-color-hover;
+			color : $button-primary-font-color-hover; 
+		}
+	}
 }

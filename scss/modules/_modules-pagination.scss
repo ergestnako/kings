@@ -1,158 +1,164 @@
 .pagination__alphabetical {
-display : flex;
-justify-content : center;
-margin-bottom : $vertical-spacing; }
+	display : flex;
+	justify-content : center;
+	margin-bottom : $vertical-spacing; 
+}
 
 .pagination__list {
-display : flex;
-flex-wrap : wrap;
-justify-content : center;
-list-style-type : none;
-margin : 0 0 $vertical-spacing / 2 0;
-padding : 0;
-text-align : center; 
+	display : flex;
+	flex-wrap : wrap;
+	justify-content : center;
+	list-style-type : none;
+	margin : 0 0 $vertical-spacing / 2 0;
+	padding : 0;
+	text-align : center; 
 
-li {
-display : inline-block;
-box-sizing : border-box; 
-order : 2;
-margin-right : 5px;
-color : $pagination-color;
+	li {
+		display : inline-block;
+		box-sizing : border-box; 
+		order : 2;
+		margin-right : 5px;
+		color : $pagination-color;
 
-@include bp(bp3) {
-order : 0;
-width : auto;
-text-align : center; } 
-}
+		@include bp(bp3) {
+			order : 0;
+			width : auto;
+			text-align : center; 
+		} 
+	}
 
-li a {
-display : inline-block;
-padding : $pagination-padding;
-background-color : $pagination-background;
-border : $pagination-border;
-border-radius : $border-radius;
-font-family : $pagination-font-family;
-font-weight : 500;
-@include font-size($pagination-font-size);
-color : $pagination-link-color;
-letter-spacing : $pagination-letter-spacing;
-text-transform : $pagination-text-transform; 
+	li a {
+		display : inline-block;
+		padding : $pagination-padding;
+		background-color : $pagination-background;
+		border : $pagination-border;
+		border-radius : $border-radius;
+		font-family : $pagination-font-family;
+		font-weight : 500;
+		@include font-size($pagination-font-size);
+		color : $pagination-link-color;
+		letter-spacing : $pagination-letter-spacing;
+		text-transform : $pagination-text-transform; 
 
-&:hover {
-color : $link-color-hover;
-background-color : $pagination-background-hover; }
-}
+		&:hover {
+			color : $link-color-hover;
+			background-color : $pagination-background-hover; 
+		}
+	}
 
-li a.active {
-background-color : $white;
-color : $font-color;
-cursor : default; }
+	li a.active {
+		background-color : $white;
+		color : $font-color;
+		cursor : default; 
+	}
 
-li:first-child {
-order : 0;
-width : 50%;
-margin-bottom : .675rem;
-text-align : left; 
+	li:first-child {
+		order : 0;
+		width : 50%;
+		margin-bottom : .675rem;
+		text-align : left; 
 
-@include bp(bp3) {
-order : 0;
-width : auto;
-margin-bottom : 0;
-text-align : center; } 
-}
+		@include bp(bp3) {
+			order : 0;
+			width : auto;
+			margin-bottom : 0;
+			text-align : center; 
+		} 
+	}
 
-li:first-child a {
-background-color : transparent;
-border-width : 0;
-color : $link-color;
+	li:first-child a {
+		background-color : transparent;
+		border-width : 0;
+		color : $link-color;
 
-@include bp(bp3) {
-padding-right : 0;
-padding-left : 0; } 
-}
+		@include bp(bp3) {
+			padding-right : 0;
+			padding-left : 0; 
+		} 
+	}
 
-li:last-child {
--webkit-order : 1;
-order : 1;
-width : 50%;
-margin-bottom : .675rem;
-margin-right : 0;
-text-align : right;
+	li:last-child {
+		-webkit-order : 1;
+		order : 1;
+		width : 50%;
+		margin-bottom : .675rem;
+		margin-right : 0;
+		text-align : right;
 
-@include bp(bp3) {
-order: 0;
-width: auto;
-margin-bottom : 0;
-text-align : center; } 
-}
+		@include bp(bp3) {
+			order: 0;
+			width: auto;
+			margin-bottom : 0;
+			text-align : center; 
+		} 
+	}
 
-li:last-child a {
-background-color : transparent;
-border-width : 0; 
-color : $link-color;
+	li:last-child a {
+		background-color : transparent;
+		border-width : 0; 
+		color : $link-color;
 
-@include bp(bp3) {
-padding-right : 0;
-padding-left : 0; } 
-}
+		@include bp(bp3) {
+			padding-right : 0;
+			padding-left : 0; 
+		} 
+	}
 }
 
 .pagination__status {
-@include font-size($pagination-font-size);
-letter-spacing : 1px;
-text-align : center;
-text-transform : uppercase; }
-
-
-
+	@include font-size($pagination-font-size);
+	letter-spacing : 1px;
+	text-align : center;
+	text-transform : uppercase; 
+}
 
 // pagination__list__alphabetical
 
 .pagination__list__alphabetical {
-display : flex;
-flex-wrap : wrap;
-list-style-type : none;
-margin : 0 0 $vertical-spacing / 2 0;
-padding : 0;
-text-align : center; 
+	display : flex;
+	flex-wrap : wrap;
+	list-style-type : none;
+	margin : 0 0 $vertical-spacing / 2 0;
+	padding : 0;
+	text-align : center; 
 
-li {
-display : inline-block;
-box-sizing : border-box; 
-order : 2;
-margin-right : 5px;
-margin-bottom : 5px;
-color : $pagination-color;
+	li {
+		display : inline-block;
+		box-sizing : border-box; 
+		order : 2;
+		margin-right : 5px;
+		margin-bottom : 5px;
+		color : $pagination-color;
 
-@include bp(bp3) {
-order : 0;
-width : auto;
-text-align : center; } 
+		@include bp(bp3) {
+			order : 0;
+			width : auto;
+			text-align : center; 
+		} 
+	}
+
+	li a {
+		display : inline-block;
+		min-width : 1.2rem;
+		padding : $pagination-padding;
+		background-color : $pagination-background;
+		border : $pagination-border;
+		border-radius : $border-radius;
+		@include font-size($pagination-font-size);
+		font-weight : 500;
+		color : $pagination-link-color;
+		letter-spacing : $pagination-letter-spacing;
+		text-transform : $pagination-text-transform; 
+
+		&:hover {
+			color : $link-color-hover;
+			background-color : $pagination-background-hover; 
+		}
+	}
+
+	li a.active {
+		background-color : $white;
+		color : $font-color;
+		cursor : default; 
+	}
 }
-
-li a {
-display : inline-block;
-min-width : 1.2rem;
-padding : $pagination-padding;
-background-color : $pagination-background;
-border : $pagination-border;
-border-radius : $border-radius;
-@include font-size($pagination-font-size);
-font-weight : 500;
-color : $pagination-link-color;
-letter-spacing : $pagination-letter-spacing;
-text-transform : $pagination-text-transform; 
-
-&:hover {
-color : $link-color-hover;
-background-color : $pagination-background-hover; }
-}
-
-li a.active {
-background-color : $white;
-color : $font-color;
-cursor : default; }
-
-}
-
-

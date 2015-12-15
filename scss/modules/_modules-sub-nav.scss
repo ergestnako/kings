@@ -1,39 +1,45 @@
 .list--sub-nav {  
-list-style-type : none; 
-margin : 0 0 ($vertical-spacing) 0;
-padding : 0;
+	list-style-type : none; 
+	margin : 0 0 ($vertical-spacing) 0;
+	padding : 0;
 
-@include bp(bp5) {
-margin-left : 6.541%; }
+	@include bp(bp5) {
+		margin-left : 6.541%; 
+	}
 
-li {
-display : inline-block;
-padding : 0 ($gutter / 2);
-border-right : $border;
+	li {
+		display : inline-block;
+		padding : 0 ($gutter / 2);
+		border-right : $border;
 
-&:first-child {
-padding-left : 0;
-font-weight : 600; }
+		&:first-child {
+			padding-left : 0;
+			font-weight : 600; 
+		}
 
-&:last-child {
-border-right-width : 0; }
-}
+		&:last-child {
+			border-right-width : 0; 
+		}
+	}
 
-a {
-position : relative;
-display : inline-block;
-background-color : $sub-nav-background;
-color : $sub-nav-color;
-@include font-size($font-size-minus-one);
-text-decoration : none;
+	a {
+		position : relative;
+		display : inline-block;
+		background-color : $sub-nav-background;
+		color : $sub-nav-color;
+		@include font-size($font-size-minus-one);
+		text-decoration : none;
 
-&:hover {
-color : $link-color-hover; }
+		&:hover {
+			color : $link-color-hover; 
+		}
 
-&:focus {
-color : $sub-nav-color-hover; }
+		&:focus {
+			color : $sub-nav-color-hover; 
+		}
 
-&.active {
-border-bottom : 3px solid $color-secondary; }
-}
+		&.active {
+			border-bottom : 3px solid $color-secondary; 
+		}
+	}
 }

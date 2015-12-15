@@ -9,6 +9,7 @@
 			border-radius : $border-radius; 
 		}
 	}
+	
 	.accordion-section{
 		@include bp(bp3) {
 			display : inline; 

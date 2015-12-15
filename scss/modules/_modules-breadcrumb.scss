@@ -1,76 +1,85 @@
 .list--breadcrumb {   
-display : inline-block;
-margin-bottom : $vertical-spacing;
-text-align : left;
+	display : inline-block;
+	margin-bottom : $vertical-spacing;
+	text-align : left;
 
-a {
-position : relative;
-display : inline-block;
-background-color : $breadcrumb-background;
-border-left : 0;
-border : $breadcrumb-border;
-margin-bottom : 2px;
-margin-right : -5px;
-padding : 0 ($breadcrumb-height / 4) 0;
-color : $breadcrumb-color;
-@include font-size($font-size-minus-one);
-line-height : $breadcrumb-height;
-text-decoration : none;
+	a {
+		position : relative;
+		display : inline-block;
+		background-color : $breadcrumb-background;
+		border-left : 0;
+		border : $breadcrumb-border;
+		margin-bottom : 2px;
+		margin-right : -5px;
+		padding : 0 ($breadcrumb-height / 4) 0;
+		color : $breadcrumb-color;
+		@include font-size($font-size-minus-one);
+		line-height : $breadcrumb-height;
+		text-decoration : none;
 
-&:first-child {
-padding-left : $breadcrumb-height / 2;
-border-top-left-radius: $border-radius;
-border-bottom-left-radius: $border-radius;
-border-left : $breadcrumb-border; }
+		&:first-child {
+			padding-left : $breadcrumb-height / 2;
+			border-top-left-radius: $border-radius;
+			border-bottom-left-radius: $border-radius;
+			border-left : $breadcrumb-border; 
+		}
 
-&:last-child {
-padding-right : $breadcrumb-height / 2;
-background-color : $body-background;
-border-top-right-radius : $border-radius;
-border-bottom-right-radius : $border-radius;
-color : $breadcrumb-color-active; }
+		&:last-child {
+			padding-right : $breadcrumb-height / 2;
+			background-color : $body-background;
+			border-top-right-radius : $border-radius;
+			border-bottom-right-radius : $border-radius;
+			color : $breadcrumb-color-active; 
+		}
 
-&:hover {
-color : $link-color-hover;
-background-color : $breadcrumb-background-hover; }
+		&:hover {
+			color : $link-color-hover;
+			background-color : $breadcrumb-background-hover; 
+		}
 
-&:focus {
-background-color : $breadcrumb-inactive-hover-color;
-color: $breadcrumb-color-hover; }
+		&:focus {
+			background-color : $breadcrumb-inactive-hover-color;
+			color: $breadcrumb-color-hover; 
+		}
 
-&:after,
-&:before {
-position : absolute;
-z-index : 2;
-top : 0px;
-right : auto;
-bottom : 0px;
-left : 100%;
-display : block;
-margin : auto;
-border-top : $breadcrumb-height / 2 solid transparent;
-border-bottom : $breadcrumb-height / 2 solid transparent;
-border-left : $breadcrumb-height / 4 solid transparent;
-content : ''; }
+		&:after,
+		&:before {
+			position : absolute;
+			z-index : 2;
+			top : 0px;
+			right : auto;
+			bottom : 0px;
+			left : 100%;
+			display : block;
+			margin : auto;
+			border-top : $breadcrumb-height / 2 solid transparent;
+			border-bottom : $breadcrumb-height / 2 solid transparent;
+			border-left : $breadcrumb-height / 4 solid transparent;
+			content : ''; 
+		}
 
-&:last-child:after,
-&:last-child:before {
-border : none; }
+		&:last-child:after,
+		&:last-child:before {
+			border : none; 
+		}
 
-&:before {
-border-left-color : $breadcrumb-arrow-color;
-margin-left : 2px;
-z-index : 1; }
+		&:before {
+			border-left-color : $breadcrumb-arrow-color;
+			margin-left : 2px;
+			z-index : 1; 
+		}
 
-&:after {
-border-left-color: $breadcrumb-background; }
+		&:after {
+			border-left-color: $breadcrumb-background; 
+		}
 
+		&:hover:after {
+			border-left-color: $breadcrumb-background-hover;  
+		}
 
-&:hover:after {
-border-left-color: $breadcrumb-background-hover;  }
-
-@include bp(bp4) {
-@include font-size($font-size);
-padding : ($breadcrumb-height / 5) ($breadcrumb-height / 2); }
-}
+		@include bp(bp4) {
+			@include font-size($font-size);
+			padding : ($breadcrumb-height / 5) ($breadcrumb-height / 2); 
+		}
+	}
 }

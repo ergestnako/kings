@@ -1,23 +1,25 @@
 .title {
-position : relative; 
+	position : relative; 
 
-span {
-display : block;
-position : absolute; 
-top : -4px;
-left : ($gutter);
-width : 33px;
-height : 33px; }
-
+	span {
+		display : block;
+		position : absolute; 
+		top : -4px;
+		left : ($gutter);
+		width : 33px;
+		height : 33px; 
+	}
 }
 
 .title__header,
 .title__meta,
 .title__category {
-@include bp(bp5) {
-margin-left : 6.541%; }
+	@include bp(bp5) {
+		margin-left : 6.541%; 
+	}
 }
 
 .title__category {
-@include font-size($font-size-minus-one);
-text-transform : uppercase; }
+	@include font-size($font-size-minus-one);
+	text-transform : uppercase; 
+}
