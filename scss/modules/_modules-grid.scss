@@ -1,116 +1,48 @@
 .cols {
-	margin-bottom: $vertical-spacing;
+	@include bp(bp4) {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+	.col {
+		margin-bottom: $vertical-spacing;
+		@include bp(bp4) {
+			flex: 1 0 0%;
+			margin-right: 3.2849%;
+			&:last-of-type{
+				margin-right:0;
+			}
+		}
+		@include bp(bp5) {
+			margin-right: 4.5801%;
+			&:last-of-type{
+				margin-right:0;
+			}
+		}
+	}
+
 }
 .cols--first {
 	margin-bottom: 0;
 }
-// cols--two
-
-.cols--two {
-	@include bp(bp4) {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: flex-start;
-		justify-content: space-between;
-	}
-, .col--one {
-	margin-bottom: $vertical-spacing;
-	@include bp(bp4) {
-		flex: 1 0 0%;
-		margin-right: 3.2849%;
-		margin-bottom: 0;
-	}
-	@include bp(bp5) {
-		margin-right: 4.5801%;
-	}
-, .col--two {
-	margin-bottom: $vertical-spacing;
-	@include bp(bp4) {
-		flex: 1 0 0%;
-		margin-bottom: 0;
-	}
-}
-// cols--three
-
-.cols--three {
-	@include bp(bp4) {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: flex-start;
-		justify-content: space-between;
-	}
-, .col--one {
-	margin-bottom: $vertical-spacing;
-	@include bp(bp4) {
-		flex: 1 0 0%;
-		margin-right: 3.2849%;
-		margin-bottom: 0;
-	}
-	@include bp(bp5) {
-		margin-right: 4.5801%;
-	}
-, .col--two {
-	margin-bottom: $vertical-spacing;
-	@include bp(bp4) {
-		flex: 1 0 0%;
-		margin-right: 3.2849%;
-		margin-bottom: 0;
-	}
-	@include bp(bp5) {
-		margin-right: 4.5801%;
-	}
-, .col--three {
-	margin-bottom: $vertical-spacing;
-	@include bp(bp4) {
-		flex: 1 0 0%;
-		margin-bottom: 0;
-	}
-}
-// cols--four
 
 .cols--four {
-	@include bp(bp4) {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: flex-start;
-		justify-content: space-between;
-	}
-	.col--one {
+	.col {
 		@include bp(bp4) {
 			flex: 1 0 40%;
-			margin-right: 3.2849%;
-			margin-bottom: $vertical-spacing;
+			&:nth-of-type(2n){
+				margin-right:0;
+			}
 		}
-	}
-	@include bp(bp5) {
-		flex: 1 0 0%;
-		margin-right: 4.5801%;
-		margin-bottom: 0;
-	}
-, .col--two {
-	@include bp(bp4) {
-		flex: 1 0 40%;
-		margin-bottom: $vertical-spacing;
-	}
-	@include bp(bp5) {
-		flex: 1 0 0%;
-		margin-right: 4.5801%;
-		margin-bottom: 0;
-	}
-, .col--three {
-	@include bp(bp4) {
-		flex: 1 0 40%;
-		margin-right: 3.2849%;
-	}
-	@include bp(bp5) {
-		flex: 1 0 0%;
-		margin-right: 4.5801%;
-	}
-, .col--four {
-	@include bp(bp4) {
-		flex: 1 0 40%;
-	}
-	@include bp(bp5) {
-		flex: 1 0 0%;
+		@include bp(bp5) {
+			flex: 1 0 0%;
+			&:nth-of-type(2n){
+				margin-right:4.5801%;
+			}
+			&:last-of-type{
+				margin-right:0;
+			}
+		}
 	}
 }
