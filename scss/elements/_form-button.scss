@@ -43,11 +43,11 @@ button {
 		color : $button-font-color-hover;
 		text-decoration : none; 
 	}
+}
 
-	a.& {
-		padding-top : 4px;
-		padding-bottom : 4px; 
-	}
+a.btn {
+	padding-top : 4px;
+	padding-bottom : 4px; 
 }
 
 // primary
