@@ -162,6 +162,10 @@ dd {
 		&.doc{
 			background-image : url(../assets/img/site/icon-download-pdf.svg);
 		}
+
+		&:after{
+			content : '';
+		}
 	}
 }
 
