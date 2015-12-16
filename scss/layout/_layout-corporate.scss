@@ -1,67 +1,70 @@
 #corporate {
-padding : ($vertical-spacing * 2) 0 ($vertical-spacing);
-background : $base-bg url(../assets/img/site/corporate.png) repeat-x 0 0;
+	padding : ($vertical-spacing * 2) 0 ($vertical-spacing);
+	background : $base-bg url(../assets/img/site/corporate.png) repeat-x 0 0;
 
-.container {
+	.container {
+		@include bp(bp4) {
+			display : flex; 
+		}
+	}
 
-@include bp(bp4) {
-display : flex; }
-}
+	.corporate__col {
+		@include bp(bp4) {
+			flex : 1;
+			margin-right : 3%; 
+		}
 
-.corporate__col {
+		&:last-of-type {
+			margin-right : 0; 
+		}
+	}
 
-@include bp(bp4) {
-flex : 1;
-margin-right : 3%; }
+	h5 { 
+		@include font-size($font-size-minus-one); 
+	}
 
-&:last-of-type {
-margin-right : 0; }
-}
+	.corporate__section + .corporate__section {
+		@include bp(bp4) {
+			margin-top : $vertical-spacing;
+			padding-top : $vertical-spacing / 1.5;
+			border-width : 1px 0 0 0;
+			border-image : url(../assets/img/site/divider-corporate.png) 2 0 0 0; 
+		}
+	}
 
-h5 { 
-@include font-size($font-size-minus-one); }
+	ul {
+		list-style-type : none;
+		margin : 0 0 $vertical-spacing 0;
+		padding : 0; 
 
-.corporate__section + .corporate__section {
+		@include bp(bp4) {
+			margin : 0; 
+		}
+	}
 
-@include bp(bp4){
-margin-top : $vertical-spacing;
-padding-top : $vertical-spacing / 1.5;
-border-width : 1px 0 0 0;
-border-image : url(../assets/img/site/divider-corporate.png) 2 0 0 0; }
-}
+	li {
+		margin-bottom : .25rem;
+		@include font-size($font-size-minus-two); 
+	}
 
-ul {
-list-style-type : none;
-margin : 0 0 $vertical-spacing 0;
-padding : 0; 
-
-@include bp(bp4) {
-margin : 0; }
-}
-
-li {
-margin-bottom : .25rem;
-@include font-size($font-size-minus-two); }
-
-.complementary {
-
-ul {
-column-count : 1; 
-&:last-of-type {
-margin-bottom : 0; }
-}
-}
+	.complementary {
+		ul {
+			column-count : 1; 
+			&:last-of-type {
+				margin-bottom : 0; 
+			}
+		}
+	}
 }
 
 .mod-js #corporate {
+	@include bp(bp4) {
+		.is-closed .accordion-body {
+			display : block; 
+		}	
 
-@include bp(bp4){
-
-.is-closed .accordion-body {
-
-display : block; }	
-
-.accordion-trigger{
-cursor : auto; }
-}
+		.accordion-trigger{
+			cursor : auto; 
+		}
+	}
 }

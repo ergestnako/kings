@@ -1,80 +1,91 @@
 [role="contentinfo"] {
-margin : 0; 
-padding : $vertical-spacing 0; 
-border-bottom : 10px solid $border-color;
+	margin : 0; 
+	padding : $vertical-spacing 0; 
+	border-bottom : 10px solid $border-color;
 
-.main {
-margin-bottom : $vertical-spacing; 
+	.main {
+		margin-bottom : $vertical-spacing; 
 
-@include bp(bp5) {
-margin-bottom : 0; }
-}
+		@include bp(bp5) {
+			margin-bottom : 0; 
+		}
+	}
 
-.complementary {
-text-align : center;
+	.complementary {
+		text-align : center;
 
-@include bp(bp5) {
-text-align : left; }
+		@include bp(bp5) {
+			text-align : left; 
+		}
 
-small {
-display : block; 
+		small {
+			display : block; 
 
-&:first-of-type {
-text-indent : -1em;
-}
-}
+			&:first-of-type {
+				text-indent : -1em;
+			}
+		}
 
-ul {
-column-count : 1; }
+		ul {
+			column-count : 1; 
+		}
 
-.list--social {
-margin : 0 auto $vertical-spacing;
+		.list--social {
+			margin : 0 auto $vertical-spacing;
 
-@include bp(bp5) {
-margin : 0 0 $vertical-spacing 0; }
-}
+			@include bp(bp5) {
+				margin : 0 0 $vertical-spacing 0; 
+			}
+		}
 
-}
+	}
 
-.content {
-display : flex;
+	.content {
+		display : flex;
 
-@include bp(bp3) {
-align-items : center; }
-}
+		@include bp(bp3) {
+			align-items : center; 
+		}
+	}
 
 }
 
 
 .contentinfo__logo {
-display : flex;
-align-items : flex-end;
-margin : 0 $gutter $vertical-spacing 0;
+	display : flex;
+	align-items : flex-end;
+	margin : 0 $gutter $vertical-spacing 0;
 
-@include bp(bp5) {
-margin-bottom : 0; }
+	@include bp(bp5) {
+		margin-bottom : 0; 
+	}
 
-img {
-margin-right : $gutter;
-width : 66px; }
+	img {
+		margin-right : $gutter;
+		width : 66px; 
+	}
 
-ul {
-list-style-type : none;
-margin : 0;
-padding : 0; }
+	ul {
+		list-style-type : none;
+		margin : 0;
+		padding : 0; 
+	}
 
-li {
-margin-bottom : 0;
-line-height : 1.25; }
+	li {
+		margin-bottom : 0;
+		line-height : 1.25; 
+	}
 
-a {
-@include font-size($font-size-minus-two); }
+	a {
+		@include font-size($font-size-minus-two); 
+	}
 }
 
 .contentinfo__translate {
-flex : 1;
-text-align : right;
+	flex : 1;
+	text-align : right;
 
-@include bp(bp5) {
-text-align : center; }
+	@include bp(bp5) {
+		text-align : center; 
+	}
 }
