@@ -31,27 +31,14 @@ dd {
 }
 
 // list--cols
-
-.list--cols {
+@mixin list--base{
 	list-style-type : none; 
 	margin-left : 0; 
 	padding-left : 0; 
-
-	@include bp(bp3) { 
-		column-count : 2; 
-	}
-
-	li {
-		@include bp(bp3) { 
-			margin-bottom : 0; 
-		}
-	}
 }
 
 .list--cols--two {
-	list-style-type : none; 
-	margin-left : 0; 
-	padding-left : 0; 
+	@include list--base;
 
 	@include bp(bp3) { 
 		column-count : 2; 
@@ -65,9 +52,7 @@ dd {
 }
 
 .list--cols--three {
-	list-style-type : none; 
-	margin-left : 0; 
-	padding-left : 0; 
+	@include list--base;
 
 	@include bp(bp3) { 
 		column-count : 3; 
@@ -81,9 +66,7 @@ dd {
 }
 
 .list--cols--four {
-	list-style-type : none; 
-	margin-left : 0; 
-	padding-left : 0; 
+	@include list--base;
 
 	@include bp(bp4) { 
 		column-count : 4; 
@@ -99,9 +82,7 @@ dd {
 // list--columns
 
 .list--columns {
-	list-style-type : none; 
-	margin-left : 0; 
-	padding-left : 0; 
+	@include list--base;
 	@include clearfix();
 
 	li {
@@ -116,9 +97,7 @@ dd {
 // list--inline
 
 .list--inline {
-	list-style-type : none; 
-	margin-left : 0; 
-	padding-left : 0; 
+	@include list--base;
 
 	li {
 		@include bp(bp3) { 
@@ -136,9 +115,7 @@ dd {
 // list--downloads
 
 .list--downloads {
-	list-style-type : none; 
-	margin-left : 0; 
-	padding-left : 0; 
+	@include list--base;
 
 	li {
 		margin-bottom : 5px; 
@@ -172,9 +149,7 @@ dd {
 // list--external
 
 .list--external {
-	list-style-type : none; 
-	margin-left : 0; 
-	padding-left : 0; 
+	@include list--base;
 
 	li {
 		margin-bottom : 5px; 
@@ -232,9 +207,7 @@ dd {
 // list--plain
 
 .list--plain {
-	list-style-type : none; 
-	margin-left : 0; 
-	padding-left : 0; 
+	@include list--base;
 }
 
 // list--sectioned
@@ -248,9 +221,7 @@ dd {
 // list--staff
 
 .list--staff {
-	list-style-type : none; 
-	margin-left : 0; 
-	padding-left : 0; 
+	@include list--base;
 
 	li {
 		margin-bottom : $vertical-spacing;
@@ -267,9 +238,7 @@ dd {
 
 .complementary {
 	> ul {
-		list-style-type : none; 
-		margin-left : 0; 
-		padding-left : 0; 
+		@include list--base;
 
 		@include bp(bp2) {
 			column-count : 2;
@@ -281,7 +250,7 @@ dd {
 		}
 	}
 
-	.list--cols {
+	[class*=' list--cols'],div[class^='list--cols']{
 		@include bp(bp3) { 
 			column-count : 2; 
 		} 
