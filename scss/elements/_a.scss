@@ -25,13 +25,28 @@ a {
 		transition : all $transition-duration $transition-timing-function; 
 	}
 
-	&.download[href$=".pdf"]:after {
-		content : " (PDF)";
+	&.download:after {
 		position : relative;
 		top : -.5em;
 		@include font-size($font-size-minus-two);
 		line-height : 0;
 		vertical-align : baselineheight; 
+	}
+
+	&.pdf:after{
+		content : " (PDF)";
+	}
+	&.xls:after{
+		content : " (XLS)";
+	}
+	&.pub:after{
+		content : " (PUB)";
+	}
+	&.ppt:after{
+		content : " (PPT)";
+	}
+	&.doc:after{
+		content : " (DOC)";
 	}
 
 	&[href="javascript:void(0)"]:hover {
