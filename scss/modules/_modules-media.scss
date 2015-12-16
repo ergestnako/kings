@@ -43,7 +43,7 @@ li {
 		padding-bottom : $vertical-spacing / 2; 
 		border-bottom : 1px $border-style #e4e4e4; 
 
-		@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+		@include hi-dpi { 
 			border-width : .5px; 
 		}
 	}

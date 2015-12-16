@@ -12,7 +12,7 @@
 	border-right : 1px solid #e4e4e4;
 	border-bottom : 1px solid #e4e4e4;
 
-	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+	@include hi-dpi { 
 		border-width : .5px; 
 	}
 
@@ -84,7 +84,7 @@
 	padding-bottom : 1.5rem;
 	border-bottom : 1px solid #e3e4e4; 
 
-	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+	@include hi-dpi { 
 		border-width : .5px; 
 	}
 }

@@ -103,7 +103,7 @@ $vertical-list-spacing					: $vertical-spacing * 1.5;
 		padding-bottom : $vertical-spacing; 
 		border-bottom : 1px $border-style $border-color; 
 
-		@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+		@include hi-dpi { 
 			border-width : .5px; 
 		}
 	}
