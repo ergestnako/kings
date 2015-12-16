@@ -1,79 +1,80 @@
 table {
-width :  100%;
-max-width : 100%;
-margin-bottom : $vertical-spacing;
-border-collapse : collapse;
-border : none;
-background-color : $table-bg;
-border-collapse : collapse;
-border-spacing : 0;
-font-family : $table-font-family;
+	width :  100%;
+	max-width : 100%;
+	margin-bottom : $vertical-spacing;
+	border-collapse : collapse;
+	border : none;
+	background-color : $table-bg;
+	border-collapse : collapse;
+	border-spacing : 0;
+	font-family : $table-font-family;
 
-img {
-margin-right : $gutter / 4; }
+	img {
+		margin-right : $gutter / 4; 
+	}
 
-.list--cols {
-margin-bottom : 0; }
+	.list--cols {
+		margin-bottom : 0; 
+	}
 }
 
 th,
 td {
-padding : $table-padding;
-border-bottom : $table-border-width $table-border-style $table-border-color;
-@include font-size($table-font-size);
-line-height : $font-lineheight;
-text-align : left;
-vertical-align : top; 
+	padding : $table-padding;
+	border-bottom : $table-border-width $table-border-style $table-border-color;
+	@include font-size($table-font-size);
+	line-height : $font-lineheight;
+	text-align : left;
+	vertical-align : top; 
 }
 
 th {
-font-family : $bold-font-family ;
-font-weight : 600;
-text-align : left; }
+	font-family : $bold-font-family ;
+	font-weight : 600;
+	text-align : left; 
+}
 
 tr:last-of-type th,
 tr:last-of-type td {
-border-bottom-width : 0; }
+	border-bottom-width : 0; 
+}
 
 .table--condensed {
-
-th,
-td {
-padding : $table-padding / 2;
-@include font-size($table-condensed-font-size); }
+	th,
+	td {
+		padding : $table-padding / 2;
+		@include font-size($table-condensed-font-size); 
+	}
 }
 
 .table--stripe {
-
-tbody tr:nth-child(odd) td,
-tbody tr:nth-child(odd) th {
-background-color : $table-stripe-bg;
-color : $table-stripe-font-color; }
+	tbody tr:nth-child(odd) td,
+	tbody tr:nth-child(odd) th {
+		background-color : $table-stripe-bg;
+		color : $table-stripe-font-color; 
+	}
 }
 
 .box {
-
-.table--stripe {
-background-color : rgba(255,255,255,.75); }
+	.table--stripe {
+		background-color : rgba(255,255,255,.75); 
+	}
 }
 
 .table--biology {
-
-tbody {
-background-color : #eaf7f5; }
-
+	tbody {
+		background-color : #eaf7f5; 
+	}
 }
 
 .table--chemistry {
-
-tbody {
-background-color : #f8e7f1; }
-
+	tbody {
+		background-color : #f8e7f1; 
+	}
 }
 
 .table--physics {
-
-tbody {
-background-color : #f0ebf1; }
-
+	tbody {
+		background-color : #f0ebf1; 
+	}
 }

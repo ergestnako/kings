@@ -1,49 +1,53 @@
 form {
-margin : 0 0 $vertical-spacing 0;
-padding : 0;
-border : 0; 
-font-family : $form-font-family;
+	margin : 0 0 $vertical-spacing 0;
+	padding : 0;
+	border : 0; 
+	font-family : $form-font-family;
 
-p {
-margin-bottom : $vertical-spacing / 2; }
+	p {
+		margin-bottom : $vertical-spacing / 2; 
+	}
 
-ul {
-list-style-type : none;
-margin : 0 0 $vertical-spacing 0;
-padding : 0; }
+	ul {
+		list-style-type : none;
+		margin : 0 0 $vertical-spacing 0;
+		padding : 0; 
+	}
 
-li {
-margin-bottom : 0; }
-
+	li {
+		margin-bottom : 0; 
+	}
 }
 
 legend {
-display : block;
-width : 100%;
-margin-bottom : $vertical-spacing / 8;
-padding : 0 0 $vertical-spacing / 2 0;
-font-family : $bold-font-family;
-@include font-size($font-size);
-line-height : inherit;
-color : $form-font-color;
-border-width : 0; }
+	display : block;
+	width : 100%;
+	margin-bottom : $vertical-spacing / 8;
+	padding : 0 0 $vertical-spacing / 2 0;
+	font-family : $bold-font-family;
+	@include font-size($font-size);
+	line-height : inherit;
+	color : $form-font-color;
+	border-width : 0; 
+}
 
 fieldset {
-margin-bottom : $vertical-spacing;
-padding : 0;
-border : 0;
-min-width : 0; 
+	margin-bottom : $vertical-spacing;
+	padding : 0;
+	border : 0;
+	min-width : 0; 
 
-&:last-of-type {
-margin-bottom : 0; }
-
+	&:last-of-type {
+		margin-bottom : 0; 
+	}
 }
 
 label {
-display : block;
-max-width : 100%; 
-margin-bottom : 0; 
-padding-left : $gutter / 2;
-font-family : $label-font-family;
-@include font-size($label-font-size);
-color : $label-font-color; }
+	display : block;
+	max-width : 100%; 
+	margin-bottom : 0; 
+	padding-left : $gutter / 2;
+	font-family : $label-font-family;
+	@include font-size($label-font-size);
+	color : $label-font-color; 
+}

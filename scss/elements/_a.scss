@@ -1,35 +1,42 @@
 a {
-text-decoration : none;
-color : $link-color;
+	text-decoration : none;
+	color : $link-color;
 
-&:visited {
-color : $link-color-visited; }
+	&:visited {
+		color : $link-color-visited; 
+	}
 
-&:hover {
-text-decoration : none;
-color : $link-color-hover; }
+	&:hover {
+		text-decoration : none;
+		color : $link-color-hover; 
+	}
 
-&:focus {
-outline : thin dotted;
-color : $link-color-focus; }
+	&:focus {
+		outline : thin dotted;
+		color : $link-color-focus; 
+	}
 
-&:hover,
-&:active {
-outline : 0; }
+	&:hover,
+	&:active {
+		outline : 0; 
+	}
+
+	&:link {
+		transition : all $transition-duration $transition-timing-function; 
+	}
+
+	&.download[href$=".pdf"]:after {
+		content : " (PDF)";
+		position : relative;
+		top : -.5em;
+		@include font-size($font-size-minus-two);
+		line-height : 0;
+		vertical-align : baselineheight; 
+	}
+
+	&[href="javascript:void(0)"]:hover {
+		text-decoration : line-through;
+		text-decoration-style : wavy;
+		text-decoration-color : $color-neutral; 
+	}
 }
-
-a:link {
-transition : all $transition-duration $transition-timing-function; }
-
-a[href$=".pdf"]:after {
-content : " (PDF)";
-position : relative;
-top : -.5em;
-@include font-size($font-size-minus-two);
-line-height : 0;
-vertical-align : baselineheight; }
-
-[href="javascript:void(0)"]:hover {
-text-decoration : line-through;
-text-decoration-style : wavy;
-text-decoration-color : $color-neutral; }

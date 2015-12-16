@@ -1,202 +1,219 @@
 ::-moz-selection {
-background-color : $base-bg;
-text-shadow : none; }
+	background-color : $base-bg;
+	text-shadow : none; 
+}
 
 ::selection {
-background-color : $base-bg;
-text-shadow : none; }
-
-
+	background-color : $base-bg;
+	text-shadow : none; 
+}
 
 // Misc
 
 address {
-margin-bottom : $vertical-spacing;
-@include font-size($font-size);
-line-height : $font-lineheight; }
+	margin-bottom : $vertical-spacing;
+	@include font-size($font-size);
+	line-height : $font-lineheight; 
+}
 
 abbr[title] {
-border-bottom : 1px dotted $border-color;
-@include font-size($font-size-minus-one);
-font-variant : small-caps;
-letter-spacing : 1px;
-cursor : help; }
+	border-bottom : 1px dotted $border-color;
+	@include font-size($font-size-minus-one);
+	font-variant : small-caps;
+	letter-spacing : 1px;
+	cursor : help; 
+}
 
 .amp {
-font-family : $amp-font-family; }
+	font-family : $amp-font-family; 
+}
 
 dfn {
-font-style : italic; }
+	font-style : italic; 
+}
 
 ins {
-background-color : $base-bg;
-color : $font-color;
-text-decoration : none; }
+	background-color : $base-bg;
+	color : $font-color;
+	text-decoration : none; 
+}
 
 mark {
-background-color : $base-bg;
-color : $font-color;
-font-style : italic;
-font-weight : bold; }
+	background-color : $base-bg;
+	color : $font-color;
+	font-style : italic;
+	font-weight : bold; 
+}
 
 small {
-@include font-size($font-size-minus-one); }
-
+	@include font-size($font-size-minus-one); 
+}
 
 // b, strong, i, em
 
 b, strong {
-font-weight : 700; }
-
+	font-weight : 700; 
+}
 
 i, em {
-font-style : italic; }
-
+	font-style : italic; 
+}
 
 // code 
 
 code {
-vertical-align : middle;
-padding : .25em .5em;
-background-color : $base-bg; }
+	vertical-align : middle;
+	padding : .25em .5em;
+	background-color : $base-bg; 
+}
 
 pre {
-white-space : pre;
-white-space : pre-wrap;
-word-wrap : break-word; }
-
-
+	white-space : pre;
+	white-space : pre-wrap;
+	word-wrap : break-word; 
+}
 
 // sub/sup 
 
 sub,
 sup {
-position : relative;
-@include font-size($font-size-minus-two);
-line-height : 0;
-vertical-align : baselineheight; }
+	position : relative;
+	@include font-size($font-size-minus-two);
+	line-height : 0;
+	vertical-align : baselineheight; 
+}
 
 sup {
-top : -.5em; }
+	top : -.5em; 
+}
 
 sub {
-bottom : -.25em; }
-
-
+	bottom : -.25em; 
+}
 
 .spaced {
-letter-spacing : .5px; }
-
+	letter-spacing : .5px; 
+}
 
 // h-card
 
 .h-card {
-margin-bottom : 1.5rem;
-@include font-size($font-size); }
+	margin-bottom : 1.5rem;
+	@include font-size($font-size); 
+}
 
 .p-name {
-margin-bottom : $vertical-spacing / 8;
-line-height : 1;
+	margin-bottom : $vertical-spacing / 8;
+	line-height : 1;
 
-@include font-size($font-size-plus-one);
-@include bp(bp4) {
-@include font-size($font-size-plus-two); }
+	@include font-size($font-size-plus-one);
+	@include bp(bp4) {
+		@include font-size($font-size-plus-two); 
+	}
 }
 
 .p-tel {
-@include font-size($font-size-plus-one);
-letter-spacing : 1px; }
+	@include font-size($font-size-plus-one);
+	letter-spacing : 1px; 
+}
 
 small {
-@include font-size($font-size-minus-three);
+	@include font-size($font-size-minus-three);
 
-@include bp(bp4) {
-@include font-size($font-size-minus-two); }
+	@include bp(bp4) {
+		@include font-size($font-size-minus-two); 
+	}
 }
 
 
 // h-card--byline
 
 .h-card--byline {
+	.p-name {
+		@include font-size($font-size); 
+	}
 
-.p-name {
-@include font-size($font-size); }
-
-.p-tel {
-@include font-size($font-size); }
-
+	.p-tel {
+		@include font-size($font-size); 
+	}
 }
 
 
 // h-card--individual
 
 .h-card--individual {
+	.p-name {
+		margin-bottom : 0;
+		line-height : 1.2;
+		@include font-size($font-size-plus-two);
+		@include bp(bp4) {
+			@include font-size($font-size-plus-three); 
+		}
+	}
 
-.p-name {
-margin-bottom : 0;
-line-height : 1.2;
-@include font-size($font-size-plus-two);
-@include bp(bp4) {
-@include font-size($font-size-plus-three); }
-}
+	.p-job-title {
+		margin-bottom : $vertical-spacing / 2;
+		@include font-size($font-size-minus-two); 
+	}
 
-.p-job-title {
-margin-bottom : $vertical-spacing / 2;
-@include font-size($font-size-minus-two); }
+	.h-card__cols {
+		@include bp(bp3) {
+			display : flex;
+			align-items : flex-start; 
+		} 
+	}
 
-.h-card__cols {
-@include bp(bp3) {
-display : flex;
-align-items : flex-start; } 
-}
+	.p-tel {
+		@include font-size($font-size);
+		line-height : 1; 
+	}
 
-.p-tel {
-@include font-size($font-size);
-line-height : 1; }
+	.p-adr {
+		@include bp(bp3) { 
+			flex : 1;
+			margin-right : $gutter; 
+		}
+	}
 
-.p-adr {
-@include bp(bp3) { 
-flex : 1;
-margin-right : $gutter; }
-}
-
-.h-card__contact { 
-@include bp(bp3) { 
-flex : 1; }
-}
+	.h-card__contact { 
+		@include bp(bp3) { 
+			flex : 1; 
+		}
+	}
 }
 
 
 .complementary {
+	.h-card__cols {
+		margin-bottom : $vertical-spacing * 2;
 
-.h-card__cols {
-margin-bottom : $vertical-spacing * 2;
+		@include bp(bp3) {
+			display : block; 
+		}
 
-@include bp(bp3) {
-display : block; }
-
-.p-adr {
-@include bp(bp3) { 
-margin-right : 0; }
-}
-}
+		.p-adr {
+			@include bp(bp3) { 
+				margin-right : 0; 
+			}
+		}
+	}
 }
 
 
 // h-card--staff
 
 .h-card--staff {
+	.p-name {
+		margin-bottom : $vertical-spacing / 8;
+		line-height : 1.2;
+		@include font-size($font-size-plus-two);
+		@include bp(bp4) {
+			@include font-size($font-size-plus-three); 
+		}
+	}
 
-.p-name {
-margin-bottom : $vertical-spacing / 8;
-line-height : 1.2;
-@include font-size($font-size-plus-two);
-@include bp(bp4) {
-@include font-size($font-size-plus-three); }
-}
-
-.p-job-title {
-margin-bottom : $vertical-spacing / 2;
-@include font-size($font-size-minus-one); }
-
+	.p-job-title {
+		margin-bottom : $vertical-spacing / 2;
+		@include font-size($font-size-minus-one); 
+	}
 }

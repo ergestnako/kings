@@ -1,84 +1,80 @@
 blockquote {
-margin : $vertical-spacing * 2 0 $vertical-spacing * 4;
+	margin : $vertical-spacing * 2 0 $vertical-spacing * 4;
 
-p {
-font-family : "lexia","Helvetica Neue",Helvetica,Arial,sans-serif;
-@include font-size($font-size-plus-one);
-color : $alt-font-color; 
+	p {
+		font-family : "lexia","Helvetica Neue",Helvetica,Arial,sans-serif;
+		@include font-size($font-size-plus-one);
+		color : $alt-font-color; 
 
-@include bp(bp4) {
-@include font-size($font-size-plus-two); }
+		@include bp(bp4) {
+			@include font-size($font-size-plus-two); 
+		}
+	}
+
+	small {
+		font-family : $alt-font-family;
+		@include font-size($font-size-minus-one);
+		letter-spacing : 1px;
+		text-transform : uppercase; 
+	}
+
+	cite {
+		display : flex;
+		font-style : normal;
+
+		.cite__photo {
+			margin-right : $gutter; 
+		}
+
+		.cite__job-title,
+		.cite__org {
+			letter-spacing : 0;
+			text-transform : none; 
+		}
+	}
 }
-
-small {
-font-family : $alt-font-family;
-@include font-size($font-size-minus-one);
-letter-spacing : 1px;
-text-transform : uppercase; }
-
-cite {
-display : flex;
-font-style : normal;
-
-.cite__photo {
-margin-right : $gutter; }
-
-.cite__job-title,
-.cite__org {
-letter-spacing : 0;
-text-transform : none; }
-}
-}
-
-
 
 
 // bordered
 
 .quote--bordered {
-padding : $vertical-spacing 0;
-border-top : 3px solid $border-color;
-border-bottom : 3px solid $border-color;
+	padding : $vertical-spacing 0;
+	border-top : 3px solid $border-color;
+	border-bottom : 3px solid $border-color;
 
-p {
-margin-bottom : ($vertical-spacing / 2);
-font-family : "lexia","Helvetica Neue",Helvetica,Arial,sans-serif;
-font-weight : 600;
-color : $font-color; 
+	p {
+		margin-bottom : ($vertical-spacing / 2);
+		font-family : "lexia","Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-weight : 600;
+		color : $font-color; 
 
-@include bp(bp4) {
-@include font-size($font-size-plus-two);
-line-height : 1.3; }
+		@include bp(bp4) {
+			@include font-size($font-size-plus-two);
+			line-height : 1.3; 
+		}
 
-@include bp(bp5) {
-@include font-size($font-size-plus-three); }
+		@include bp(bp5) {
+			@include font-size($font-size-plus-three); 
+		}
+	}
 }
-
-
-
-}
-
-
-
-
-
 
 
 // special
 
 .quote--special {
+	p {
+		font-family : "lexia","Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-weight : 300;
+		color : $font-color; 
 
-p {
-font-family : "lexia","Helvetica Neue",Helvetica,Arial,sans-serif;
-font-weight : 300;
-color : $font-color; 
+		@include bp(bp4) {
+			@include font-size($font-size-plus-four);
+			line-height : 1.3; 
+		}
 
-@include bp(bp4) {
-@include font-size($font-size-plus-four);
-line-height : 1.3; }
-
-@include bp(bp5) {
-@include font-size($font-size-plus-five); }
+		@include bp(bp5) {
+			@include font-size($font-size-plus-five); 
+		}
+	}
 }
-}
-

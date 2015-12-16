@@ -1,21 +1,19 @@
 hr {
-clear : both;
-display : block;
-margin : $vertical-spacing 0;
-padding : 0;
-height : 1px;
-border : 0;
-border-bottom : $border; 
+	clear : both;
+	display : block;
+	margin : $vertical-spacing 0;
+	padding : 0;
+	height : 1px;
+	border : 0;
+	border-bottom : $border; 
 
-@media 
-(-webkit-min-device-pixel-ratio: 2), 
-(min-resolution: 192dpi) { 
-border-width : .5px; }
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+		border-width : .5px; 
+	}
 }
 
-
-
 .divider {
-width : 30px;
-border-width : 2px 0 0 0;
-border-image : url(../assets/img/site/divider-hr.png) 2 0 0 0; }
+	width : 30px;
+	border-width : 2px 0 0 0;
+	border-image : url(../assets/img/site/divider-hr.png) 2 0 0 0; 
+}
