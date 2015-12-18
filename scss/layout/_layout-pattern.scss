@@ -7,7 +7,7 @@
 }
 
 .pattern__page {
-	padding : 22px;
+	padding : $gutter;
 	box-sizing : border-box; 
 	border-right : 1px solid #e4e4e4;
 	border-bottom : 1px solid #e4e4e4;
@@ -17,7 +17,7 @@
 	}
 
 	@include bp(bp3) { 
-		padding : 22px 44px; 
+		padding : $gutter 44px; 
 	}
 
 	@include bp(bp7) { 
@@ -121,7 +121,7 @@
 
 .pattern__notes li {
 	display : inline-block;
-	margin-right : 22px;
+	margin-right : $gutter;
 	font-size : 1.4rem;
 	color : #c7c8c9; 
 }
